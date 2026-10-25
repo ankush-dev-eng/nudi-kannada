@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241710" />
+      <stop offset="50%" stop-color="#1A100A" />
+      <stop offset="100%" stop-color="#2B1D14" />
+    </linearGradient>
+
+    <!-- Turmeric Gold Shimmer -->
+    <linearGradient id="goldShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D99A1E" />
+      <stop offset="35%" stop-color="#FCE196" />
+      <stop offset="70%" stop-color="#D99A1E" />
+      <stop offset="100%" stop-color="#9E2A2B" />
+      <animate attributeName="x1" from="-100%" to="200%" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="300%" dur="7s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Kumkuma Red Glow -->
+    <radialGradient id="glowKumkuma" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#9E2A2B" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#9E2A2B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mysore Saree Border Pattern -->
+    <pattern id="mysoreZari" width="30" height="15" patternUnits="userSpaceOnUse">
+      <path d="M 0,14 L 7.5,3 L 15,14 L 22.5,3 L 30,14" fill="none" stroke="#D99A1E" stroke-width="1.2" opacity="0.8" />
+      <polygon points="15,4 18,8.5 15,13 12,8.5" fill="#D99A1E" opacity="0.6" />
+      <circle cx="7.5" cy="8.5" r="1.5" fill="#F7F0E1" />
+      <circle cx="22.5" cy="8.5" r="1.5" fill="#F7F0E1" />
+      <line x1="0" y1="1" x2="30" y2="1" stroke="#D99A1E" stroke-width="0.8" opacity="0.6" />
+      <line x1="0" y1="15" x2="30" y2="15" stroke="#D99A1E" stroke-width="0.8" opacity="0.6" />
+    </pattern>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .titleKn { font-family: 'Noto Serif Kannada', 'Tiro Kannada', serif; font-size: 82px; font-weight: 800; fill: url(#goldShimmer); }
+    .titleEn { font-family: 'Fraunces', Georgia, serif; font-size: 42px; font-weight: 700; fill: #F7F0E1; letter-spacing: 0.04em; }
+    .subtitle { font-family: 'Inter', -apple-system, sans-serif; font-size: 16px; font-weight: 500; fill: #E9DCC3; letter-spacing: 0.05em; }
+    .tagline { font-family: 'Inter', -apple-system, sans-serif; font-size: 14px; fill: #A89784; }
+    .pillText { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; fill: #F7F0E1; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="960" height="320" rx="16" fill="url(#bgGrad)" stroke="#3D2E23" stroke-width="2" />
+  <rect width="960" height="320" rx="16" fill="url(#glowKumkuma)" />
+
+  <!-- Top and Bottom Mysore Zari Saree Borders -->
+  <rect x="0" y="0" width="960" height="15" fill="url(#mysoreZari)" />
+  <rect x="0" y="305" width="960" height="15" fill="url(#mysoreZari)" />
+
+  <!-- Decorative Corner Gopuras -->
+  <path d="M 20,35 L 40,35 L 30,18 Z" fill="#D99A1E" opacity="0.7" />
+  <path d="M 940,35 L 920,35 L 930,18 Z" fill="#D99A1E" opacity="0.7" />
+
+  <!-- Center Kannada Calligraphic Brand -->
+  <g transform="translate(480, 115)" text-anchor="middle">
+    <!-- Ambient Halo -->
+    <circle cx="0" cy="-25" r="75" fill="#9E2A2B" opacity="0.25" filter="url(#softGlow)">
+      <animate attributeName="r" values="70;82;70" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.35;0.2" dur="4s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Kannada Nudi Wordmark -->
+    <text x="0" y="10" class="titleKn" filter="url(#softGlow)">ನುಡಿ</text>
+  </g>
+
+  <!-- Title & Subtitles -->
+  <g transform="translate(480, 185)" text-anchor="middle">
+    <text x="0" y="0" class="titleEn">NUDI • KANNADA FOR EVERYDAY LIFE</text>
+    <text x="0" y="30" class="subtitle">A situation-first companion helping newcomers learn, speak, and retain everyday Kannada.</text>
+    <text x="0" y="52" class="tagline">Bengaluru &amp; Karnataka • Travel • Shopping • Healthcare • Transport • Education • Workplace</text>
+  </g>
+
+  <!-- Feature Badges -->
+  <g transform="translate(480, 275)" text-anchor="middle">
+    <!-- Badge 1: 100% Offline PWA -->
+    <g transform="translate(-240, 0)">
+      <rect x="-85" y="-14" width="170" height="26" rx="13" fill="#2F5D50" stroke="#468775" stroke-width="1" />
+      <circle cx="-65" cy="-1" r="4" fill="#69C29D" />
+      <text x="5" y="3" class="pillText" text-anchor="middle">100% Offline PWA</text>
+    </g>
+
+    <!-- Badge 2: Web Speech Recognition -->
+    <g transform="translate(0, 0)">
+      <rect x="-95" y="-14" width="190" height="26" rx="13" fill="#9E2A2B" stroke="#C53D3E" stroke-width="1" />
+      <circle cx="-75" cy="-1" r="4" fill="#FCE196" />
+      <text x="5" y="3" class="pillText" text-anchor="middle">Voice Feedback (kn-IN)</text>
+    </g>
+
+    <!-- Badge 3: SM-2 Spaced Repetition -->
+    <g transform="translate(240, 0)">
+      <rect x="-90" y="-14" width="180" height="26" rx="13" fill="#3D2E23" stroke="#D99A1E" stroke-width="1" />
+      <circle cx="-70" cy="-1" r="4" fill="#D99A1E" />
+      <text x="5" y="3" class="pillText" text-anchor="middle">SM-2 Spaced Repetition</text>
+    </g>
+  </g>
+</svg>
