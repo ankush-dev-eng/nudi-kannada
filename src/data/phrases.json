@@ -734,5 +734,240 @@
       "reviewed": false
     }
   ],
-  "roleplays": []
+  "roleplays": [
+    {
+      "id": "travel-roleplay-01",
+      "situationId": "travel",
+      "title": "Boarding a BMTC Bus to Majestic",
+      "titleKannada": "ಮೆಜೆಸ್ಟಿಕ್ ಬಸ್ ಹತ್ತುವುದು",
+      "description": "Board a bus, check the route with the conductor, buy a ticket, and alight at the destination.",
+      "partnerRole": "ನಿರ್ವಾಹಕ (Conductor)",
+      "userRole": "ಪ್ರಯಾಣಿಕ (Commuter)",
+      "initialStepId": "s1",
+      "steps": {
+        "s1": {
+          "id": "s1",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಎಲ್ಲಿಗೆ ಹೋಗ್ಬೇಕು ಸಾರ್?",
+          "romanization": "Ellige hogbeku saar?",
+          "english": "Where do you need to go, sir?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ನಮಸ್ಕಾರ, ಈ ಬಸ್ ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗುತ್ತಾ?",
+              "romanization": "Namaskara, ee bus Majestic-ge hogutta?",
+              "english": "Hello, does this bus go to Majestic?",
+              "phraseId": "travel-01",
+              "nextStepId": "s2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+              "romanization": "Ondu ticket kodi.",
+              "english": "Please give one ticket.",
+              "phraseId": "travel-05",
+              "nextStepId": "s3"
+            }
+          ]
+        },
+        "s2": {
+          "id": "s2",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಹೌದು, ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗುತ್ತೆ. ಹತ್ತಿ.",
+          "romanization": "Haudu, Majestic-ge hogutte. Hatti.",
+          "english": "Yes, it goes to Majestic. Please get in.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+              "romanization": "Ondu ticket kodi.",
+              "english": "Please give one ticket.",
+              "phraseId": "travel-05",
+              "nextStepId": "s3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಹೋಗಲು ಎಷ್ಟು ಸಮಯ ಬೇಕು?",
+              "romanization": "Hogalu eshtu samaya beku?",
+              "english": "How much time is needed to go?",
+              "phraseId": "travel-07",
+              "nextStepId": "s4"
+            }
+          ]
+        },
+        "s3": {
+          "id": "s3",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಆಗುತ್ತೆ. ಚಿಲ್ಲರೆ ಕೊಡಿ.",
+          "romanization": "Ippattu roopaayi aagutte. Chillare kodi.",
+          "english": "It will be twenty rupees. Please give change.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "s5"
+            }
+          ]
+        },
+        "s4": {
+          "id": "s4",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಟ್ರಾಫಿಕ್ ಇಲ್ಲದಿದ್ದರೆ ಅರ್ಧ ಗಂಟೆ ಬೇಕು.",
+          "romanization": "Traffic illadiddare ardha gante beku.",
+          "english": "If no traffic, half an hour is needed.",
+          "options": [
+            {
+              "id": "opt6",
+              "kannada": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+              "romanization": "Ondu ticket kodi.",
+              "english": "Please give one ticket.",
+              "phraseId": "travel-05",
+              "nextStepId": "s3"
+            }
+          ]
+        },
+        "s5": {
+          "id": "s5",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಮುಂದೆ ಮೆಜೆಸ್ಟಿಕ್ ಬರುತ್ತೆ, ರೆಡಿಯಾಗಿ.",
+          "romanization": "Munde Majestic barutte, ready aagi.",
+          "english": "Majestic comes next, get ready.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಇಲ್ಲಿ ಇಳಿಯಬೇಕು, ದಯವಿಟ್ಟು ನಿಲ್ಲಿಸಿ.",
+              "romanization": "Illi iliyabeku, dayavittu nillisi.",
+              "english": "I need to get down here, please stop.",
+              "phraseId": "travel-03",
+              "nextStepId": "s6"
+            }
+          ]
+        },
+        "s6": {
+          "id": "s6",
+          "speaker": "partner",
+          "speakerName": "ನಿರ್ವಾಹಕ",
+          "kannada": "ಸರಿ ಸಾರ್, ನಿಧಾನವಾಗಿ ಇಳಿಯಿರಿ. ಶುಭ ದಿನ!",
+          "romanization": "Sari saar, nidhaanavaagi iliyiri. Shubha dina!",
+          "english": "Okay sir, alight slowly. Have a good day!"
+        }
+      }
+    },
+    {
+      "id": "travel-roleplay-02",
+      "situationId": "travel",
+      "title": "Asking Directions near Metro Station",
+      "titleKannada": "ಮೆಟ್ರೋ ದಾರಿ ಕೇಳುವುದು",
+      "description": "Find your way to the nearest Namma Metro station by talking with a friendly pedestrian.",
+      "partnerRole": "ಸ್ಥಳೀಯ ನಿವಾಸಿ (Local Resident)",
+      "userRole": "ಪ್ರಯಾಣಿಕ (Commuter)",
+      "initialStepId": "m1",
+      "steps": {
+        "m1": {
+          "id": "m1",
+          "speaker": "partner",
+          "speakerName": "ಸ್ಥಳೀಯ ನಿವಾಸಿ",
+          "kannada": "ನಮಸ್ಕಾರ! ಏನಾಗಬೇಕಿತ್ತು?",
+          "romanization": "Namaskara! Enaagabekittu?",
+          "english": "Hello! What did you need?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಮೆಟ್ರೋ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?",
+              "romanization": "Metro nildana ellide?",
+              "english": "Where is the metro station?",
+              "phraseId": "travel-04",
+              "nextStepId": "m2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಇಲ್ಲಿಂದ ಎಷ್ಟು ದೂರ?",
+              "romanization": "Illinda eshtu doora?",
+              "english": "How far is it from here?",
+              "phraseId": "travel-06",
+              "nextStepId": "m3"
+            }
+          ]
+        },
+        "m2": {
+          "id": "m2",
+          "speaker": "partner",
+          "speakerName": "ಸ್ಥಳೀಯ ನಿವಾಸಿ",
+          "kannada": "ಮೆಟ್ರೋ ಸ್ಟೇಷನ್ ಇಲ್ಲೇ ಹತ್ತಿರ ಇದೆ, ಕೇವಲ 200 ಮೀಟರ್.",
+          "romanization": "Metro station ille hattira ide, kevala 200 meter.",
+          "english": "The metro station is right near here, only 200 meters.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಈ ರಸ್ತೆಯಲ್ಲಿ ನೇರವಾಗಿ ಹೋಗಿ.",
+              "romanization": "Ee rasteyalli neravaagi hogi.",
+              "english": "Go straight on this road.",
+              "phraseId": "travel-08",
+              "nextStepId": "m4"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಬಲಗಡೆ ತಿರುಗಿ.",
+              "romanization": "Balagade tirugi.",
+              "english": "Turn right.",
+              "phraseId": "travel-09",
+              "nextStepId": "m4"
+            }
+          ]
+        },
+        "m3": {
+          "id": "m3",
+          "speaker": "partner",
+          "speakerName": "ಸ್ಥಳೀಯ ನಿವಾಸಿ",
+          "kannada": "ಕೇವಲ ಐದು ನಿಮಿಷದ ನಡಿಗೆ ಅಷ್ಟೇ.",
+          "romanization": "Kevala aidu nimishada nadige ashte.",
+          "english": "Just a five minute walk, that is all.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "m5"
+            }
+          ]
+        },
+        "m4": {
+          "id": "m4",
+          "speaker": "partner",
+          "speakerName": "ಸ್ಥಳೀಯ ನಿವಾಸಿ",
+          "kannada": "ನೇರವಾಗಿ ಹೋಗಿ ಬಲಕ್ಕೆ ತಿರುಗಿ, ದೊಡ್ಡ ಬೋರ್ಡ್ ಕಾಣಿಸುತ್ತೆ.",
+          "romanization": "Neravaagi hogi balakke tirugi, dodda board kaanisutte.",
+          "english": "Go straight and turn right, you will see a big board.",
+          "options": [
+            {
+              "id": "opt6",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "m5"
+            }
+          ]
+        },
+        "m5": {
+          "id": "m5",
+          "speaker": "partner",
+          "speakerName": "ಸ್ಥಳೀಯ ನಿವಾಸಿ",
+          "kannada": "ಪರವಾಗಿಲ್ಲ, ಒಳ್ಳೆಯದಾಗಲಿ!",
+          "romanization": "Paravaagilla, olleyadaagali!",
+          "english": "You're welcome, all the best!"
+        }
+      }
+    }
+  ]
 }
