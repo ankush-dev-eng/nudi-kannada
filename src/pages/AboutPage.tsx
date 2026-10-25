@@ -18,7 +18,7 @@ export const AboutPage: React.FC = () => {
         <div className={styles.titleEnglish}>About Nudi (Kannada for Everyday Life)</div>
       </section>
 
-      <MysoreBorder width={200} height={12} color="var(--kumkuma)" style={{ margin: '0 auto 1.5rem auto' }} />
+      <MysoreBorder variant="kumkuma" height={12} />
 
       <article className={styles.aboutCard}>
         <h2 className={styles.cardHeading}>Our Mission</h2>

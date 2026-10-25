@@ -17,6 +17,8 @@
   --focus-ring: #9E2A2B;
   --shadow-warm: 0 4px 16px rgba(43, 29, 20, 0.08);
   --shadow-lift: 0 8px 24px rgba(43, 29, 20, 0.12);
+  --shadow-sm: 0 2px 8px rgba(43, 29, 20, 0.06);
+  --shadow-md: 0 6px 20px rgba(43, 29, 20, 0.1);
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 18px;

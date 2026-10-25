@@ -11,7 +11,7 @@ export const NotFoundPage: React.FC = () => {
       <h1 className={styles.titleKannada}>ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ</h1>
       <div className={styles.titleEnglish}>Page Not Found</div>
 
-      <MysoreBorder width={180} height={10} color="var(--kumkuma)" />
+      <MysoreBorder variant="kumkuma" height={10} />
 
       <p className={styles.message}>
         ನೀವು ಹುಡುಕುತ್ತಿರುವ ಪುಟವು ಲಭ್ಯವಿಲ್ಲ. The route or resource you requested could not be located in Nudi.
