@@ -402,6 +402,116 @@
       "formality": "polite",
       "tags": ["pharmacy", "direction"],
       "reviewed": false
+    },
+    {
+      "id": "transport-01",
+      "situationId": "transport",
+      "kannada": "ಆಟೋ ಮೀಟರ್ ಹಾಕಿ.",
+      "romanization": "Auto meter haaki.",
+      "english": "Please put the meter.",
+      "note": "'Haaki' = please put / engage. The quintessential Bengaluru commuter phrase.",
+      "formality": "polite",
+      "tags": ["auto", "fare"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-02",
+      "situationId": "transport",
+      "kannada": "ಇಂದಿರಾನಗರಕ್ಕೆ ಹೋಗ್ತೀರಾ?",
+      "romanization": "Indiranagarakke hogteera?",
+      "english": "Will you go to Indiranagar?",
+      "note": "Polite question asking if the auto or cab driver is willing to go to a destination.",
+      "formality": "polite",
+      "tags": ["auto", "destination"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-03",
+      "situationId": "transport",
+      "kannada": "ಎಷ್ಟು ಆಗುತ್ತೆ?",
+      "romanization": "Eshtu aagutte?",
+      "english": "How much will it be?",
+      "note": "Used to ask the final fare or total cost.",
+      "formality": "casual",
+      "tags": ["fare", "payment"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-04",
+      "situationId": "transport",
+      "kannada": "ಮೀಟರ್ ಮೇಲೆ ಎಷ್ಟು?",
+      "romanization": "Meter mele eshtu?",
+      "english": "How much above the meter?",
+      "note": "'Mele' = above / extra. Common during peak hours or rain in Bengaluru.",
+      "formality": "casual",
+      "tags": ["auto", "negotiation"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-05",
+      "situationId": "transport",
+      "kannada": "ಯು-ಟರ್ನ್ ತಗೊಳ್ಳಿ.",
+      "romanization": "U-turn tagolli.",
+      "english": "Take a U-turn.",
+      "note": "'Tagolli' = please take.",
+      "formality": "polite",
+      "tags": ["navigation", "driving"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-06",
+      "situationId": "transport",
+      "kannada": "ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಚಲಾಯಿಸಿ.",
+      "romanization": "Svalpa nidhaanavaagi chalaayisi.",
+      "english": "Drive a bit slowly.",
+      "note": "'Nidhaana' = slow, 'chalaayisi' = please drive.",
+      "formality": "polite",
+      "tags": ["safety", "instruction"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-07",
+      "situationId": "transport",
+      "kannada": "ಇಲ್ಲೇ ಕಾರ್ನರ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+      "romanization": "Ille corner-nalli nillisi.",
+      "english": "Stop right here at the corner.",
+      "note": "'Ille' = right here, 'nillisi' = please stop.",
+      "formality": "polite",
+      "tags": ["dropoff", "direction"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-08",
+      "situationId": "transport",
+      "kannada": "ಜಿಪೇ ಮಾಡ್ತೀನಿ.",
+      "romanization": "GPay maadtini.",
+      "english": "I will pay via GPay.",
+      "note": "'Maadtini' = I will do. Seamless digital payment confirmation.",
+      "formality": "polite",
+      "tags": ["payment", "upi"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-09",
+      "situationId": "transport",
+      "kannada": "ಬಸ್ ಯಾವಾಗ ಹೊರಡುತ್ತೆ?",
+      "romanization": "Bus yaavaaga horadutte?",
+      "english": "When does the bus leave?",
+      "note": "'Horadutte' = departs / leaves.",
+      "formality": "polite",
+      "tags": ["bus", "timing"],
+      "reviewed": false
+    },
+    {
+      "id": "transport-10",
+      "situationId": "transport",
+      "kannada": "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನಂಬರ್ ಎಷ್ಟು?",
+      "romanization": "Platform number eshtu?",
+      "english": "What is the platform number?",
+      "note": "Useful at Majestic, Shantinagar, and railway stations.",
+      "formality": "polite",
+      "tags": ["station", "direction"],
+      "reviewed": false
     }
   ],
   "roleplays": []
