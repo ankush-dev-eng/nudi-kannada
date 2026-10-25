@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import 'fake-indexeddb/auto';
 import { render, screen, fireEvent } from '@testing-library/react';
-import React from 'react';
 import { SpeakPractice } from '../components/speak/SpeakPractice';
 import { Phrase } from '../types/phrase';
 

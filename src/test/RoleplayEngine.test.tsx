@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import 'fake-indexeddb/auto';
 import { render, screen, fireEvent } from '@testing-library/react';
-import React from 'react';
 import { RoleplayEngine } from '../components/roleplay/RoleplayEngine';
 import { RoleplayScenario } from '../types/phrase';
 
@@ -27,8 +26,11 @@ const mockScenario: RoleplayScenario = {
   title: 'Hiring an Auto Rickshaw',
   titleKannada: 'ಆಟೋ ಬಾಡಿಗೆ ಪಡೆಯುವುದು',
   description: 'Practice hailing an auto and asking to go by meter.',
-  steps: [
-    {
+  partnerRole: 'Auto Driver',
+  userRole: 'Commuter',
+  initialStepId: 'step-1',
+  steps: {
+    'step-1': {
       id: 'step-1',
       speaker: 'partner',
       speakerName: 'Auto Driver (ಆಟೋ ಚಾಲಕರು)',
@@ -37,7 +39,7 @@ const mockScenario: RoleplayScenario = {
       english: 'Where do you want to go sir?',
       nextStepId: 'step-2',
     },
-    {
+    'step-2': {
       id: 'step-2',
       speaker: 'user',
       speakerName: 'You (ನೀವು)',
@@ -56,7 +58,7 @@ const mockScenario: RoleplayScenario = {
         },
       ],
     },
-    {
+    'step-3': {
       id: 'step-3',
       speaker: 'partner',
       speakerName: 'Auto Driver (ಆಟೋ ಚಾಲಕರು)',
@@ -64,7 +66,7 @@ const mockScenario: RoleplayScenario = {
       romanization: 'Sari sir, banni kulithukolli.',
       english: 'Okay sir, please come and sit.',
     },
-  ],
+  },
 };
 
 describe('RoleplayEngine Component', () => {

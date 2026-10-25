@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="42" fill="#9E2A2B" />
+  <!-- Mysore zari outer ring -->
+  <circle cx="96" cy="96" r="80" fill="none" stroke="#D99A1E" stroke-width="4" stroke-dasharray="6,4" />
+  <!-- Inner medallion -->
+  <circle cx="96" cy="96" r="68" fill="#F7F0E1" />
+  <!-- Kannada character Nu -->
+  <text x="96" y="125" font-family="'Noto Serif Kannada', 'Tiro Kannada', serif" font-size="88" font-weight="bold" fill="#9E2A2B" text-anchor="middle">ನು</text>
+  <!-- Subtle accent dot -->
+  <circle cx="96" cy="38" r="4" fill="#D99A1E" />
+</svg>

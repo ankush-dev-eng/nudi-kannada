@@ -8,10 +8,11 @@ import {
 } from '@/lib/scoring';
 
 describe('Pronunciation Scoring Engine', () => {
-  it('calculates exact Levenshtein distance', () => {
+  it('calculates exact Levenshtein distance and similarity', () => {
     expect(levenshteinDistance('kitten', 'sitting')).toBe(3);
     expect(levenshteinDistance('ನಮಸ್ಕಾರ', 'ನಮಸ್ಕಾರ')).toBe(0);
     expect(levenshteinDistance('', 'ಬಸ್')).toBe(3);
+    expect(stringSimilarity('ನಮಸ್ಕಾರ', 'ನಮಸ್ಕಾರ')).toBe(1.0);
   });
 
   it('normalizes Kannada and romanized strings by stripping punctuation and spacing', () => {

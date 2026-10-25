@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
-import { SituationId, Formality } from '@/types/phrase';
 import { useSpeechSynthesis } from '@/hooks/useSpeechSynthesis';
 import { SearchBar } from '@/components/search/SearchBar';
 import { ChevronLeftIcon, VolumeIcon, MicIcon } from '@/components/common/Icons';

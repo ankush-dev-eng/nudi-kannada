@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { RoleplayScenario, RoleplayStep, RoleplayOption } from '@/types/phrase';
+import { RoleplayScenario, RoleplayOption } from '@/types/phrase';
 import { useSpeechSynthesis } from '@/hooks/useSpeechSynthesis';
 import { playSuccessSound, playCardFlipSound, triggerHaptic } from '@/lib/feedback';
 import { useAppStore } from '@/store/useAppStore';
@@ -28,13 +28,15 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
   const { completeRoleplay } = useAppStore();
   const { speak } = useSpeechSynthesis();
 
-  const [currentStepId, setCurrentStepId] = useState<string>(scenario.steps[0]?.id || '');
+  const getInitialStep = () => scenario.initialStepId || Object.keys(scenario.steps)[0] || '';
+
+  const [currentStepId, setCurrentStepId] = useState<string>(getInitialStep());
   const [history, setHistory] = useState<MessageHistoryItem[]>([]);
   const [isCompleted, setIsCompleted] = useState<boolean>(false);
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const currentStep = scenario.steps.find((s) => s.id === currentStepId);
+  const currentStep = scenario.steps[currentStepId];
 
   // Auto-scroll chat area on new message
   useEffect(() => {
@@ -124,7 +126,7 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
   const handleRestart = () => {
     setHistory([]);
     setIsCompleted(false);
-    setCurrentStepId(scenario.steps[0]?.id || '');
+    setCurrentStepId(getInitialStep());
     playCardFlipSound();
   };
 
@@ -198,7 +200,7 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
       {!isCompleted && currentStep && currentStep.speaker === 'user' && currentStep.options && (
         <section className={styles.optionsSection}>
           <div className={styles.optionsPrompt}>Choose your Kannada response:</div>
-          {currentStep.options.map((option) => (
+          {currentStep.options.map((option: RoleplayOption) => (
             <button
               key={option.id}
               type="button"

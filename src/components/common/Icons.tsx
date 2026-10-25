@@ -162,7 +162,7 @@ export const FlameIcon: React.FC<IconProps> = ({ className, size = 20, color = '
     width={size}
     height={size}
     viewBox="0 0 24 24"
-    fill="currentColor"
+    fill={color}
     className={className}
     aria-hidden="true"
   >

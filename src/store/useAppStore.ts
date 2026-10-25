@@ -6,7 +6,6 @@ import {
   SituationProgress,
   UserStreak,
   UserSettings,
-  UserReviewGrade,
 } from '@/types/progress';
 import {
   getAllProgress,
@@ -15,7 +14,6 @@ import {
   getStoredSettings,
   saveSM2Card,
   saveSituationProgress,
-  saveStreak,
   saveStoredSettings,
   recordTodayActivity,
   resetUserData,
@@ -28,6 +26,7 @@ import {
   createInitialCard,
   calculateReviewByGrade,
   isCardMastered,
+  UserReviewGrade,
 } from '@/lib/scheduler';
 
 interface AppState {
@@ -63,7 +62,7 @@ interface AppState {
 export const useAppStore = create<AppState>((set, get) => ({
   phrases: phrasesData.phrases as Phrase[],
   situations: phrasesData.situations as SituationMeta[],
-  roleplays: phrasesData.roleplays as RoleplayScenario[],
+  roleplays: phrasesData.roleplays as unknown as RoleplayScenario[],
 
   cards: {},
   progress: {
