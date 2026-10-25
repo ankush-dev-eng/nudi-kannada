@@ -53,4 +53,6 @@
   --focus-ring: #E8B038;
   --shadow-warm: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
