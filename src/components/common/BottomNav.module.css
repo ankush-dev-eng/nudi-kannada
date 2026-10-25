@@ -1,0 +1,59 @@
+.navWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -2px 10px rgba(43, 29, 20, 0.05);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.navInner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.35rem 0.5rem;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  position: relative;
+  min-width: 58px;
+}
+
+.navItem:hover {
+  color: var(--ink);
+}
+
+.active {
+  color: var(--kumkuma);
+  font-weight: 600;
+}
+
+.dueBadge {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  background-color: var(--kumkuma);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-full);
+  min-width: 16px;
+  text-align: center;
+}
