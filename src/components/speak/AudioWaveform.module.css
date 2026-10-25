@@ -1,0 +1,60 @@
+.waveformContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 48px;
+  padding: 0.5rem;
+  background-color: var(--sand);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.bar {
+  width: 5px;
+  background-color: var(--muted);
+  border-radius: var(--radius-full);
+  height: 8px;
+  transition: height 0.15s ease, background-color 0.2s ease;
+}
+
+.recording .bar {
+  background-color: var(--kumkuma);
+  animation: pulseWave 1.2s infinite ease-in-out;
+}
+
+.recording .bar:nth-child(2n) {
+  animation-delay: 0.2s;
+  background-color: var(--turmeric);
+}
+
+.recording .bar:nth-child(3n) {
+  animation-delay: 0.4s;
+  background-color: var(--ghats);
+}
+
+.recording .bar:nth-child(4n) {
+  animation-delay: 0.1s;
+}
+
+.recording .bar:nth-child(5n) {
+  animation-delay: 0.3s;
+}
+
+@keyframes pulseWave {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recording .bar {
+    animation: none;
+    height: 24px;
+  }
+}
