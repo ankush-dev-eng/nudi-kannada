@@ -1,3 +1,4 @@
+/// <reference types="vitest/globals" />
 import '@testing-library/jest-dom';
 
 // Mock Web Speech API SpeechSynthesis and SpeechRecognition for test environment
