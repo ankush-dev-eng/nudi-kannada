@@ -78,34 +78,34 @@ Nudi organizes 60+ verified, idiomatic phrases across 6 high-stakes domains:
 
 ```mermaid
 graph TD
-    User([Learner / Newcomer]) -->|Touch / Keyboard / Voice| UI[React 18 Frontend]
+    User["Learner / Newcomer"] -->|Touch / Keyboard / Voice| UI["React 18 Frontend"]
     
-    subgraph Client Architecture (100% On-Device)
-        UI --> Router[React Router SPA]
-        Router --> LearnPage[Learn Mode]
-        Router --> SpeakPage[Speak Mode]
-        Router --> RoleplayPage[Roleplay Engine]
-        Router --> ReviewPage[SM-2 Spaced Repetition]
-        Router --> ScriptPage[Script Helper & Quiz]
+    subgraph ClientArchitecture ["Client Architecture (100% On-Device)"]
+        UI --> Router["React Router SPA"]
+        Router --> LearnPage["Learn Mode"]
+        Router --> SpeakPage["Speak Mode"]
+        Router --> RoleplayPage["Roleplay Engine"]
+        Router --> ReviewPage["SM-2 Spaced Repetition"]
+        Router --> ScriptPage["Script Helper & Quiz"]
         
-        SpeakPage --> SpeechEngine[Web Speech Recognition kn-IN]
-        SpeakPage --> AudioViz[Web Audio API Waveform]
-        SpeakPage --> ScoringUtil[Phonetic Scoring Engine]
+        SpeakPage --> SpeechEngine["Web Speech Recognition kn-IN"]
+        SpeakPage --> AudioViz["Web Audio API Waveform"]
+        SpeakPage --> ScoringUtil["Phonetic Scoring Engine"]
         
-        RoleplayPage --> StateMachine[Branching Dialogue Engine]
-        StateMachine --> TTS[Web Speech Synthesis kn-IN]
+        RoleplayPage --> StateMachine["Branching Dialogue Engine"]
+        StateMachine --> TTS["Web Speech Synthesis kn-IN"]
         
-        ReviewPage --> SM2[SM-2 Retention Scheduler]
-        SM2 --> AppStore[Zustand Store]
+        ReviewPage --> SM2["SM-2 Retention Scheduler"]
+        SM2 --> AppStore["Zustand Store"]
         
-        AppStore --> IDB[(IndexedDB Local Storage)]
+        AppStore --> IDB[("IndexedDB Local Storage")]
     end
     
-    subgraph Offline PWA & Build Infrastructure
-        Vite[Vite + TypeScript] --> Workbox[Workbox Service Worker]
-        Workbox --> Cache[(CacheStorage: HTML/JS/CSS/Fonts)]
-        Data[phrases.json Dataset] --> GoVal[Go Validator CLI tools/validate]
-        GoVal --> UnicodeCheck[Unicode \\u0C80-\\u0CFF Strict Linter]
+    subgraph OfflinePWA ["Offline PWA & Build Infrastructure"]
+        Vite["Vite + TypeScript"] --> Workbox["Workbox Service Worker"]
+        Workbox --> Cache[("CacheStorage: HTML/JS/CSS/Fonts")]
+        Data["phrases.json Dataset"] --> GoVal["Go Validator CLI tools/validate"]
+        GoVal --> UnicodeCheck["Unicode \\u0C80-\\u0CFF Strict Linter"]
     end
 ```
 
