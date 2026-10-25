@@ -1,17 +1,19 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useAppStore } from '../store/useAppStore';
-import { PhraseFlipCard } from '../components/learn/PhraseFlipCard';
-import { ChevronLeftIcon, ChevronRightIcon, MicIcon, UsersIcon } from '../components/common/Icons';
+import { useAppStore } from '@/store/useAppStore';
+import { SituationId } from '@/types/phrase';
+import { PhraseFlipCard } from '@/components/learn/PhraseFlipCard';
+import { ChevronLeftIcon, ChevronRightIcon, MicIcon, UsersIcon } from '@/components/common/Icons';
 import styles from './LearnPage.module.css';
 
 export const LearnPage: React.FC = () => {
   const { situationId } = useParams<{ situationId: string }>();
   const navigate = useNavigate();
-  const { situations, progress, toggleMasteredPhrase } = useAppStore();
+  const { situations, getPhrasesBySituation, markPhraseLearned } = useAppStore();
 
-  const situation = situations.find((s) => s.id === situationId) || situations[0];
-  const phrases = situation ? situation.phrases : [];
+  const currentSituationId = (situationId || 'travel') as SituationId;
+  const situation = situations.find((s) => s.id === currentSituationId) || situations[0];
+  const phrases = situation ? getPhrasesBySituation(situation.id) : [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -61,7 +63,6 @@ export const LearnPage: React.FC = () => {
     );
   }
 
-  const isMastered = currentPhrase ? progress.masteredPhraseIds.includes(currentPhrase.id) : false;
   const progressPercent = Math.round(((currentIndex + 1) / phrases.length) * 100);
 
   return (
@@ -76,8 +77,8 @@ export const LearnPage: React.FC = () => {
       </header>
 
       <section className={styles.situationHeading}>
-        <h1 className={styles.titleKannada}>{situation.nameKannada}</h1>
-        <div className={styles.titleEnglish}>{situation.nameEnglish}</div>
+        <h1 className={styles.titleKannada}>{situation.titleKannada}</h1>
+        <div className={styles.titleEnglish}>{situation.title}</div>
       </section>
 
       <div
@@ -94,10 +95,7 @@ export const LearnPage: React.FC = () => {
       {currentPhrase && (
         <PhraseFlipCard
           phrase={currentPhrase}
-          isMastered={isMastered}
-          onToggleMastered={() => toggleMasteredPhrase(currentPhrase.id)}
-          onNext={currentIndex < phrases.length - 1 ? handleNext : undefined}
-          onPrev={currentIndex > 0 ? handlePrev : undefined}
+          onLearned={() => markPhraseLearned(currentPhrase.id, currentPhrase.situationId)}
         />
       )}
 

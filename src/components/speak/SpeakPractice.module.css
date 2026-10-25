@@ -1,0 +1,262 @@
+.container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  background-color: var(--sand);
+  color: var(--ink);
+}
+
+.badge.formal {
+  background-color: var(--sand);
+  color: var(--ghats);
+  border: 1px solid var(--ghats);
+}
+
+.targetCard {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: var(--sand);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+}
+
+.kannadaText {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.romanText {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.englishText {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.audioControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.listenBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.listenBtn:hover {
+  border-color: var(--kumkuma);
+  color: var(--kumkuma);
+}
+
+.micSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.recordBtn {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background-color: var(--kumkuma);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.recordBtn:hover {
+  transform: scale(1.05);
+}
+
+.recordBtn.recording {
+  background-color: var(--turmeric);
+  animation: pulseButton 1s infinite alternate;
+}
+
+@keyframes pulseButton {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.micHint {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.resultCard {
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scoreHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scoreLabel {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.scorePercent {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ghats);
+}
+
+.scorePercent.good {
+  color: var(--ghats);
+}
+
+.scorePercent.moderate {
+  color: var(--turmeric);
+}
+
+.scorePercent.low {
+  color: var(--kumkuma);
+}
+
+.transcriptRow {
+  font-size: 0.9rem;
+  color: var(--ink);
+  background-color: var(--card-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+}
+
+.transcriptRow strong {
+  color: var(--muted);
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+.wordMatchContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.wordChip {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.wordChip.matched {
+  background-color: rgba(47, 93, 80, 0.15);
+  color: var(--ghats);
+  border: 1px solid var(--ghats);
+}
+
+.wordChip.missed {
+  background-color: rgba(158, 42, 43, 0.12);
+  color: var(--kumkuma);
+  border: 1px dashed var(--kumkuma);
+}
+
+.fallbackToggleBtn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.fallbackToggleBtn:hover {
+  color: var(--ink);
+}
+
+.textFallbackInputGroup {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.fallbackInput {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background-color: var(--card-bg);
+  color: var(--ink);
+  font-family: var(--font-kannada), var(--font-sans);
+  font-size: 0.95rem;
+}
+
+.fallbackSubmitBtn {
+  background-color: var(--ghats);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
