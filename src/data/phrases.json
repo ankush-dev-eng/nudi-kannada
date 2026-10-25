@@ -1,0 +1,177 @@
+{
+  "version": "1.0.0",
+  "situations": [
+    {
+      "id": "travel",
+      "title": "Travel & Exploration",
+      "titleKannada": "ಪ್ರವಾಸ ಮತ್ತು ದಾರಿ",
+      "description": "Navigate cities, ask for directions, find landmarks and metro routes across Karnataka.",
+      "phraseCount": 11,
+      "accentColor": "#9E2A2B"
+    },
+    {
+      "id": "shopping",
+      "title": "Shopping & Markets",
+      "titleKannada": "ಶಾಪಿಂಗ್ ಮತ್ತು ಮಾರುಕಟ್ಟೆ",
+      "description": "Bargain with local vendors, ask prices, buy fresh produce, and request bills.",
+      "phraseCount": 11,
+      "accentColor": "#D99A1E"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare & Clinic",
+      "titleKannada": "ಆರೋಗ್ಯ ಮತ್ತು ಚಿಕಿತ್ಸೆ",
+      "description": "Describe symptoms, ask medicine dosages, and converse with doctors or pharmacists.",
+      "phraseCount": 10,
+      "accentColor": "#2F5D50"
+    },
+    {
+      "id": "transport",
+      "title": "Auto & Public Transit",
+      "titleKannada": "ಸಾರಿಗೆ ಮತ್ತು ಆಟೋ",
+      "description": "Negotiate auto fares, confirm meter usage, board BMTC buses, and navigate stops.",
+      "phraseCount": 10,
+      "accentColor": "#9E2A2B"
+    },
+    {
+      "id": "education",
+      "title": "College & Education",
+      "titleKannada": "ಶಿಕ್ಷಣ ಮತ್ತು ಕಾಲೇಜು",
+      "description": "Interact with teachers and classmates, find libraries, and clarify coursework doubts.",
+      "phraseCount": 10,
+      "accentColor": "#D99A1E"
+    },
+    {
+      "id": "workplace",
+      "title": "Workplace & Office",
+      "titleKannada": "ಕಚೇರಿ ಮತ್ತು ಕೆಲಸ",
+      "description": "Greet colleagues, schedule meetings, invite for chai/coffee, and discuss deadlines.",
+      "phraseCount": 10,
+      "accentColor": "#2F5D50"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "travel-01",
+      "situationId": "travel",
+      "kannada": "ನಮಸ್ಕಾರ, ಈ ಬಸ್ ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗುತ್ತಾ?",
+      "romanization": "Namaskara, ee bus Majestic-ge hogutta?",
+      "english": "Hello, does this bus go to Majestic?",
+      "note": "Majestic (Kempegowda Bus Station) is Bengaluru's central transit hub. 'Hogutta?' is the colloquial question for 'does it go?'.",
+      "formality": "polite",
+      "tags": ["transit", "bus", "direction"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-02",
+      "situationId": "travel",
+      "kannada": "ಮುಂದಿನ ನಿಲ್ದಾಣ ಯಾವುದು?",
+      "romanization": "Mundina nildana yaavudu?",
+      "english": "Which is the next stop?",
+      "note": "'Nildana' means station or stop. 'Mundina' means next.",
+      "formality": "polite",
+      "tags": ["transit", "inquiry"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-03",
+      "situationId": "travel",
+      "kannada": "ಇಲ್ಲಿ ಇಳಿಯಬೇಕು, ದಯವಿಟ್ಟು ನಿಲ್ಲಿಸಿ.",
+      "romanization": "Illi iliyabeku, dayavittu nillisi.",
+      "english": "I need to get down here, please stop.",
+      "note": "Use 'iliye-beku' when signaling the conductor or driver that you wish to alight.",
+      "formality": "polite",
+      "tags": ["transit", "action"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-04",
+      "situationId": "travel",
+      "kannada": "ಮೆಟ್ರೋ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?",
+      "romanization": "Metro nildana ellide?",
+      "english": "Where is the metro station?",
+      "note": "'Ellide?' is the universal question for 'where is it?'.",
+      "formality": "polite",
+      "tags": ["metro", "direction"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-05",
+      "situationId": "travel",
+      "kannada": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+      "romanization": "Ondu ticket kodi.",
+      "english": "Please give one ticket.",
+      "note": "'Kodi' is polite for 'give'. 'Kodu' is casual.",
+      "formality": "polite",
+      "tags": ["ticket", "bus"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-06",
+      "situationId": "travel",
+      "kannada": "ಇಲ್ಲಿಂದ ಎಷ್ಟು ದೂರ?",
+      "romanization": "Illinda eshtu doora?",
+      "english": "How far is it from here?",
+      "note": "'Illinda' means from here, 'eshtu doora' means how much distance.",
+      "formality": "casual",
+      "tags": ["distance", "navigation"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-07",
+      "situationId": "travel",
+      "kannada": "ಹೋಗಲು ಎಷ್ಟು ಸಮಯ ಬೇಕು?",
+      "romanization": "Hogalu eshtu samaya beku?",
+      "english": "How much time is needed to go?",
+      "note": "'Beku' expresses requirement or need.",
+      "formality": "polite",
+      "tags": ["time", "navigation"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-08",
+      "situationId": "travel",
+      "kannada": "ಈ ರಸ್ತೆಯಲ್ಲಿ ನೇರವಾಗಿ ಹೋಗಿ.",
+      "romanization": "Ee rasteyalli neravaagi hogi.",
+      "english": "Go straight on this road.",
+      "note": "'Neravaagi' means straight.",
+      "formality": "polite",
+      "tags": ["direction"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-09",
+      "situationId": "travel",
+      "kannada": "ಬಲಗಡೆ ತಿರುಗಿ.",
+      "romanization": "Balagade tirugi.",
+      "english": "Turn right.",
+      "note": "'Bala' means right side in Kannada.",
+      "formality": "polite",
+      "tags": ["direction"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-10",
+      "situationId": "travel",
+      "kannada": "ಎಡಗಡೆ ತಿರುಗಿ.",
+      "romanization": "Edagade tirugi.",
+      "english": "Turn left.",
+      "note": "'Eda' means left side in Kannada.",
+      "formality": "polite",
+      "tags": ["direction"],
+      "reviewed": false
+    },
+    {
+      "id": "travel-11",
+      "situationId": "travel",
+      "kannada": "ಧನ್ಯವಾದಗಳು!",
+      "romanization": "Dhanyavaadagalu!",
+      "english": "Thank you!",
+      "note": "Standard respectful Kannada expression for gratitude.",
+      "formality": "polite",
+      "tags": ["courtesy"],
+      "reviewed": false
+    }
+  ],
+  "roleplays": []
+}
