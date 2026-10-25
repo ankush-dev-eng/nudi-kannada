@@ -1,0 +1,113 @@
+.pageContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 5rem 1rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.heroKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.heroSubtitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.heroDescription {
+  max-width: 580px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.reviewAlertCard {
+  background: linear-gradient(135deg, var(--sand), var(--paper));
+  border: 1px solid var(--turmeric);
+  border-left: 5px solid var(--turmeric);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: var(--shadow-warm);
+}
+
+.reviewAlertText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.reviewAlertTitle {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.reviewAlertSubtitle {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.reviewAlertBtn {
+  background-color: var(--kumkuma);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+}
+
+.reviewAlertBtn:hover {
+  background-color: #832021;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.sectionSubtitle {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 680px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
