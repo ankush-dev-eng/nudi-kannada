@@ -622,6 +622,116 @@
       "formality": "polite",
       "tags": ["kannada", "learning"],
       "reviewed": false
+    },
+    {
+      "id": "workplace-01",
+      "situationId": "workplace",
+      "kannada": "ಶುಭೋದಯ! ನೀವು ಹೇಗಿದ್ದೀರಿ?",
+      "romanization": "Shubhodaya! Neevu hegiddiri?",
+      "english": "Good morning! How are you?",
+      "note": "'Shubhodaya' = good morning, 'Neevu hegiddiri?' = polite 'how are you?'.",
+      "formality": "polite",
+      "tags": ["greeting", "office"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-02",
+      "situationId": "workplace",
+      "kannada": "ಇವತ್ತು ಮೀಟಿಂಗ್ ಇದೆಯಾ?",
+      "romanization": "Ivattu meeting ideya?",
+      "english": "Is there a meeting today?",
+      "note": "'Ivattu' = today. Natural blend of English loanwords in Karnataka workplaces.",
+      "formality": "polite",
+      "tags": ["meeting", "schedule"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-03",
+      "situationId": "workplace",
+      "kannada": "ನಾನು ಇಮೇಲ್ ಕಳುಹಿಸಿದ್ದೇನೆ.",
+      "romanization": "Naanu email kaluhisiddene.",
+      "english": "I have sent an email.",
+      "note": "'Kaluhisiddene' = I have sent.",
+      "formality": "polite",
+      "tags": ["communication", "email"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-04",
+      "situationId": "workplace",
+      "kannada": "ಕಾಫಿ ಕುಡಿಯೋಣ ಬನ್ನಿ.",
+      "romanization": "Coffee kudiyona banni.",
+      "english": "Come, let's have coffee.",
+      "note": "Iconic Karnataka filter coffee break invitation among teammates.",
+      "formality": "casual",
+      "tags": ["social", "break"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-05",
+      "situationId": "workplace",
+      "kannada": "ಈ ಪ್ರಾಜೆಕ್ಟ್ ಯಾವಾಗ ಮುಗಿಯುತ್ತೆ?",
+      "romanization": "Ee project yaavaaga mugiyutte?",
+      "english": "When will this project finish?",
+      "note": "'Mugiyutte' = will end / conclude.",
+      "formality": "polite",
+      "tags": ["project", "timeline"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-06",
+      "situationId": "workplace",
+      "kannada": "ನನಗೆ ಈ ಫೈಲ್ ಕಳುಹಿಸಿ.",
+      "romanization": "Nanage ee file kaluhisi.",
+      "english": "Send me this file.",
+      "note": "'Kaluhisi' = please send.",
+      "formality": "polite",
+      "tags": ["task", "file"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-07",
+      "situationId": "workplace",
+      "kannada": "ನಾಳೆ ನಾನು ರಜೆ ತಗೋತೀನಿ.",
+      "romanization": "Naale naanu raje tagotini.",
+      "english": "Tomorrow I am taking leave.",
+      "note": "'Naale' = tomorrow, 'raje' = leave / holiday.",
+      "formality": "polite",
+      "tags": ["leave", "hr"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-08",
+      "situationId": "workplace",
+      "kannada": "ಸ್ವಲ್ಪ ಸಮಯ ಮಾತನಾಡಬಹುದಾ?",
+      "romanization": "Svalpa samaya maatanaadabahuda?",
+      "english": "Can we talk for a moment?",
+      "note": "'Maatanaadabahuda?' = can we speak?",
+      "formality": "polite",
+      "tags": ["discussion", "meeting"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-09",
+      "situationId": "workplace",
+      "kannada": "ಕೆಲಸ ಚೆನ್ನಾಗಿ ಆಗಿದೆ!",
+      "romanization": "Kelasa chennaagi aagide!",
+      "english": "Great job / work done well!",
+      "note": "'Chennaagi aagide' = has turned out nicely. Great for peer recognition.",
+      "formality": "polite",
+      "tags": ["appreciation", "team"],
+      "reviewed": false
+    },
+    {
+      "id": "workplace-10",
+      "situationId": "workplace",
+      "kannada": "ಸಂಜೆ ಸಿಗೋಣ.",
+      "romanization": "Sanje sigona.",
+      "english": "Let's meet in the evening / see you this evening.",
+      "note": "'Sanje' = evening, 'sigona' = let's meet.",
+      "formality": "casual",
+      "tags": ["social", "farewell"],
+      "reviewed": false
     }
   ],
   "roleplays": []
