@@ -131,6 +131,13 @@
   100% { transform: scale(1.1); }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .recordBtn.recording {
+    animation: none;
+    outline: 3px solid var(--turmeric);
+  }
+}
+
 .micHint {
   font-size: 0.85rem;
   color: var(--muted);
