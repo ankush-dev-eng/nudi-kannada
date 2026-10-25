@@ -1280,6 +1280,290 @@
           "english": "Certainly, please scan. Thank you, visit again!"
         }
       }
+    },
+    {
+      "id": "healthcare-roleplay-01",
+      "situationId": "healthcare",
+      "title": "Consulting a Doctor at a Clinic",
+      "titleKannada": "ವೈದ್ಯರ ಬಳಿ ಚಿಕಿತ್ಸೆ",
+      "description": "Explain physical symptoms, fever, and headache to a physician and understand prescription directions.",
+      "partnerRole": "ವೈದ್ಯರು (Doctor)",
+      "userRole": "ರೋಗಿ (Patient)",
+      "initialStepId": "d1",
+      "steps": {
+        "d1": {
+          "id": "d1",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ನಮಸ್ಕಾರ, ಕುಳಿತುಕೊಳ್ಳಿ. ಏನು ತೊಂದರೆ?",
+          "romanization": "Namaskara, kulitukolli. Enu tondare?",
+          "english": "Hello, please sit down. What is the trouble?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ನನಗೆ ಹುಷಾರಿಲ್ಲ.",
+              "romanization": "Nanage hushaadilla.",
+              "english": "I am not feeling well.",
+              "phraseId": "healthcare-01",
+              "nextStepId": "d2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಜ್ವರ ಬಂದಿದೆ.",
+              "romanization": "Jvara bandide.",
+              "english": "I have fever.",
+              "phraseId": "healthcare-03",
+              "nextStepId": "d3"
+            }
+          ]
+        },
+        "d2": {
+          "id": "d2",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ಹೌದಾ, ನಿರ್ದಿಷ್ಟವಾಗಿ ಏನು ಲಕ್ಷಣಗಳು ಕಾಣಿಸುತ್ತಿವೆ?",
+          "romanization": "Hauda, nirdishtavaagi enu lakshanagalu kaanisuttive?",
+          "english": "Is that so? What specific symptoms are you noticing?",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ತಲೆ ನೋವು ತುಂಬಾ ಇದೆ.",
+              "romanization": "Tale novu tumba ide.",
+              "english": "I have a severe headache.",
+              "phraseId": "healthcare-02",
+              "nextStepId": "d4"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ನನಗೆ ಕೆಮ್ಮು ಮತ್ತು ನೆಗಡಿ ಇದೆ.",
+              "romanization": "Nanage kemmu mattu negadi ide.",
+              "english": "I have cough and cold.",
+              "phraseId": "healthcare-08",
+              "nextStepId": "d4"
+            }
+          ]
+        },
+        "d3": {
+          "id": "d3",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ಜ್ವರ ಎಷ್ಟು ದಿನದಿಂದ ಇದೆ? ಹೊಟ್ಟೆಯಲ್ಲಿ ಅಥವಾ ಮೈ ಕೈ ನೋವು ಇದೆಯಾ?",
+          "romanization": "Jvara eshtu dinadinda ide? Hotteyalli athava mai kai novu ideya?",
+          "english": "Since how many days is the fever? Any stomach or body ache?",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಹೊಟ್ಟೆ ನೋವು ಇದೆ.",
+              "romanization": "Hotte novu ide.",
+              "english": "I have stomach pain.",
+              "phraseId": "healthcare-04",
+              "nextStepId": "d4"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ತಲೆ ನೋವು ತುಂಬಾ ಇದೆ.",
+              "romanization": "Tale novu tumba ide.",
+              "english": "I have a severe headache.",
+              "phraseId": "healthcare-02",
+              "nextStepId": "d4"
+            }
+          ]
+        },
+        "d4": {
+          "id": "d4",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ಸರಿ, ಇದು ಸಾಮಾನ್ಯ ವೈರಲ್ ಇನ್‌ಫೆಕ್ಷನ್. ಮೂರು ದಿನದ ಮಾತ್ರೆ ಬರೆಯುತ್ತೇನೆ.",
+          "romanization": "Sari, idu saamaanya viral infection. Mooru dinada maatre bareyuttene.",
+          "english": "Alright, it is a common viral infection. I am prescribing tablets for 3 days.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಈ ಮಾತ್ರೆ ಊಟದ ನಂತರ ತಗೋಬೇಕಾ?",
+              "romanization": "Ee maatre ootada nantara tagobeka?",
+              "english": "Should this tablet be taken after food?",
+              "phraseId": "healthcare-06",
+              "nextStepId": "d5"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತಗೋಬೇಕು?",
+              "romanization": "Dinakke eshtu baari tagobeku?",
+              "english": "How many times a day should it be taken?",
+              "phraseId": "healthcare-07",
+              "nextStepId": "d5"
+            }
+          ]
+        },
+        "d5": {
+          "id": "d5",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ಊಟದ ನಂತರ ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ ತಗೊಳ್ಳಿ, ಸಾಕಷ್ಟು ಬಿಸಿ ನೀರು ಕುಡಿಯಿರಿ.",
+          "romanization": "Ootada nantara dinakke eradu baari tagolli, saakashtu bisi neeru kudiyiri.",
+          "english": "Take twice a day after meals, and drink plenty of warm water.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಮೆಡಿಕಲ್ ಶಾಪ್ ಎಲ್ಲಿದೆ?",
+              "romanization": "Medical shop ellide?",
+              "english": "Where is the medical shop / pharmacy?",
+              "phraseId": "healthcare-10",
+              "nextStepId": "d_end"
+            }
+          ]
+        },
+        "d_end": {
+          "id": "d_end",
+          "speaker": "partner",
+          "speakerName": "ವೈದ್ಯರು",
+          "kannada": "ಕ್ಲಿನಿಕ್ ಪಕ್ಕದಲ್ಲೇ ಮೆಡಿಕಲ್ ಶಾಪ್ ಇದೆ. ಚೆನ್ನಾಗಿ ವಿಶ್ರಾಂತಿ ತಗೊಳ್ಳಿ, ಬೇಗ ಹುಷಾರಾಗುತ್ತೀರಿ!",
+          "romanization": "Clinic pakkadalle medical shop ide. Chennaagi vishraanti tagolli, bega hushaaraagutteeri!",
+          "english": "The pharmacy is right beside the clinic. Take good rest, you will recover soon!"
+        }
+      }
+    },
+    {
+      "id": "healthcare-roleplay-02",
+      "situationId": "healthcare",
+      "title": "At the Pharmacy Counter",
+      "titleKannada": "ಮೆಡಿಕಲ್ ಶಾಪ್‌ನಲ್ಲಿ ಮಾತ್ರೆ ಕೊಳ್ಳುವುದು",
+      "description": "Clarify prescription dosage, timing with food, and inquire about directions at the chemist.",
+      "partnerRole": "ಔಷಧ ವ್ಯಾಪಾರಿ (Pharmacist)",
+      "userRole": "ಗ್ರಾಹಕ (Customer)",
+      "initialStepId": "p1",
+      "steps": {
+        "p1": {
+          "id": "p1",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ನಮಸ್ಕಾರ! ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಕೊಡಿ, ಯಾವ ಮಾತ್ರೆ ಬೇಕು?",
+          "romanization": "Namaskara! Prescription kodi, yaava maatre beku?",
+          "english": "Hello! Please give the prescription, which medicines are needed?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತಗೋಬೇಕು?",
+              "romanization": "Dinakke eshtu baari tagobeku?",
+              "english": "How many times a day should it be taken?",
+              "phraseId": "healthcare-07",
+              "nextStepId": "p2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಈ ಮಾತ್ರೆ ಊಟದ ನಂತರ ತಗೋಬೇಕಾ?",
+              "romanization": "Ee maatre ootada nantara tagobeka?",
+              "english": "Should this tablet be taken after food?",
+              "phraseId": "healthcare-06",
+              "nextStepId": "p3"
+            }
+          ]
+        },
+        "p2": {
+          "id": "p2",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಈ ಜ್ವರದ ಮಾತ್ರೆ ದಿನಕ್ಕೆ ಮೂರು ಬಾರಿ, ಆಂಟಿಬಯೋಟಿಕ್ ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ.",
+          "romanization": "Ee jvarada maatre dinakke mooru baari, antibiotic dinakke eradu baari.",
+          "english": "This fever tablet thrice daily, antibiotic twice daily.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಈ ಮಾತ್ರೆ ಊಟದ ನಂತರ ತಗೋಬೇಕಾ?",
+              "romanization": "Ee maatre ootada nantara tagobeka?",
+              "english": "Should this tablet be taken after food?",
+              "phraseId": "healthcare-06",
+              "nextStepId": "p3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+              "romanization": "Idu eshtu roopaayi?",
+              "english": "How much rupees is this?",
+              "phraseId": "shopping-01",
+              "nextStepId": "p4"
+            }
+          ]
+        },
+        "p3": {
+          "id": "p3",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಹೌದು, ಎಲ್ಲಾ ಮಾತ್ರೆಗಳನ್ನೂ ಊಟ ಅಥವಾ ತಿಂಡಿ ತಿಂದ ಮೇಲೆಯೇ ತಗೋಬೇಕು.",
+          "romanization": "Haudu, ella maatregalannoo oota athava tindi tinda meleye tagobeku.",
+          "english": "Yes, all tablets must be consumed after eating food or breakfast.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+              "romanization": "Idu eshtu roopaayi?",
+              "english": "How much rupees is this?",
+              "phraseId": "shopping-01",
+              "nextStepId": "p4"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ತುರ್ತು ಚಿಕಿತ್ಸೆ ವಿಭಾಗ ಎಲ್ಲಿದೆ?",
+              "romanization": "Turtu chikitse vibhaaga ellide?",
+              "english": "Where is the emergency department?",
+              "phraseId": "healthcare-09",
+              "nextStepId": "p5"
+            }
+          ]
+        },
+        "p4": {
+          "id": "p4",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಒಟ್ಟು ನೂರ ಎಂಭತ್ತು ರೂಪಾಯಿ ಆಗುತ್ತೆ.",
+          "romanization": "Ottu noora embhattu roopaayi aagutte.",
+          "english": "Total comes to one hundred and eighty rupees.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ ಇದೆಯಾ?",
+              "romanization": "Online payment ideya?",
+              "english": "Is online payment accepted?",
+              "phraseId": "shopping-06",
+              "nextStepId": "p_end"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "p_end"
+            }
+          ]
+        },
+        "p5": {
+          "id": "p5",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ತುರ್ತು ಚಿಕಿತ್ಸೆ ಎದುರುಗಡೆ ಮುಖ್ಯ ಆಸ್ಪತ್ರೆ ಬ್ಲಾಕ್‌ನಲ್ಲಿದೆ.",
+          "romanization": "Turtu chikitse edurugade mukhya aaspatre block-nallide.",
+          "english": "Emergency care is opposite, inside the main hospital block.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "p_end"
+            }
+          ]
+        },
+        "p_end": {
+          "id": "p_end",
+          "speaker": "partner",
+          "speakerName": "ಔಷಧ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಧನ್ಯವಾದಗಳು, ಮಾತ್ರೆಗಳನ್ನು ಕ್ರಮವಾಗಿ ತಗೊಳ್ಳಿ, ಹುಷಾರಾಗಿರಿ!",
+          "romanization": "Dhanyavaadagalu, maatregalannu kramavaagi tagolli, hushaaraagiri!",
+          "english": "Thank you, take the medicines regularly, take care!"
+        }
+      }
     }
   ]
 }
