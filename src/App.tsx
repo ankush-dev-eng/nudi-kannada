@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { Header } from '@/components/common/Header';
 import { BottomNav } from '@/components/common/BottomNav';
@@ -72,9 +72,12 @@ export const App: React.FC = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/learn" element={<Navigate to="/learn/travel" replace />} />
           <Route path="/learn/:situationId" element={<LearnPage />} />
           <Route path="/speak" element={<SpeakPage />} />
+          <Route path="/speak/:situationId" element={<SpeakPage />} />
           <Route path="/roleplay" element={<RoleplayPage />} />
+          <Route path="/roleplay/:situationId" element={<RoleplayPage />} />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/script" element={<ScriptPage />} />
           <Route path="/search" element={<SearchPage />} />

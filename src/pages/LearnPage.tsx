@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
-import { SituationId } from '@/types/phrase';
+import { resolveSituationId } from '@/lib/situations';
 import { PhraseFlipCard } from '@/components/learn/PhraseFlipCard';
+import { SituationNotFound } from '@/components/common/SituationNotFound';
 import { ChevronLeftIcon, ChevronRightIcon, MicIcon, UsersIcon } from '@/components/common/Icons';
 import styles from './LearnPage.module.css';
 
@@ -11,8 +12,10 @@ export const LearnPage: React.FC = () => {
   const navigate = useNavigate();
   const { situations, getPhrasesBySituation, markPhraseLearned } = useAppStore();
 
-  const currentSituationId = (situationId || 'travel') as SituationId;
-  const situation = situations.find((s) => s.id === currentSituationId) || situations[0];
+  const resolvedSituationId = resolveSituationId(situationId || 'travel');
+  const situation = resolvedSituationId
+    ? situations.find((s) => s.id === resolvedSituationId)
+    : undefined;
   const phrases = situation ? getPhrasesBySituation(situation.id) : [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,22 +52,8 @@ export const LearnPage: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handleNext, handlePrev]);
 
-  if (!situation || phrases.length === 0) {
-    return (
-      <main className={styles.pageContainer}>
-        <div className={styles.situationHeading}>
-          <h2 className={styles.titleEnglish}>Situation Not Found</h2>
-          <p>Please select a valid category from the home page.</p>
-          <Link
-            to="/"
-            className={styles.backLink}
-            style={{ justifyContent: 'center', marginTop: '1rem' }}
-          >
-            <ChevronLeftIcon size={18} /> Back to Situations
-          </Link>
-        </div>
-      </main>
-    );
+  if (!resolvedSituationId || !situation || phrases.length === 0) {
+    return <SituationNotFound requestedSlug={situationId} mode="learn" />;
   }
 
   const progressPercent = Math.round(((currentIndex + 1) / phrases.length) * 100);
@@ -118,7 +107,7 @@ export const LearnPage: React.FC = () => {
           <button
             type="button"
             className={styles.navBtn}
-            onClick={() => navigate(`/speak?situation=${situation.id}`)}
+            onClick={() => navigate(`/speak/${situation.id}`)}
             style={{
               backgroundColor: 'var(--kumkuma)',
               color: '#FFF',
@@ -141,12 +130,12 @@ export const LearnPage: React.FC = () => {
 
       <section className={styles.secondaryActions}>
         <Link
-          to={`/speak?situation=${situation.id}&phrase=${currentPhrase?.id}`}
+          to={`/speak/${situation.id}?phrase=${currentPhrase?.id}`}
           className={styles.quickActionLink}
         >
           <MicIcon size={16} /> Speak Practice
         </Link>
-        <Link to={`/roleplay?situation=${situation.id}`} className={styles.quickActionLink}>
+        <Link to={`/roleplay/${situation.id}`} className={styles.quickActionLink}>
           <UsersIcon size={16} /> Situation Roleplay
         </Link>
       </section>

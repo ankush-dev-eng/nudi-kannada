@@ -30,7 +30,7 @@ export const MysoreBorder: React.FC<MysoreBorderProps> = ({
         style={{ height: `${height}px` }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 240 12"
-        preserveAspectRatio="repeat-x"
+        preserveAspectRatio="none"
       >
         <defs>
           <pattern id="mysore-saree-pattern" width="24" height="12" patternUnits="userSpaceOnUse">

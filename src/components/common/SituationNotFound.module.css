@@ -1,0 +1,97 @@
+.container {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.titleKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.75rem;
+  color: var(--kumkuma);
+  margin-bottom: 0.25rem;
+}
+
+.titleEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.situationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.situationCard {
+  display: block;
+  padding: 0.85rem 1rem;
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--ink);
+  transition: all var(--transition-fast);
+}
+
+.situationCard:hover,
+.situationCard:focus-visible {
+  border-color: var(--kumkuma);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.sitKannada {
+  font-family: var(--font-kannada-sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--kumkuma);
+  display: block;
+}
+
+.sitEnglish {
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: block;
+  margin-top: 0.15rem;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background-color: var(--kumkuma);
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: opacity var(--transition-fast);
+}
+
+.backBtn:hover {
+  opacity: 0.9;
+}

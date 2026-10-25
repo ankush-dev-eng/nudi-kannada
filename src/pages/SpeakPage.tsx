@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { SituationId } from '@/types/phrase';
 import { PronunciationResult } from '@/types/progress';
+import { resolveSituationId } from '@/lib/situations';
+import { SituationNotFound } from '@/components/common/SituationNotFound';
 import { SpeakPractice } from '@/components/speak/SpeakPractice';
 import { ChevronLeftIcon, ChevronRightIcon, FlameIcon } from '@/components/common/Icons';
 import styles from './SpeakPage.module.css';
 
 export const SpeakPage: React.FC = () => {
+  const { situationId } = useParams<{ situationId: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
   const { situations, phrases, streak, getPhrasesBySituation } = useAppStore();
 
-  const situationParam = (searchParams.get('situation') || 'travel') as SituationId;
-  const phraseParam = searchParams.get('phrase');
+  const rawSituation = situationId ?? searchParams.get('situation');
+  const isExplicit = rawSituation !== undefined && rawSituation !== null;
+  const resolvedSituation = rawSituation ? resolveSituationId(rawSituation) : 'travel';
 
-  const [selectedSituation, setSelectedSituation] = useState<SituationId>(situationParam);
+  const selectedSituation: SituationId = resolvedSituation || 'travel';
   const situationPhrases = getPhrasesBySituation(selectedSituation);
+  const phraseParam = searchParams.get('phrase');
 
   const initialPhraseIndex = phraseParam
     ? Math.max(
@@ -33,20 +39,25 @@ export const SpeakPage: React.FC = () => {
   const [sessionPassed, setSessionPassed] = useState<number>(0);
   const [lastScore, setLastScore] = useState<number | null>(null);
 
-  // Update state if URL params change
+  // Update currentIdx when situation changes
   useEffect(() => {
-    if (situationParam && situationParam !== selectedSituation) {
-      setSelectedSituation(situationParam);
-      setCurrentIdx(0);
-    }
-  }, [situationParam, selectedSituation]);
+    setCurrentIdx(0);
+  }, [situationId, rawSituation]);
+
+  // Unknown situation in URL
+  if (isExplicit && !resolvedSituation) {
+    return <SituationNotFound requestedSlug={rawSituation} mode="speak" />;
+  }
 
   const activePhrase = situationPhrases[currentIdx] || situationPhrases[0] || phrases[0];
 
   const handleSituationChange = (newSit: SituationId) => {
-    setSelectedSituation(newSit);
     setCurrentIdx(0);
-    setSearchParams({ situation: newSit });
+    if (situationId) {
+      navigate(`/speak/${newSit}`);
+    } else {
+      setSearchParams({ situation: newSit });
+    }
   };
 
   const handleAttemptComplete = (result: PronunciationResult) => {
@@ -61,7 +72,11 @@ export const SpeakPage: React.FC = () => {
     if (currentIdx > 0) {
       const newIdx = currentIdx - 1;
       setCurrentIdx(newIdx);
-      setSearchParams({ situation: selectedSituation, phrase: situationPhrases[newIdx].id });
+      if (situationId) {
+        setSearchParams({ phrase: situationPhrases[newIdx].id });
+      } else {
+        setSearchParams({ situation: selectedSituation, phrase: situationPhrases[newIdx].id });
+      }
     }
   };
 
@@ -69,7 +84,11 @@ export const SpeakPage: React.FC = () => {
     if (currentIdx < situationPhrases.length - 1) {
       const newIdx = currentIdx + 1;
       setCurrentIdx(newIdx);
-      setSearchParams({ situation: selectedSituation, phrase: situationPhrases[newIdx].id });
+      if (situationId) {
+        setSearchParams({ phrase: situationPhrases[newIdx].id });
+      } else {
+        setSearchParams({ situation: selectedSituation, phrase: situationPhrases[newIdx].id });
+      }
     }
   };
 

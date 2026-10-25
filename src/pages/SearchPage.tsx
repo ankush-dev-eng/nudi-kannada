@@ -122,7 +122,7 @@ export const SearchPage: React.FC = () => {
                   <VolumeIcon size={14} /> Listen
                 </button>
                 <Link
-                  to={`/speak?situation=${phrase.situationId}&phrase=${phrase.id}`}
+                  to={`/speak/${phrase.situationId}?phrase=${phrase.id}`}
                   className={styles.practiceLink}
                 >
                   <MicIcon size={14} /> Practice Speaking

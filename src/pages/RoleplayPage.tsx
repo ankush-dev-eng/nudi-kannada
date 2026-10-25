@@ -1,36 +1,47 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams, useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { SituationId, RoleplayScenario } from '@/types/phrase';
+import { resolveSituationId } from '@/lib/situations';
+import { SituationNotFound } from '@/components/common/SituationNotFound';
 import { RoleplayEngine } from '@/components/roleplay/RoleplayEngine';
 import { ChevronLeftIcon, CheckIcon } from '@/components/common/Icons';
 import styles from './RoleplayPage.module.css';
 
 export const RoleplayPage: React.FC = () => {
+  const { situationId } = useParams<{ situationId: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
   const { situations, roleplays, progress, getRoleplaysBySituation } = useAppStore();
 
-  const situationParam = (searchParams.get('situation') || 'travel') as SituationId;
-  const [activeSituation, setActiveSituation] = useState<SituationId>(situationParam);
+  const rawSituation = situationId ?? searchParams.get('situation');
+  const isExplicit = rawSituation !== undefined && rawSituation !== null;
+  const resolvedSituation = rawSituation ? resolveSituationId(rawSituation) : 'travel';
 
+  const activeSituation: SituationId = resolvedSituation || 'travel';
   const situationRoleplays = getRoleplaysBySituation(activeSituation);
   const [selectedScenarioId, setSelectedScenarioId] = useState<string>(
     situationRoleplays[0]?.id || roleplays[0]?.id || ''
   );
 
   useEffect(() => {
-    if (situationParam && situationParam !== activeSituation) {
-      setActiveSituation(situationParam);
-      const matchingRoleplays = getRoleplaysBySituation(situationParam);
-      if (matchingRoleplays.length > 0) {
-        setSelectedScenarioId(matchingRoleplays[0].id);
-      }
+    const matchingRoleplays = getRoleplaysBySituation(activeSituation);
+    if (matchingRoleplays.length > 0) {
+      setSelectedScenarioId(matchingRoleplays[0].id);
     }
-  }, [situationParam, activeSituation, getRoleplaysBySituation]);
+  }, [activeSituation, getRoleplaysBySituation]);
+
+  // Unknown situation in URL
+  if (isExplicit && !resolvedSituation) {
+    return <SituationNotFound requestedSlug={rawSituation} mode="roleplay" />;
+  }
 
   const handleSelectSituation = (sitId: SituationId) => {
-    setActiveSituation(sitId);
-    setSearchParams({ situation: sitId });
+    if (situationId) {
+      navigate(`/roleplay/${sitId}`);
+    } else {
+      setSearchParams({ situation: sitId });
+    }
     const matching = getRoleplaysBySituation(sitId);
     if (matching.length > 0) {
       setSelectedScenarioId(matching[0].id);
