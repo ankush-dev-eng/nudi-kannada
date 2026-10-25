@@ -512,6 +512,116 @@
       "formality": "polite",
       "tags": ["station", "direction"],
       "reviewed": false
+    },
+    {
+      "id": "education-01",
+      "situationId": "education",
+      "kannada": "ಪುಸ್ತಕ ಎಲ್ಲಿ ಸಿಗುತ್ತದೆ?",
+      "romanization": "Pustaka elli siguttade?",
+      "english": "Where can I get the book?",
+      "note": "'Pustaka' = book, 'siguttade' = is obtained / available.",
+      "formality": "polite",
+      "tags": ["college", "books"],
+      "reviewed": false
+    },
+    {
+      "id": "education-02",
+      "situationId": "education",
+      "kannada": "ಲೈಬ್ರರಿ ಸಮಯ ಏನು?",
+      "romanization": "Library samaya enu?",
+      "english": "What are the library timings?",
+      "note": "'Samaya' = time.",
+      "formality": "polite",
+      "tags": ["library", "timing"],
+      "reviewed": false
+    },
+    {
+      "id": "education-03",
+      "situationId": "education",
+      "kannada": "ನನಗೆ ಒಂದು ಸಂದೇಹವಿದೆ.",
+      "romanization": "Nanage ondu sandehavide.",
+      "english": "I have a doubt / question.",
+      "note": "'Sandeha' = doubt / clarification point. Very polite student phrasing.",
+      "formality": "polite",
+      "tags": ["classroom", "clarification"],
+      "reviewed": false
+    },
+    {
+      "id": "education-04",
+      "situationId": "education",
+      "kannada": "ದಯವಿಟ್ಟು ಇನ್ನೊಮ್ಮೆ ಹೇಳಿ.",
+      "romanization": "Dayavittu innomme heli.",
+      "english": "Please say it once again.",
+      "note": "'Innomme' = once more, 'heli' = please tell.",
+      "formality": "polite",
+      "tags": ["classroom", "request"],
+      "reviewed": false
+    },
+    {
+      "id": "education-05",
+      "situationId": "education",
+      "kannada": "ತರಗತಿ ಯಾವಾಗ ಪ್ರಾರಂಭ?",
+      "romanization": "Taragati yaavaaga praarambha?",
+      "english": "When does the class start?",
+      "note": "'Taragati' = class / lecture, 'praarambha' = beginning.",
+      "formality": "polite",
+      "tags": ["college", "schedule"],
+      "reviewed": false
+    },
+    {
+      "id": "education-06",
+      "situationId": "education",
+      "kannada": "ಪರೀಕ್ಷೆ ದಿನಾಂಕ ಯಾವುದು?",
+      "romanization": "Pareekshe dinaanka yaavudu?",
+      "english": "What is the exam date?",
+      "note": "'Pareekshe' = exam, 'dinaanka' = calendar date.",
+      "formality": "polite",
+      "tags": ["exam", "schedule"],
+      "reviewed": false
+    },
+    {
+      "id": "education-07",
+      "situationId": "education",
+      "kannada": "ಅಸೈನ್‌ಮೆಂಟ್ ಯಾವಾಗ ಸಬ್ಮಿಟ್ ಮಾಡಬೇಕು?",
+      "romanization": "Assignment yaavaaga submit maadabeku?",
+      "english": "When should the assignment be submitted?",
+      "note": "Common everyday query among university and engineering students.",
+      "formality": "polite",
+      "tags": ["assignment", "deadline"],
+      "reviewed": false
+    },
+    {
+      "id": "education-08",
+      "situationId": "education",
+      "kannada": "ದಯವಿಟ್ಟು ನನಗೆ ಸ್ವಲ್ಪ ಸಹಾಯ ಮಾಡಿ.",
+      "romanization": "Dayavittu nanage svalpa sahaaya maadi.",
+      "english": "Please help me a little.",
+      "note": "'Sahaaya' = assistance / help.",
+      "formality": "polite",
+      "tags": ["courtesy", "assistance"],
+      "reviewed": false
+    },
+    {
+      "id": "education-09",
+      "situationId": "education",
+      "kannada": "ಫೀಸ್ ಎಲ್ಲಿ ಪಾವತಿಸಬೇಕು?",
+      "romanization": "Fees elli paavatisabeku?",
+      "english": "Where should the fees be paid?",
+      "note": "'Paavatisabeku' = should be paid.",
+      "formality": "polite",
+      "tags": ["administration", "fees"],
+      "reviewed": false
+    },
+    {
+      "id": "education-10",
+      "situationId": "education",
+      "kannada": "ಕನ್ನಡ ಕಲಿಯಲು ನನಗೆ ಆಸಕ್ತಿ ಇದೆ.",
+      "romanization": "Kannada kaliyalu nanage aasakti ide.",
+      "english": "I am interested in learning Kannada.",
+      "note": "'Kaliyalu' = to learn, 'aasakti' = interest / enthusiasm.",
+      "formality": "polite",
+      "tags": ["kannada", "learning"],
+      "reviewed": false
     }
   ],
   "roleplays": []
