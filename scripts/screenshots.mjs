@@ -8,50 +8,71 @@ const projectRoot = path.resolve(__dirname, '..');
 const screensDir = path.resolve(projectRoot, 'docs/assets/screens');
 
 async function main() {
-  console.log('--- Nudi Screenshot Automation ---');
+  console.log('--- Nudi Mobile Screenshot Automation ---');
   if (!fs.existsSync(screensDir)) {
     fs.mkdirSync(screensDir, { recursive: true });
   }
 
-  try {
-    const { chromium } = await import('playwright');
-    console.log('Launching headless Chromium browser...');
-    const browser = await chromium.launch();
-    const context = await browser.newContext({
-      viewport: { width: 1280, height: 800 },
-      deviceScaleFactor: 2,
-    });
-    const page = await context.newPage();
+  const { chromium } = await import('playwright');
 
-    const baseUrl = process.env.BASE_URL || 'http://localhost:5173';
-    console.log(`Navigating to ${baseUrl}...`);
+  const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+  const edgePath = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+  const executablePath = fs.existsSync(chromePath)
+    ? chromePath
+    : fs.existsSync(edgePath)
+      ? edgePath
+      : undefined;
 
-    const routes = [
-      { name: 'home', path: '/' },
-      { name: 'learn', path: '/learn/travel' },
-      { name: 'speak', path: '/speak?situation=travel' },
-      { name: 'roleplay', path: '/roleplay?situation=travel' },
-      { name: 'review', path: '/review' },
-      { name: 'script', path: '/script' },
-      { name: 'search', path: '/search' },
-      { name: 'settings', path: '/settings' },
-    ];
+  console.log(
+    'Launching browser...',
+    executablePath ? `(using ${executablePath})` : '(using default chromium)'
+  );
+  const browser = await chromium.launch(
+    executablePath ? { executablePath, headless: true } : { headless: true }
+  );
 
-    for (const r of routes) {
-      console.log(`Capturing screenshot for route: ${r.path} -> ${r.name}.png`);
-      try {
-        await page.goto(`${baseUrl}${r.path}`, { waitUntil: 'networkidle', timeout: 8000 });
-        await page.screenshot({ path: path.join(screensDir, `${r.name}.png`), fullPage: false });
-      } catch (err) {
-        console.warn(`Could not capture route ${r.path}:`, err.message);
+  const context = await browser.newContext({
+    viewport: { width: 390, height: 844 },
+    deviceScaleFactor: 2,
+    isMobile: true,
+    hasTouch: true,
+  });
+
+  const page = await context.newPage();
+  const baseUrl = process.env.BASE_URL || 'https://nudi-kannada-flame.vercel.app';
+  console.log(`Target Base URL: ${baseUrl}`);
+
+  const captures = [
+    { name: 'home', path: '/' },
+    { name: 'learn', path: '/learn/travel' },
+    { name: 'speak', path: '/speak?situation=travel' },
+    { name: 'roleplay', path: '/roleplay?situation=travel' },
+    { name: 'review', path: '/review' },
+    { name: 'script', path: '/script' },
+    { name: 'dark', path: '/', dark: true },
+  ];
+
+  for (const c of captures) {
+    const targetUrl = `${baseUrl}${c.path}`;
+    console.log(`Capturing ${c.name}.png from ${targetUrl}...`);
+    try {
+      await page.goto(targetUrl, { waitUntil: 'networkidle', timeout: 20000 });
+      if (c.dark) {
+        await page.evaluate(() => {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        });
       }
+      await page.waitForTimeout(600);
+      const outPath = path.join(screensDir, `${c.name}.png`);
+      await page.screenshot({ path: outPath, fullPage: false });
+      console.log(`✓ Saved ${outPath}`);
+    } catch (err) {
+      console.error(`Failed to capture ${c.name}:`, err.message);
     }
-
-    await browser.close();
-    console.log('Screenshots generated successfully in docs/assets/screens/');
-  } catch (err) {
-    console.log('Playwright not installed in global environment. Ready for CI capture.');
   }
+
+  await browser.close();
+  console.log('All mobile screenshots captured successfully in docs/assets/screens/ !');
 }
 
 main().catch((err) => {
