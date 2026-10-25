@@ -42,12 +42,12 @@ Every month, thousands of newcomers move to Bengaluru, Mysuru, Mangaluru, and Hu
 </p>
 
 | Situation Hub & Navigation | Real-Time Pronunciation Practice |
-|:---:|:---:|
+| :---: | :---: |
 | <img src="docs/assets/screens/home.png" alt="Home Screen" width="100%" /> | <img src="docs/assets/screens/speak.png" alt="Speak Screen" width="100%" /> |
 | *6 situation domains with Karnataka Sandalwood palette* | *Live Web Audio waveform visualizer and phonetic scoring* |
 
 | Branching Roleplay Engine | SM-2 Spaced Repetition Queue |
-|:---:|:---:|
+| :---: | :---: |
 | <img src="docs/assets/screens/roleplay.png" alt="Roleplay Screen" width="100%" /> | <img src="docs/assets/screens/review.png" alt="Review Screen" width="100%" /> |
 | *Interactive multi-step conversations with local avatars* | *Daily flashcards with SuperMemo-2 interval scheduling* |
 
@@ -63,13 +63,13 @@ Every month, thousands of newcomers move to Bengaluru, Mysuru, Mangaluru, and Hu
 Nudi features 60+ meticulously verified phrases across 6 high-stakes daily scenarios:
 
 | Domain | Kannada | English Description | Sample Scenario Phrase |
-|:---|:---|:---|:---|
-| <img src="docs/assets/icons/travel.svg" width="24" height="24" /> **Travel** | ಪ್ರಯಾಣ | Auto rickshaws, meters, directions, landmarks | **ಮೀಟರ್ ಹಾಕಿ** (*Mīṭar hāki* — "Please put the meter") |
-| <img src="docs/assets/icons/shopping.svg" width="24" height="24" /> **Shopping** | ಖರೀದಿ | KR Market, vegetable vendors, UPI payments, bargaining | **ಸ್ವಲ್ಪ ಕಡಿಮೆ ಮಾಡಿ** (*Svalpa kaḍime māḍi* — "Please reduce a little") |
-| <img src="docs/assets/icons/healthcare.svg" width="24" height="24" /> **Healthcare** | ಆರೋಗ್ಯ | Describing symptoms, chemist prescription, dosage | **ನನಗೆ ಜ್ವರ ಬಂದಿದೆ** (*Nanage jvara bandide* — "I have a fever") |
-| <img src="docs/assets/icons/transport.svg" width="24" height="24" /> **Transport** | ಸಾರಿಗೆ | BMTC conductors, platform numbers, tickets | **ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ** (*Mejesṭik-ge ondu ṭikeṭ koḍi*) |
-| <img src="docs/assets/icons/education.svg" width="24" height="24" /> **Education** | ಶಿಕ್ಷಣ | College campus, library, classroom greetings | **ಈ ಪುಸ್ತಕ ಇಲ್ಲಿದೆ** (*Ī pustaka illide* — "This book is here") |
-| <img src="docs/assets/icons/workplace.svg" width="24" height="24" /> **Workplace** | ಕೆಲಸದ ಸ್ಥಳ | Security desk, canteen requests, colleague etiquette | **ನಮಸ್ಕಾರ, ನಾನು ಹೊಸದಾಗಿ ಬಂದಿದ್ದೇನೆ** (*Namaskāra, nānu hosadāgi bandiddēne*) |
+| :--- | :--- | :--- | :--- |
+| <img src="docs/assets/icons/travel.svg" alt="Travel icon" width="24" height="24" /> **Travel** | ಪ್ರಯಾಣ | Auto rickshaws, meters, directions, landmarks | **ಮೀಟರ್ ಹಾಕಿ** (*Mīṭar hāki* — "Please put the meter") |
+| <img src="docs/assets/icons/shopping.svg" alt="Shopping icon" width="24" height="24" /> **Shopping** | ಖರೀದಿ | KR Market, vegetable vendors, UPI payments, bargaining | **ಸ್ವಲ್ಪ ಕಡಿಮೆ ಮಾಡಿ** (*Svalpa kaḍime māḍi* — "Please reduce a little") |
+| <img src="docs/assets/icons/healthcare.svg" alt="Healthcare icon" width="24" height="24" /> **Healthcare** | ಆರೋಗ್ಯ | Describing symptoms, chemist prescription, dosage | **ನನಗೆ ಜ್ವರ ಬಂದಿದೆ** (*Nanage jvara bandide* — "I have a fever") |
+| <img src="docs/assets/icons/transport.svg" alt="Transport icon" width="24" height="24" /> **Transport** | ಸಾರಿಗೆ | BMTC conductors, platform numbers, tickets | **ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ** (*Mejesṭik-ge ondu ṭikeṭ koḍi*) |
+| <img src="docs/assets/icons/education.svg" alt="Education icon" width="24" height="24" /> **Education** | ಶಿಕ್ಷಣ | College campus, library, classroom greetings | **ಈ ಪುಸ್ತಕ ಇಲ್ಲಿದೆ** (*Ī pustaka illide* — "This book is here") |
+| <img src="docs/assets/icons/workplace.svg" alt="Workplace icon" width="24" height="24" /> **Workplace** | ಕೆಲಸದ ಸ್ಥಳ | Security desk, canteen requests, colleague etiquette | **ನಮಸ್ಕಾರ, ನಾನು ಹೊಸದಾಗಿ ಬಂದಿದ್ದೇನೆ** (*Namaskāra, nānu hosadāgi bandiddēne*) |
 
 ---
 
@@ -122,7 +122,7 @@ graph TD
 Nudi's design honors the rich natural and architectural heritage of Karnataka:
 
 | Token Name | Hex Code | Visual Swatch | Semantic Purpose |
-|:---|:---|:---:|:---|
+| :--- | :--- | :---: | :--- |
 | `--ink` | `#2B1D14` | ![#2B1D14](https://via.placeholder.com/15/2B1D14/000000?text=+) | Primary text; deep sandalwood woodcut tone |
 | `--paper` | `#F7F0E1` | ![#F7F0E1](https://via.placeholder.com/15/F7F0E1/000000?text=+) | Base background; aged palm-leaf manuscript parchment |
 | `--sand` | `#E9DCC3` | ![#E9DCC3](https://via.placeholder.com/15/E9DCC3/000000?text=+) | Secondary surface & card elevation |
@@ -139,7 +139,7 @@ All color combinations have been rigorously tested and certified for **WCAG AA c
 Press <kbd>?</kbd> anywhere in the application to view the interactive keyboard shortcuts modal:
 
 | Shortcut Key | Action |
-|:---:|:---|
+| :---: | :--- |
 | <kbd>?</kbd> | Toggle Keyboard Shortcuts Help Modal |
 | <kbd>/</kbd> | Focus Instant Search Bar |
 | <kbd>H</kbd> | Navigate to Home (Situation Hub) |
@@ -155,7 +155,8 @@ Press <kbd>?</kbd> anywhere in the application to view the interactive keyboard 
 ## 🚀 Quickstart & Development
 
 ### Prerequisites
-- Node.js >= 18.0.0
+
+- Node.js >= 20.0.0
 - npm >= 9.0.0
 - Go >= 1.21 *(optional, for running dataset validator CLI)*
 

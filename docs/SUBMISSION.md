@@ -22,6 +22,7 @@ Every year, hundreds of thousands of students, engineers, healthcare workers, an
 ## 2. Problem Statement & Karnataka Context
 
 ### The Challenge
+
 1. **The Fear of Speaking (Linguistic Hesitation)**: Learners often understand a few words from textbooks but freeze when trying to speak to auto drivers, bus conductors, or street vendors for fear of sounding impolite or pronouncing sounds incorrectly.
 2. **Abstract vs Survival Curriculum**: Standard language apps teach *"The cat is on the table"* before teaching *"Where is the bus stop?"* or *"Please reduce the price a little"*.
 3. **Connectivity & Privacy Barriers**: Connectivity in underground Namma Metro stations, crowded market alleys, and rural transit is notoriously unreliable. Learners need a companion that works 100% offline without mandatory account logins or intrusive cloud tracking.
@@ -32,7 +33,9 @@ Every year, hundreds of thousands of students, engineers, healthcare workers, an
 ## 3. The Nudi Solution: Core Innovations
 
 ### 3.1. Six Curated Daily Situations
+
 Nudi organizes 60+ verified, idiomatic phrases across 6 high-stakes domains:
+
 - 🛺 **Travel & Commute (ಪ್ರಯಾಣ)**: Auto rickshaws, meters, directions, landmark navigation.
 - 🛍️ **Market & Shopping (ಖರೀದಿ)**: Vegetable vendors, bargaining etiquette, UPI payments, quantities.
 - 🏥 **Healthcare & Clinic (ಆರೋಗ್ಯ)**: Expressing pain, fever, chemist prescriptions, dosages.
@@ -41,6 +44,7 @@ Nudi organizes 60+ verified, idiomatic phrases across 6 high-stakes domains:
 - 🏢 **Office & Workplace (ಕೆಲಸದ ಸ್ಥಳ)**: Security desks, canteen requests, housekeeping greetings, colleague etiquette.
 
 ### 3.2. Private, Real-Time Speech Scoring
+
 - Integrates the browser's native **Web Speech Recognition API** (`kn-IN`).
 - Uses custom **Phonetic & Levenshtein String Similarity** to compute a granular pronunciation score (0–100%).
 - Provides word-level token diffing (matching words highlighted in emerald ghats green, missing or mispronounced tokens flagged in kumkuma red).
@@ -48,20 +52,24 @@ Nudi organizes 60+ verified, idiomatic phrases across 6 high-stakes domains:
 - **Privacy-first**: All speech processing occurs locally on-device. Zero audio data is transmitted to external servers.
 
 ### 3.3. Branching Roleplay Engine
+
 - Powered by a deterministic conversation state machine.
 - Learners engage in simulated, two-way dialogues (e.g., negotiating with a KR Market vegetable seller or asking a BMTC conductor for a ticket).
 - Dynamic branching: Each user response unlocks alternate dialogue paths with audio synthesized using native speech synthesis.
 
 ### 3.4. SuperMemo-2 (SM-2) Spaced Repetition System
+
 - Implements the validated SM-2 algorithmic model (`Easiness Factor`, `Interval`, `Repetitions`).
 - Automatically calculates review intervals based on user feedback grades (0–5).
 - Persists all learning history, streaks, and flashcard queues in client-side **IndexedDB** with export/import capabilities.
 
 ### 3.5. Civic Script Helper & Bus Sign Quiz
+
 - Comprehensive Akshara reference with audio pronunciation for all vowels (ಸ್ವರಗಳು), consonants (ವ್ಯಂಜನಗಳು), and conjunct forms (ಒತ್ತಕ್ಷರಗಳು).
 - An interactive **Civic Sign-Reading Mini-Quiz** that trains learners to recognize BMTC bus boards (Majestic, Indiranagar, Whitefield, Koramangala) in Kannada script within minutes.
 
 ### 3.6. Karnataka Sandalwood Aesthetic
+
 - Custom CSS design system inspired by Karnataka's cultural heritage:
   - Deep Sandalwood Ink (`#2B1D14`)
   - Warm Ivory Paper (`#F7F0E1`)
@@ -114,6 +122,7 @@ graph TD
 ## 5. Offline-First PWA Implementation
 
 Nudi is built from the ground up to survive real-world transit dead zones:
+
 1. **Service Worker Precaching**: Using `vite-plugin-pwa` and Workbox, all 53 application assets (HTML, bundled JavaScript, CSS modules, SVGs, and bundled Kannada fonts) are cached on first load.
 2. **Zero External Runtime API Dependencies**:
    - Speech synthesis relies on native browser voices.
@@ -127,6 +136,7 @@ Nudi is built from the ground up to survive real-world transit dead zones:
 ## 6. Dataset & Linguistic Verification
 
 To prevent corrupted diacritics, incorrect halants, or missing Unicode characters, Nudi includes a dedicated Go verification CLI in `tools/validate/`:
+
 - **Unicode Range Validation**: Asserts that every Kannada string in `phrases.json` strictly utilizes code points within `\u0C80`–`\u0CFF`.
 - **Domain Coverage**: Enforces at least 8 phrases per situation with mandatory audio pronunciation keys and formality tiers.
 - **Graph Integrity**: Validates all roleplay scenario state trees to guarantee no orphan steps, broken nextStep links, or dangling options.
@@ -137,7 +147,7 @@ To prevent corrupted diacritics, incorrect halants, or missing Unicode character
 ## 7. Quality Assurance & Verification Evidence
 
 | Test Suite / Tool | Command | Scope | Result |
-|:---|:---|:---|:---|
+| :--- | :--- | :--- | :--- |
 | **Vitest** | `npm test` | Unit & Component Tests (Scoring, SM-2, Store, Roleplay, Audio) | **30 passed (30/30)** |
 | **TypeScript** | `npm run typecheck` | Strict Typecheck (`noEmit`, strict null checks) | **0 errors** |
 | **ESLint** | `npm run lint` | Code style, hooks compliance, unused variables | **0 errors** |
