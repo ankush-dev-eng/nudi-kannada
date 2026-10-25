@@ -21,7 +21,7 @@ export const ReviewPage: React.FC = () => {
     setDueQueue(phrases);
     setCurrentIdx(0);
     setIsRevealed(false);
-  }, [getDueReviewPhrases]);
+  }, [getDueReviewPhrases, cards]);
 
   const currentPhrase = dueQueue[currentIdx];
 

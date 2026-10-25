@@ -182,15 +182,17 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({ scenario, onFini
         ))}
       </div>
 
-      {!isCompleted && currentStep && currentStep.speaker === 'partner' && (
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <button type="button" className={styles.advanceBtn} onClick={handlePartnerAdvance}>
-            Continue Conversation <ChevronRightIcon size={16} />
-          </button>
-        </div>
-      )}
+      {!isCompleted &&
+        currentStep &&
+        (!currentStep.options || currentStep.options.length === 0) && (
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button type="button" className={styles.advanceBtn} onClick={handlePartnerAdvance}>
+              Continue Conversation <ChevronRightIcon size={16} />
+            </button>
+          </div>
+        )}
 
-      {!isCompleted && currentStep && currentStep.speaker === 'user' && currentStep.options && (
+      {!isCompleted && currentStep && currentStep.options && currentStep.options.length > 0 && (
         <section className={styles.optionsSection}>
           <div className={styles.optionsPrompt}>Choose your Kannada response:</div>
           {currentStep.options.map((option: RoleplayOption) => (
