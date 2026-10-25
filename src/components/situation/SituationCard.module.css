@@ -1,0 +1,147 @@
+.card {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-warm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.illustrationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleArea {
+  flex: 1;
+}
+
+.titleKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  margin-bottom: 0.2rem;
+}
+
+.titleEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.progressSection {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.8rem;
+  background-color: var(--sand);
+  border-radius: var(--radius-sm);
+}
+
+.progressRingWrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressRingText {
+  position: absolute;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.progressDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.progressCount {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.progressLabel {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.actionBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.55rem 0.35rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background-color: var(--card-bg);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.actionBtn:hover {
+  background-color: var(--sand);
+  border-color: var(--kumkuma);
+}
+
+.actionBtnPrimary {
+  background-color: var(--kumkuma);
+  color: #ffffff;
+  border-color: var(--kumkuma);
+}
+
+.actionBtnPrimary:hover {
+  background-color: #822223;
+  color: #ffffff;
+}
+
+.actionSubLabel {
+  font-size: 0.65rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
