@@ -1,0 +1,93 @@
+.pageContainer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  color: var(--ink);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.titleKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  margin-bottom: 0.2rem;
+}
+
+.titleEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.introBox {
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.tabBar {
+  display: flex;
+  border-bottom: 2px solid var(--line);
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.tabBtn:hover {
+  color: var(--ink);
+}
+
+.tabBtn.active {
+  color: var(--kumkuma);
+}
+
+.tabBtn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--kumkuma);
+}
