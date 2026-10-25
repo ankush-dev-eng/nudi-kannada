@@ -1,0 +1,43 @@
+/* Mysore Silk Saree Border Motif Utilities */
+.saree-card-edge {
+  position: relative;
+  border: 1px solid var(--line);
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.saree-card-edge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--kumkuma) 0px,
+    var(--kumkuma) 6px,
+    var(--turmeric) 6px,
+    var(--turmeric) 12px,
+    var(--ghats) 12px,
+    var(--ghats) 18px
+  );
+}
+
+.section-divider-motif {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--muted);
+}
+
+.section-divider-motif::before,
+.section-divider-motif::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
