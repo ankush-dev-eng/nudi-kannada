@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#2B1D14" stroke="#D99A1E" stroke-width="2" />
+  <text x="32" y="44" font-family="'Noto Serif Kannada', serif" font-size="34" font-weight="bold" fill="#F7F0E1" text-anchor="middle">ಅ</text>
+  <circle cx="48" cy="18" r="4" fill="#9E2A2B" />
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#2B1D14" stroke="#9E2A2B" stroke-width="2" />
+  <path d="M 20,44 L 20,24 C 20,18 24,14 32,14 C 40,14 44,18 44,24 L 44,44 Z" fill="none" stroke="#F7F0E1" stroke-width="3" />
+  <circle cx="32" cy="30" r="4" fill="#D99A1E" />
+  <path d="M 32,34 L 32,40" stroke="#D99A1E" stroke-width="3" stroke-linecap="round" />
+  <!-- Offline checkmark -->
+  <polyline points="24 48 30 54 44 40" fill="none" stroke="#2F5D50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
