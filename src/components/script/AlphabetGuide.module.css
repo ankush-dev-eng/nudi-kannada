@@ -1,0 +1,138 @@
+.guideContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categorySection {
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitleKn {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+}
+
+.sectionTitleEn {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.letterGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 0.5rem;
+}
+
+.letterTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.25rem;
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.letterTile:hover {
+  transform: translateY(-2px);
+  background-color: #fff;
+  border-color: var(--kumkuma);
+}
+
+.letterTile:focus-visible {
+  outline: 2px solid var(--kumkuma);
+}
+
+.kannadaChar {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.romanChar {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.selectedCard {
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectedMain {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.selectedChar {
+  font-family: var(--font-kannada-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+}
+
+.selectedInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedSound {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.selectedExample {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pronounceBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.pronounceBtn:hover {
+  border-color: var(--kumkuma);
+  color: var(--kumkuma);
+}
