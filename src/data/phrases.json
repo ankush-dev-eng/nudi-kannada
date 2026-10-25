@@ -1876,6 +1876,292 @@
           "english": "All the best sir, have a pleasant journey!"
         }
       }
+    },
+    {
+      "id": "education-roleplay-01",
+      "situationId": "education",
+      "title": "Asking Professor in the Classroom",
+      "titleKannada": "ತರಗತಿಯಲ್ಲಿ ಪ್ರಶ್ನೆ ಕೇಳುವುದು",
+      "description": "Engage respectfully with your lecturer, seek clarification on difficult concepts, and confirm assignment deadlines.",
+      "partnerRole": "ಪ್ರಾಧ್ಯಾಪಕರು (Professor)",
+      "userRole": "ವಿದ್ಯಾರ್ಥಿ (Student)",
+      "initialStepId": "ed1",
+      "steps": {
+        "ed1": {
+          "id": "ed1",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಹಲೋ, ಪಾಠದಲ್ಲಿ ಏನಾದರೂ ಪ್ರಶ್ನೆಗಳಿವೆಯೇ?",
+          "romanization": "Hello, paatadalli enaadaru prashnegaliveye?",
+          "english": "Hello, are there any questions regarding today's lesson?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ನನಗೆ ಒಂದು ಸಂದೇಹವಿದೆ.",
+              "romanization": "Nanage ondu sandehavide.",
+              "english": "I have a doubt / question.",
+              "phraseId": "education-03",
+              "nextStepId": "ed2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ದಯವಿಟ್ಟು ಇನ್ನೊಮ್ಮೆ ಹೇಳಿ.",
+              "romanization": "Dayavittu innomme heli.",
+              "english": "Please say it once again.",
+              "phraseId": "education-04",
+              "nextStepId": "ed3"
+            }
+          ]
+        },
+        "ed2": {
+          "id": "ed2",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಖಂಡಿತ, ಯಾವ ಕಾನ್ಸೆಪ್ಟ್ ಬಗ್ಗೆ ನಿಮ್ಮ ಸಂದೇಹ ಹೇಳಿ?",
+          "romanization": "Khandita, yaava concept bagge nimma sandeha heli?",
+          "english": "Certainly, tell me which concept you have a doubt about.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ದಯವಿಟ್ಟು ಇನ್ನೊಮ್ಮೆ ಹೇಳಿ.",
+              "romanization": "Dayavittu innomme heli.",
+              "english": "Please say it once again.",
+              "phraseId": "education-04",
+              "nextStepId": "ed3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ದಯವಿಟ್ಟು ನನಗೆ ಸ್ವಲ್ಪ ಸಹಾಯ ಮಾಡಿ.",
+              "romanization": "Dayavittu nanage svalpa sahaaya maadi.",
+              "english": "Please help me a little.",
+              "phraseId": "education-08",
+              "nextStepId": "ed4"
+            }
+          ]
+        },
+        "ed3": {
+          "id": "ed3",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಸರಿ, ಈ ಥಿಯರಿಯನ್ನು ಮತ್ತೊಮ್ಮೆ ಸರಳವಾಗಿ ವಿವರಿಸುತ್ತೇನೆ, ಗಮನವಿಟ್ಟು ಕೇಳಿ.",
+          "romanization": "Sari, ee theory-yannu mattomme saralavaagi vivarisuttene, gamanavittu keli.",
+          "english": "Alright, I will explain this theory once more simply, listen attentively.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಅಸೈನ್‌ಮೆಂಟ್ ಯಾವಾಗ ಸಬ್ಮಿಟ್ ಮಾಡಬೇಕು?",
+              "romanization": "Assignment yaavaaga submit maadabeku?",
+              "english": "When should the assignment be submitted?",
+              "phraseId": "education-07",
+              "nextStepId": "ed5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಪರೀಕ್ಷೆ ದಿನಾಂಕ ಯಾವುದು?",
+              "romanization": "Pareekshe dinaanka yaavudu?",
+              "english": "What is the exam date?",
+              "phraseId": "education-06",
+              "nextStepId": "ed6"
+            }
+          ]
+        },
+        "ed4": {
+          "id": "ed4",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಖಂಡಿತ, ತರಗತಿಯ ನಂತರ ನನ್ನ ಕ್ಯಾಬಿನ್‌ಗೆ ಬನ್ನಿ, ಸಹಾಯ ಮಾಡುತ್ತೇನೆ.",
+          "romanization": "Khandita, taragatiya nantara nanna cabin-ge banni, sahaaya maaduttene.",
+          "english": "Certainly, come to my cabin after class, I will assist you.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಅಸೈನ್‌ಮೆಂಟ್ ಯಾವಾಗ ಸಬ್ಮಿಟ್ ಮಾಡಬೇಕು?",
+              "romanization": "Assignment yaavaaga submit maadabeku?",
+              "english": "When should the assignment be submitted?",
+              "phraseId": "education-07",
+              "nextStepId": "ed5"
+            }
+          ]
+        },
+        "ed5": {
+          "id": "ed5",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಅಸೈನ್‌ಮೆಂಟ್ ಮುಂದಿನ ಸೋಮವಾರ ಸಂಜೆ ಐದು ಗಂಟೆಯೊಳಗೆ ಸಬ್ಮಿಟ್ ಮಾಡಬೇಕು.",
+          "romanization": "Assignment mundina somavaara sanje aidu ganteyolage submit maadabeku.",
+          "english": "The assignment must be submitted before next Monday 5 PM.",
+          "options": [
+            {
+              "id": "opt8",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "ed_end"
+            }
+          ]
+        },
+        "ed6": {
+          "id": "ed6",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಪರೀಕ್ಷೆ ಮುಂದಿನ ತಿಂಗಳ ಹದಿನೈದನೇ ತಾರೀಕು ಶುರುವಾಗುತ್ತದೆ.",
+          "romanization": "Pareekshe mundina tingala hadinaidane taareeku shuruvaaguttade.",
+          "english": "Exams commence on the 15th of next month.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "ed_end"
+            }
+          ]
+        },
+        "ed_end": {
+          "id": "ed_end",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಧ್ಯಾಪಕರು",
+          "kannada": "ಆಲ್ ದಿ ಬೆಸ್ಟ್, ಚೆನ್ನಾಗಿ ಅಭ್ಯಾಸ ಮಾಡಿ!",
+          "romanization": "All the best, chennaagi abhyaasa maadi!",
+          "english": "All the best, study well!"
+        }
+      }
+    },
+    {
+      "id": "education-roleplay-02",
+      "situationId": "education",
+      "title": "Visiting the College Library",
+      "titleKannada": "ಗ್ರಂಥಾಲಯದಲ್ಲಿ ವಿಚಾರಣೆ",
+      "description": "Find reference books, ask operating timings, and discover Kannada learning sections with the librarian.",
+      "partnerRole": "ಗ್ರಂಥಪಾಲಕರು (Librarian)",
+      "userRole": "ವಿದ್ಯಾರ್ಥಿ (Student)",
+      "initialStepId": "lb1",
+      "steps": {
+        "lb1": {
+          "id": "lb1",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ನಮಸ್ಕಾರ, ಲೈಬ್ರರಿಗೆ ಸ್ವಾಗತ! ಯಾವ ಸಹಾಯ ಬೇಕು?",
+          "romanization": "Namaskara, library-ge swaagata! Yaava sahaaya beku?",
+          "english": "Hello, welcome to the library! What help do you need?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಪುಸ್ತಕ ಎಲ್ಲಿ ಸಿಗುತ್ತದೆ?",
+              "romanization": "Pustaka elli siguttade?",
+              "english": "Where can I get the book?",
+              "phraseId": "education-01",
+              "nextStepId": "lb2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಲೈಬ್ರರಿ ಸಮಯ ಏನು?",
+              "romanization": "Library samaya enu?",
+              "english": "What are the library timings?",
+              "phraseId": "education-02",
+              "nextStepId": "lb3"
+            }
+          ]
+        },
+        "lb2": {
+          "id": "lb2",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ಕಂಪ್ಯೂಟರ್ ಸೈನ್ಸ್ ಮತ್ತು ಎಂಜಿನಿಯರಿಂಗ್ ವಿಭಾಗ ಎರಡನೇ ಮಹಡಿಯಲ್ಲಿದೆ.",
+          "romanization": "Computer Science mattu engineering vibhaaga eradane mahadiyallide.",
+          "english": "Computer Science and engineering sections are on the second floor.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಲೈಬ್ರರಿ ಸಮಯ ಏನು?",
+              "romanization": "Library samaya enu?",
+              "english": "What are the library timings?",
+              "phraseId": "education-02",
+              "nextStepId": "lb3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಕನ್ನಡ ಕಲಿಯಲು ನನಗೆ ಆಸಕ್ತಿ ಇದೆ.",
+              "romanization": "Kannada kaliyalu nanage aasakti ide.",
+              "english": "I am interested in learning Kannada.",
+              "phraseId": "education-10",
+              "nextStepId": "lb4"
+            }
+          ]
+        },
+        "lb3": {
+          "id": "lb3",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ಲೈಬ್ರರಿ ಬೆಳಗ್ಗೆ ಒಂಭತ್ತರಿಂದ ಸಂಜೆ ಎಂಟು ಗಂಟೆಯವರೆಗೆ ತೆರೆದಿರುತ್ತದೆ.",
+          "romanization": "Library belagge ombhattarinda sanje entu ganteyavarege terediruttade.",
+          "english": "The library is open from 9 AM to 8 PM in the evening.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಫೀಸ್ ಎಲ್ಲಿ ಪಾವತಿಸಬೇಕು?",
+              "romanization": "Fees elli paavatisabeku?",
+              "english": "Where should the fees be paid?",
+              "phraseId": "education-09",
+              "nextStepId": "lb5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "lb_end"
+            }
+          ]
+        },
+        "lb4": {
+          "id": "lb4",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ತುಂಬಾ ಸಂತೋಷ! ನಮ್ಮಲ್ಲಿ ಸುಲಭ ಕನ್ನಡ ಕಲಿಕಾ ಪುಸ್ತಕಗಳ ಪ್ರತ್ಯೇಕ ವಿಭಾಗವಿದೆ.",
+          "romanization": "Tumba santosha! Nammalli sulabha Kannada kalikaa pustakagala vibhaagavide.",
+          "english": "Very glad! We have a dedicated shelf for simple conversational Kannada learning.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "lb_end"
+            }
+          ]
+        },
+        "lb5": {
+          "id": "lb5",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ಲೈಬ್ರರಿ ಕಾರ್ಡ್ ಫೀಸ್ ಅಡ್ಮಿನ್ ಕೌಂಟರ್‌ನಲ್ಲಿ ಪಾವತಿಸಬೇಕು.",
+          "romanization": "Library card fees admin counter-nalli paavatisabeku.",
+          "english": "Library card renewal fee is to be paid at the admin counter.",
+          "options": [
+            {
+              "id": "opt8",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "lb_end"
+            }
+          ]
+        },
+        "lb_end": {
+          "id": "lb_end",
+          "speaker": "partner",
+          "speakerName": "ಗ್ರಂಥಪಾಲಕರು",
+          "kannada": "ಪರವಾಗಿಲ್ಲ, ಗ್ರಂಥಾಲಯವನ್ನು ಸದುಪಯೋಗಪಡಿಸಿಕೊಳ್ಳಿ!",
+          "romanization": "Paravaagilla, granthaalayavannu sadupayogapadisikolli!",
+          "english": "You are welcome, make good use of the library!"
+        }
+      }
     }
   ]
 }
