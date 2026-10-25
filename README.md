@@ -38,16 +38,16 @@ Every month, thousands of newcomers move to Bengaluru, Mysuru, Mangaluru, and Hu
 
 | Situation Hub & Navigation | Real-Time Pronunciation Practice |
 |:---:|:---:|
-| <img src="docs/assets/screens/home.svg" alt="Home Screen" width="100%" /> | <img src="docs/assets/screens/speak.svg" alt="Speak Screen" width="100%" /> |
+| <img src="docs/assets/screens/home.png" alt="Home Screen" width="100%" /> | <img src="docs/assets/screens/speak.png" alt="Speak Screen" width="100%" /> |
 | *6 situation domains with Karnataka Sandalwood palette* | *Live Web Audio waveform visualizer and phonetic scoring* |
 
 | Branching Roleplay Engine | SM-2 Spaced Repetition Queue |
 |:---:|:---:|
-| <img src="docs/assets/screens/roleplay.svg" alt="Roleplay Screen" width="100%" /> | <img src="docs/assets/screens/review.svg" alt="Review Screen" width="100%" /> |
+| <img src="docs/assets/screens/roleplay.png" alt="Roleplay Screen" width="100%" /> | <img src="docs/assets/screens/review.png" alt="Review Screen" width="100%" /> |
 | *Interactive multi-step conversations with local avatars* | *Daily flashcards with SuperMemo-2 interval scheduling* |
 
 <p align="center">
-  <img src="docs/assets/screens/script.svg" alt="Script Helper & Quiz" width="80%" /><br />
+  <img src="docs/assets/screens/script.png" alt="Script Helper & Quiz" width="60%" /><br />
   <em>Interactive Akshara alphabet reference and BMTC bus destination board quiz</em>
 </p>
 
