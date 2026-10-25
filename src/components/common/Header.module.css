@@ -1,0 +1,88 @@
+.headerWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--paper);
+  transition: background-color var(--transition-normal);
+}
+
+.headerInner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brandLink {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brandKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  line-height: 1;
+}
+
+.brandEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.brandTagline {
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .brandTagline {
+    display: inline;
+  }
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.streakBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--turmeric);
+}
+
+.actionButton {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.actionButton:hover {
+  background-color: var(--sand);
+}
