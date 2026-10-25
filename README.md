@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://nudi-kannada-flame.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-nudi--kannada--flame.vercel.app-9E2A2B?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
   <a href="https://github.com/ankush-dev-eng/nudi-kannada/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-Passing-2F5D50?style=for-the-badge&logo=github-actions&logoColor=white" alt="CI Status" /></a>
   <a href="#test-and-verification"><img src="https://img.shields.io/badge/Tests-30%2F30%20Passing-2F5D50?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest Tests" /></a>
   <a href="#offline-first-pwa"><img src="https://img.shields.io/badge/PWA-100%25%20Offline-9E2A2B?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA Ready" /></a>

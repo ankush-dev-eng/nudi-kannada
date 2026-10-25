@@ -8,7 +8,7 @@
 
 - **Project Name**: Nudi (ನುಡಿ)
 - **Category**: Language, Education & Civic Inclusion
-- **Live Demo**: [https://nudi-kannada.vercel.app](https://nudi-kannada.vercel.app) *(or local preview via `npm run preview`)*
+- **Live Demo**: [https://nudi-kannada-flame.vercel.app/](https://nudi-kannada-flame.vercel.app/) *(or local preview via `npm run preview`)*
 - **Repository**: [https://github.com/ankush-dev-eng/nudi-kannada](https://github.com/ankush-dev-eng/nudi-kannada)
 - **License**: MIT
 - **Release Version**: `v1.0.0`

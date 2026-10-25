@@ -3,6 +3,7 @@
 A comprehensive, time-coded walkthrough script for demonstrating **Nudi (ನುಡಿ) — Kannada for Everyday Life**.
 
 - **Target Duration**: Exactly 90 seconds (01:30)
+- **Live Demo**: [https://nudi-kannada-flame.vercel.app/](https://nudi-kannada-flame.vercel.app/)
 - **Target Audience**: Newcomers to Karnataka, hackathon judges, educators, and language enthusiasts
 - **Key Themes**: Situation-first immersion, pronunciation confidence, offline privacy, Karnataka heritage aesthetic
 
