@@ -1,0 +1,241 @@
+.pageContainer {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  color: var(--ink);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.titleKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  margin-bottom: 0.2rem;
+}
+
+.titleEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.queueProgress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.progressBarContainer {
+  width: 100%;
+  height: 6px;
+  background-color: var(--sand);
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: var(--turmeric);
+  transition: width 0.3s ease;
+}
+
+.cardContainer {
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.cardKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  line-height: 1.35;
+}
+
+.cardRoman {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.cardEnglish {
+  font-size: 1rem;
+  color: var(--ink);
+  padding: 0.75rem;
+  background-color: var(--sand);
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--line);
+}
+
+.cardNote {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.revealBtn {
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.revealBtn:hover {
+  background-color: var(--paper);
+  border-color: var(--kumkuma);
+}
+
+.ratingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.rateBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.65rem 0.4rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  background-color: var(--card-bg);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.rateBtn:hover {
+  transform: translateY(-2px);
+}
+
+.rateBtn.again {
+  border-color: var(--kumkuma);
+  color: var(--kumkuma);
+}
+
+.rateBtn.again:hover {
+  background-color: rgba(158, 42, 43, 0.1);
+}
+
+.rateBtn.hard {
+  border-color: var(--turmeric);
+  color: var(--turmeric);
+}
+
+.rateBtn.hard:hover {
+  background-color: rgba(217, 154, 30, 0.1);
+}
+
+.rateBtn.good {
+  border-color: var(--ghats);
+  color: var(--ghats);
+}
+
+.rateBtn.good:hover {
+  background-color: rgba(47, 93, 80, 0.1);
+}
+
+.rateBtn.easy {
+  border-color: #1a4f78;
+  color: #1a4f78;
+}
+
+.rateBtn.easy:hover {
+  background-color: rgba(26, 79, 120, 0.1);
+}
+
+.rateLabel {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.rateSub {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-top: 0.15rem;
+}
+
+.emptyStateCard {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+}
+
+.emptyTitle {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ghats);
+}
+
+.emptyText {
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 420px;
+}
+
+.homeActionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--kumkuma);
+  color: #fff;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
