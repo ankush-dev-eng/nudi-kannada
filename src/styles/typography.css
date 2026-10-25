@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background-color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0;
+  color: var(--ink);
+}
+
+/* Kannada script typography rules: Kannada is visually more detailed so it is rendered larger than Latin text */
+.kannada-text {
+  font-family: var(--font-kannada);
+  font-size: 1.35em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.kannada-heading {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.45em;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.romanization-text {
+  font-family: var(--font-sans);
+  font-size: 0.95em;
+  color: var(--muted);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.english-meaning {
+  font-family: var(--font-sans);
+  font-size: 1.05em;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
