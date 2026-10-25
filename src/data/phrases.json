@@ -1564,6 +1564,318 @@
           "english": "Thank you, take the medicines regularly, take care!"
         }
       }
+    },
+    {
+      "id": "transport-roleplay-01",
+      "situationId": "transport",
+      "title": "Hailing an Auto to Indiranagar",
+      "titleKannada": "ಇಂದಿರಾನಗರಕ್ಕೆ ಆಟೋ ಹಿಡಿಯುವುದು",
+      "description": "Negotiate with a Bengaluru autorickshaw driver, request meter fare, guide turns, and pay via UPI.",
+      "partnerRole": "ಆಟೋ ಚಾಲಕ (Auto Driver)",
+      "userRole": "ಪ್ರಯಾಣಿಕ (Commuter)",
+      "initialStepId": "a1",
+      "steps": {
+        "a1": {
+          "id": "a1",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಎಲ್ಲಿಗೆ ಹೋಗ್ಬೇಕು ಸಾರ್?",
+          "romanization": "Ellige hogbeku saar?",
+          "english": "Where do you need to go, sir?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಇಂದಿರಾನಗರಕ್ಕೆ ಹೋಗ್ತೀರಾ?",
+              "romanization": "Indiranagarakke hogteera?",
+              "english": "Will you go to Indiranagar?",
+              "phraseId": "transport-02",
+              "nextStepId": "a2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಆಟೋ ಮೀಟರ್ ಹಾಕಿ.",
+              "romanization": "Auto meter haaki.",
+              "english": "Please put the meter.",
+              "phraseId": "transport-01",
+              "nextStepId": "a3"
+            }
+          ]
+        },
+        "a2": {
+          "id": "a2",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಹೋಗೋಣ, ಆದ್ರೆ ಪೀಕ್ ಅವರ್ ಟ್ರಾಫಿಕ್ ಜಾಸ್ತಿ ಇದೆ.",
+          "romanization": "Hogona, aadre peak hour traffic jaasti ide.",
+          "english": "Let's go, but peak hour traffic is heavy.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಆಟೋ ಮೀಟರ್ ಹಾಕಿ.",
+              "romanization": "Auto meter haaki.",
+              "english": "Please put the meter.",
+              "phraseId": "transport-01",
+              "nextStepId": "a3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಮೀಟರ್ ಮೇಲೆ ಎಷ್ಟು?",
+              "romanization": "Meter mele eshtu?",
+              "english": "How much above the meter?",
+              "phraseId": "transport-04",
+              "nextStepId": "a4"
+            }
+          ]
+        },
+        "a3": {
+          "id": "a3",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಸರಿ ಸಾರ್, ಮೀಟರ್ ಹಾಕ್ತೀನಿ. ಬನ್ನಿ ಕೂತ್ಕೊಳ್ಳಿ.",
+          "romanization": "Sari saar, meter haaktini. Banni kootkolli.",
+          "english": "Okay sir, I will put the meter. Come, sit.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಚಲಾಯಿಸಿ.",
+              "romanization": "Svalpa nidhaanavaagi chalaayisi.",
+              "english": "Drive a bit slowly.",
+              "phraseId": "transport-06",
+              "nextStepId": "a5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಯು-ಟರ್ನ್ ತಗೊಳ್ಳಿ.",
+              "romanization": "U-turn tagolli.",
+              "english": "Take a U-turn.",
+              "phraseId": "transport-05",
+              "nextStepId": "a5"
+            }
+          ]
+        },
+        "a4": {
+          "id": "a4",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಮೀಟರ್ ಮೇಲೆ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಕೊಡಿ ಸಾರ್.",
+          "romanization": "Meter mele ippattu roopaayi kodi saar.",
+          "english": "Give twenty rupees above the meter, sir.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಎಷ್ಟು ಆಗುತ್ತೆ?",
+              "romanization": "Eshtu aagutte?",
+              "english": "How much will it be?",
+              "phraseId": "transport-03",
+              "nextStepId": "a6"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ಆಟೋ ಮೀಟರ್ ಹಾಕಿ.",
+              "romanization": "Auto meter haaki.",
+              "english": "Please put the meter.",
+              "phraseId": "transport-01",
+              "nextStepId": "a3"
+            }
+          ]
+        },
+        "a5": {
+          "id": "a5",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಸರಿ ಸಾರ್, ನಿಧಾನವಾಗಿಯೇ ಹೋಗ್ತೀನಿ. ಎಲ್ಲಿ ನಿಲ್ಲಿಸಬೇಕು?",
+          "romanization": "Sari saar, nidhaanavaagiye hogtini. Elli nillisabeku?",
+          "english": "Alright sir, I will drive carefully. Where should I stop?",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಇಲ್ಲೇ ಕಾರ್ನರ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+              "romanization": "Ille corner-nalli nillisi.",
+              "english": "Stop right here at the corner.",
+              "phraseId": "transport-07",
+              "nextStepId": "a7"
+            }
+          ]
+        },
+        "a6": {
+          "id": "a6",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಅಂದಾಜು ನೂರ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಆಗುತ್ತೆ ಸಾರ್.",
+          "romanization": "Andaaju noora ippattu roopaayi aagutte saar.",
+          "english": "Approximately one hundred twenty rupees, sir.",
+          "options": [
+            {
+              "id": "opt10",
+              "kannada": "ಇಲ್ಲೇ ಕಾರ್ನರ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+              "romanization": "Ille corner-nalli nillisi.",
+              "english": "Stop right here at the corner.",
+              "phraseId": "transport-07",
+              "nextStepId": "a7"
+            }
+          ]
+        },
+        "a7": {
+          "id": "a7",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಇಗೋ ಬಂದ್ವಿ ಸಾರ್, ಕಾರ್ನರ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿದ್ದೀನಿ.",
+          "romanization": "Igo bandvi saar, corner-nalli nillisiddini.",
+          "english": "Here we are sir, I have stopped at the corner.",
+          "options": [
+            {
+              "id": "opt11",
+              "kannada": "ಜಿಪೇ ಮಾಡ್ತೀನಿ.",
+              "romanization": "GPay maadtini.",
+              "english": "I will pay via GPay.",
+              "phraseId": "transport-08",
+              "nextStepId": "a_end"
+            }
+          ]
+        },
+        "a_end": {
+          "id": "a_end",
+          "speaker": "partner",
+          "speakerName": "ಆಟೋ ಚಾಲಕ",
+          "kannada": "ಸರಿ ಸಾರ್, ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ. ಥ್ಯಾಂಕ್ಸ್, ಒಳ್ಳೆಯದಾಗಲಿ!",
+          "romanization": "Sari saar, QR code scan maadi. Thanks, olleyadaagali!",
+          "english": "Sure sir, please scan the QR code. Thanks, have a great day!"
+        }
+      }
+    },
+    {
+      "id": "transport-roleplay-02",
+      "situationId": "transport",
+      "title": "Inquiring at KSRTC Bus Stand",
+      "titleKannada": "ಬಸ್ ನಿಲ್ದಾಣದಲ್ಲಿ ವಿಚಾರಣೆ",
+      "description": "Ask bus departure timings, platform information, and route durations at an intercity bus terminal.",
+      "partnerRole": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ (Inquiry Staff)",
+      "userRole": "ಪ್ರಯಾಣಿಕ (Passenger)",
+      "initialStepId": "k1",
+      "steps": {
+        "k1": {
+          "id": "k1",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ನಮಸ್ಕಾರ, ಯಾವ ಊರಿಗೆ ಹೋಗಬೇಕು?",
+          "romanization": "Namaskara, yaava oorige hogabeku?",
+          "english": "Hello, which town do you need to go to?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಬಸ್ ಯಾವಾಗ ಹೊರಡುತ್ತೆ?",
+              "romanization": "Bus yaavaaga horadutte?",
+              "english": "When does the bus leave?",
+              "phraseId": "transport-09",
+              "nextStepId": "k2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನಂಬರ್ ಎಷ್ಟು?",
+              "romanization": "Platform number eshtu?",
+              "english": "What is the platform number?",
+              "phraseId": "transport-10",
+              "nextStepId": "k3"
+            }
+          ]
+        },
+        "k2": {
+          "id": "k2",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ಮೈಸೂರು ಎಕ್ಸ್‌ಪ್ರೆಸ್ ಬಸ್ ಪ್ರತಿ ಹತ್ತು ನಿಮಿಷಕ್ಕೆ ಒಂದು ಹೊರಡುತ್ತದೆ.",
+          "romanization": "Mysore Express bus prati hattu nimishakke ondu horaduttade.",
+          "english": "Mysore Express bus leaves every ten minutes.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನಂಬರ್ ಎಷ್ಟು?",
+              "romanization": "Platform number eshtu?",
+              "english": "What is the platform number?",
+              "phraseId": "transport-10",
+              "nextStepId": "k3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಹೋಗಲು ಎಷ್ಟು ಸಮಯ ಬೇಕು?",
+              "romanization": "Hogalu eshtu samaya beku?",
+              "english": "How much time is needed to go?",
+              "phraseId": "travel-07",
+              "nextStepId": "k4"
+            }
+          ]
+        },
+        "k3": {
+          "id": "k3",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ಮೈಸೂರು ಬಸ್‌ಗಳು ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನಂಬರ್ ಮೂರರಿಂದ ಹೊರಡುತ್ತವೆ.",
+          "romanization": "Mysore bus-galu platform number moorarinda horaduttave.",
+          "english": "Mysore buses depart from platform number 3.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+              "romanization": "Ondu ticket kodi.",
+              "english": "Please give one ticket.",
+              "phraseId": "travel-05",
+              "nextStepId": "k5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "k_end"
+            }
+          ]
+        },
+        "k4": {
+          "id": "k4",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ಎಕ್ಸ್‌ಪ್ರೆಸ್‌ವೇ ಮೂಲಕ ಸುಮಾರು ಎರಡು ಗಂಟೆ ಬೇಕು.",
+          "romanization": "Expressway moolaka sumaaru eradu gante beku.",
+          "english": "Via the expressway, it takes approximately two hours.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನಂಬರ್ ಎಷ್ಟು?",
+              "romanization": "Platform number eshtu?",
+              "english": "What is the platform number?",
+              "phraseId": "transport-10",
+              "nextStepId": "k3"
+            }
+          ]
+        },
+        "k5": {
+          "id": "k5",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ಟಿಕೆಟ್‌ಗಳನ್ನು ಬಸ್‌ನಲ್ಲೇ ಕಂಡಕ್ಟರ್ ನೀಡುತ್ತಾರೆ, ನೇರವಾಗಿ ಬಸ್ ಹತ್ತಿ.",
+          "romanization": "Ticket-galannu bus-nalle conductor needuttaare, neravaagi bus hatti.",
+          "english": "The conductor issues tickets inside the bus, please board directly.",
+          "options": [
+            {
+              "id": "opt8",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "k_end"
+            }
+          ]
+        },
+        "k_end": {
+          "id": "k_end",
+          "speaker": "partner",
+          "speakerName": "ಮಾಹಿತಿ ಅಧಿಕಾರಿ",
+          "kannada": "ಸರಿ ಸಾರ್, ಸುಖಕರ ಪ್ರಯಾಣ ನಿಮ್ಮದಾಗಲಿ!",
+          "romanization": "Sari saar, sukhakara prayaana nimmadaagali!",
+          "english": "All the best sir, have a pleasant journey!"
+        }
+      }
     }
   ]
 }
