@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <rect width="800" height="520" rx="16" fill="#F7F0E1" stroke="#D9CBB0" stroke-width="2" />
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#FFFFFF" />
+  <text x="32" y="34" font-family="sans-serif" font-size="14" font-weight="600" fill="#7A6A58">← Situations</text>
+  <text x="400" y="36" font-family="'Noto Serif Kannada', serif" font-size="18" font-weight="bold" fill="#9E2A2B" text-anchor="middle">ಧ್ವನಿ ಅಭ್ಯಾಸ • Pronunciation Practice</text>
+
+  <!-- Target Card -->
+  <g transform="translate(150, 85)">
+    <rect x="0" y="0" width="500" height="150" rx="12" fill="#E9DCC3" stroke="#D9CBB0" />
+    <text x="250" y="48" font-family="'Noto Serif Kannada', serif" font-size="28" font-weight="bold" fill="#9E2A2B" text-anchor="middle">ಧನ್ಯವಾದಗಳು, ತುಂಬಾ ಸಹಾಯವಾಯಿತು</text>
+    <text x="250" y="80" font-family="serif" font-size="16" font-style="italic" fill="#2B1D14" text-anchor="middle">Dhanyavadagalu, tumba sahayavayitu</text>
+    <text x="250" y="105" font-family="sans-serif" font-size="13" fill="#7A6A58" text-anchor="middle">Thank you, that was very helpful</text>
+
+    <!-- Listen Button -->
+    <rect x="180" y="118" width="140" height="24" rx="4" fill="#FFFFFF" stroke="#D9CBB0" />
+    <text x="250" y="134" font-family="sans-serif" font-size="11" font-weight="600" fill="#2B1D14" text-anchor="middle">🔊 Listen (1.0x)</text>
+  </g>
+
+  <!-- Animated Waveform -->
+  <g transform="translate(250, 255)">
+    <rect x="0" y="0" width="300" height="40" rx="6" fill="#E9DCC3" />
+    <line x1="40" y1="20" x2="40" y2="20" stroke="#9E2A2B" stroke-width="4" stroke-linecap="round" />
+    <line x1="60" y1="12" x2="60" y2="28" stroke="#D99A1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="80" y1="8" x2="80" y2="32" stroke="#2F5D50" stroke-width="4" stroke-linecap="round" />
+    <line x1="100" y1="15" x2="100" y2="25" stroke="#9E2A2B" stroke-width="4" stroke-linecap="round" />
+    <line x1="120" y1="6" x2="120" y2="34" stroke="#D99A1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="140" y1="10" x2="140" y2="30" stroke="#2F5D50" stroke-width="4" stroke-linecap="round" />
+    <line x1="160" y1="14" x2="160" y2="26" stroke="#9E2A2B" stroke-width="4" stroke-linecap="round" />
+    <line x1="180" y1="6" x2="180" y2="34" stroke="#D99A1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="200" y1="10" x2="200" y2="30" stroke="#2F5D50" stroke-width="4" stroke-linecap="round" />
+    <line x1="220" y1="16" x2="220" y2="24" stroke="#9E2A2B" stroke-width="4" stroke-linecap="round" />
+    <line x1="240" y1="12" x2="240" y2="28" stroke="#D99A1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="260" y1="20" x2="260" y2="20" stroke="#9E2A2B" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Big Mic Button -->
+  <circle cx="400" cy="340" r="32" fill="#9E2A2B" />
+  <text x="400" y="348" font-size="24" text-anchor="middle" fill="#FFFFFF">🎤</text>
+
+  <!-- Score Feedback Result -->
+  <g transform="translate(200, 395)">
+    <rect x="0" y="0" width="400" height="90" rx="8" fill="#FFFFFF" stroke="#2F5D50" stroke-width="1.5" />
+    <text x="20" y="30" font-family="'Noto Serif Kannada', serif" font-size="16" font-weight="bold" fill="#2F5D50">ಅದ್ಭುತ! Excellent Pronunciation!</text>
+    <text x="375" y="30" font-family="monospace" font-size="18" font-weight="bold" fill="#2F5D50" text-anchor="end">94%</text>
+
+    <!-- Word chips -->
+    <rect x="20" y="48" width="115" height="22" rx="4" fill="rgba(47,93,80,0.15)" stroke="#2F5D50" />
+    <text x="77" y="63" font-size="10" font-weight="bold" fill="#2F5D50" text-anchor="middle">ಧನ್ಯವಾದಗಳು ✓</text>
+
+    <rect x="145" y="48" width="80" height="22" rx="4" fill="rgba(47,93,80,0.15)" stroke="#2F5D50" />
+    <text x="185" y="63" font-size="10" font-weight="bold" fill="#2F5D50" text-anchor="middle">ತುಂಬಾ ✓</text>
+
+    <rect x="235" y="48" width="125" height="22" rx="4" fill="rgba(47,93,80,0.15)" stroke="#2F5D50" />
+    <text x="297" y="63" font-size="10" font-weight="bold" fill="#2F5D50" text-anchor="middle">ಸಹಾಯವಾಯಿತು ✓</text>
+  </g>
+</svg>

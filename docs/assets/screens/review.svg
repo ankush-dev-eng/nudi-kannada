@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <rect width="800" height="520" rx="16" fill="#F7F0E1" stroke="#D9CBB0" stroke-width="2" />
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#FFFFFF" />
+  <text x="32" y="34" font-family="sans-serif" font-size="14" font-weight="600" fill="#7A6A58">← Home</text>
+  <text x="400" y="36" font-family="'Noto Serif Kannada', serif" font-size="18" font-weight="bold" fill="#9E2A2B" text-anchor="middle">ದೈನಂದಿನ ಪುನರಾವರ್ತನೆ • SM-2 Spaced Repetition</text>
+
+  <!-- Progress bar -->
+  <rect x="150" y="80" width="500" height="8" rx="4" fill="#E9DCC3" />
+  <rect x="150" y="80" width="350" height="8" rx="4" fill="#D99A1E" />
+  <text x="150" y="105" font-family="sans-serif" font-size="12" fill="#7A6A58">Card 7 of 10</text>
+  <text x="650" y="105" font-family="sans-serif" font-size="12" fill="#7A6A58" text-anchor="end">6 phrases mastered</text>
+
+  <!-- Flashcard Box -->
+  <g transform="translate(150, 125)">
+    <rect x="0" y="0" width="500" height="230" rx="12" fill="#FFFFFF" stroke="#D9CBB0" />
+    <text x="250" y="60" font-family="'Noto Serif Kannada', serif" font-size="30" font-weight="bold" fill="#9E2A2B" text-anchor="middle">ಎಷ್ಟು ಬೆಲೆ?</text>
+    <text x="250" y="95" font-family="serif" font-size="18" font-style="italic" fill="#2B1D14" text-anchor="middle">Eshtu bele?</text>
+
+    <line x1="40" y1="120" x2="460" y2="120" stroke="#E9DCC3" stroke-width="1" />
+
+    <text x="250" y="155" font-family="sans-serif" font-size="18" font-weight="600" fill="#2F5D50" text-anchor="middle">How much does it cost?</text>
+    <text x="250" y="185" font-family="sans-serif" font-size="12" fill="#7A6A58" text-anchor="middle">Essential shopping inquiry for markets and stores</text>
+  </g>
+
+  <!-- SM-2 4 Rating Buttons -->
+  <g transform="translate(150, 390)">
+    <!-- Again -->
+    <rect x="0" y="0" width="115" height="56" rx="6" fill="#FFFFFF" stroke="#9E2A2B" stroke-width="1.5" />
+    <text x="57" y="26" font-family="sans-serif" font-size="13" font-weight="bold" fill="#9E2A2B" text-anchor="middle">Again</text>
+    <text x="57" y="44" font-family="sans-serif" font-size="11" fill="#7A6A58" text-anchor="middle">&lt; 1 day</text>
+
+    <!-- Hard -->
+    <rect x="128" y="0" width="115" height="56" rx="6" fill="#FFFFFF" stroke="#D99A1E" stroke-width="1.5" />
+    <text x="185" y="26" font-family="sans-serif" font-size="13" font-weight="bold" fill="#D99A1E" text-anchor="middle">Hard</text>
+    <text x="185" y="44" font-family="sans-serif" font-size="11" fill="#7A6A58" text-anchor="middle">2 days</text>
+
+    <!-- Good -->
+    <rect x="256" y="0" width="115" height="56" rx="6" fill="#FFFFFF" stroke="#2F5D50" stroke-width="1.5" />
+    <text x="313" y="26" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5D50" text-anchor="middle">Good</text>
+    <text x="313" y="44" font-family="sans-serif" font-size="11" fill="#7A6A58" text-anchor="middle">4 days</text>
+
+    <!-- Easy -->
+    <rect x="385" y="0" width="115" height="56" rx="6" fill="#FFFFFF" stroke="#1A4F78" stroke-width="1.5" />
+    <text x="442" y="26" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1A4F78" text-anchor="middle">Easy</text>
+    <text x="442" y="44" font-family="sans-serif" font-size="11" fill="#7A6A58" text-anchor="middle">7+ days</text>
+  </g>
+</svg>
