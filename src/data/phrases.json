@@ -2162,6 +2162,308 @@
           "english": "You are welcome, make good use of the library!"
         }
       }
+    },
+    {
+      "id": "workplace-roleplay-01",
+      "situationId": "workplace",
+      "title": "Coffee Break with Teammate",
+      "titleKannada": "ಸಹೋದ್ಯೋಗಿಯೊಂದಿಗೆ ಕಾಫಿ ಬ್ರೇಕ್",
+      "description": "Invite a team colleague for south Indian filter coffee, converse about daily work, and build team rapport.",
+      "partnerRole": "ಸಹೋದ್ಯೋಗಿ (Colleague)",
+      "userRole": "ಉದ್ಯೋಗಿ (Professional)",
+      "initialStepId": "w1",
+      "steps": {
+        "w1": {
+          "id": "w1",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಹೇ, ತುಂಬಾ ಕೆಲಸದಲ್ಲಿ ಮುಳುಗಿದ್ದೀರಾ?",
+          "romanization": "Hey, tumba kelasadalli mulugiddira?",
+          "english": "Hey, are you immersed in a lot of work?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಶುಭೋದಯ! ನೀವು ಹೇಗಿದ್ದೀರಿ?",
+              "romanization": "Shubhodaya! Neevu hegiddiri?",
+              "english": "Good morning! How are you?",
+              "phraseId": "workplace-01",
+              "nextStepId": "w2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಕಾಫಿ ಕುಡಿಯೋಣ ಬನ್ನಿ.",
+              "romanization": "Coffee kudiyona banni.",
+              "english": "Come, let's have coffee.",
+              "phraseId": "workplace-04",
+              "nextStepId": "w3"
+            }
+          ]
+        },
+        "w2": {
+          "id": "w2",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೀನಿ! ಸ್ಪ್ರಿಂಟ್ ರಿಲೀಸ್ ಕೆಲಸ ನಡೀತಿದೆ.",
+          "romanization": "Naanu chennaagiddini! Sprint release kelasa nadeetide.",
+          "english": "I am doing well! Sprint release work is currently ongoing.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಕಾಫಿ ಕುಡಿಯೋಣ ಬನ್ನಿ.",
+              "romanization": "Coffee kudiyona banni.",
+              "english": "Come, let's have coffee.",
+              "phraseId": "workplace-04",
+              "nextStepId": "w3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಸ್ವಲ್ಪ ಸಮಯ ಮಾತನಾಡಬಹುದಾ?",
+              "romanization": "Svalpa samaya maatanaadabahuda?",
+              "english": "Can we talk for a moment?",
+              "phraseId": "workplace-08",
+              "nextStepId": "w4"
+            }
+          ]
+        },
+        "w3": {
+          "id": "w3",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಖಂಡಿತ ಬನ್ನಿ! ಕೆಫೆಟೇರಿಯಾ ಫಿಲ್ಟರ್ ಕಾಫಿ ಸಖತ್ತಾಗಿದೆ.",
+          "romanization": "Khandita banni! Cafeteria filter coffee sakhattaagide.",
+          "english": "Definitely, let's go! The cafeteria filter coffee is superb.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಕೆಲಸ ಚೆನ್ನಾಗಿ ಆಗಿದೆ!",
+              "romanization": "Kelasa chennaagi aagide!",
+              "english": "Great job / work done well!",
+              "phraseId": "workplace-09",
+              "nextStepId": "w5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಇವತ್ತು ಮೀಟಿಂಗ್ ಇದೆಯಾ?",
+              "romanization": "Ivattu meeting ideya?",
+              "english": "Is there a meeting today?",
+              "phraseId": "workplace-02",
+              "nextStepId": "w6"
+            }
+          ]
+        },
+        "w4": {
+          "id": "w4",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಹೌದು, ಐದು ನಿಮಿಷ ಮಾತಾಡೋಣ, ಹೇಳಿ.",
+          "romanization": "Haudu, aidu nimisha maataadona, heli.",
+          "english": "Sure, let's speak for five minutes, tell me.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ನನಗೆ ಈ ಫೈಲ್ ಕಳುಹಿಸಿ.",
+              "romanization": "Nanage ee file kaluhisi.",
+              "english": "Send me this file.",
+              "phraseId": "workplace-06",
+              "nextStepId": "w5"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ನಾಳೆ ನಾನು ರಜೆ ತಗೋತೀನಿ.",
+              "romanization": "Naale naanu raje tagotini.",
+              "english": "Tomorrow I am taking leave.",
+              "phraseId": "workplace-07",
+              "nextStepId": "w5"
+            }
+          ]
+        },
+        "w5": {
+          "id": "w5",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಖಂಡಿತ, ಈಮೇಲ್ ಮಾಡ್ತೀನಿ. ಟೀಮ್ ಲೀಡ್‌ಗೂ ಅಪ್ಡೇಟ್ ಮಾಡೋಣ.",
+          "romanization": "Khandita, email maadtini. Team lead-goo update maadona.",
+          "english": "Certainly, I will email it. We will also update the team lead.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಸಂಜೆ ಸಿಗೋಣ.",
+              "romanization": "Sanje sigona.",
+              "english": "Let's meet in the evening / see you this evening.",
+              "phraseId": "workplace-10",
+              "nextStepId": "w_end"
+            }
+          ]
+        },
+        "w6": {
+          "id": "w6",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಮಧ್ಯಾಹ್ನ ಮೂರು ಗಂಟೆಗೆ ಕ್ಲೈಂಟ್ ಸಿಂಕ್ ಮೀಟಿಂಗ್ ಇದೆ.",
+          "romanization": "Madhyaahna mooru gantege client sync meeting ide.",
+          "english": "There is a client sync meeting at 3 PM in the afternoon.",
+          "options": [
+            {
+              "id": "opt10",
+              "kannada": "ಸಂಜೆ ಸಿಗೋಣ.",
+              "romanization": "Sanje sigona.",
+              "english": "Let's meet in the evening / see you this evening.",
+              "phraseId": "workplace-10",
+              "nextStepId": "w_end"
+            }
+          ]
+        },
+        "w_end": {
+          "id": "w_end",
+          "speaker": "partner",
+          "speakerName": "ಸಹೋದ್ಯೋಗಿ",
+          "kannada": "ಸರಿ, ಸಂಜೆ ಸಿಗೋಣ! ಆಲ್ ದಿ ಬೆಸ್ಟ್.",
+          "romanization": "Sari, sanje sigona! All the best.",
+          "english": "Alright, see you in the evening! All the best."
+        }
+      }
+    },
+    {
+      "id": "workplace-roleplay-02",
+      "situationId": "workplace",
+      "title": "Standup & Sprint Planning Sync",
+      "titleKannada": "ಪ್ರಾಜೆಕ್ಟ್ ಮೀಟಿಂಗ್ ಮತ್ತು ಅಪ್ಡೇಟ್",
+      "description": "Discuss task progress with your project manager, review deliverables, and inform about scheduled leave.",
+      "partnerRole": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್ (Manager)",
+      "userRole": "ಡೆವಲಪರ್ (Software Engineer)",
+      "initialStepId": "sp1",
+      "steps": {
+        "sp1": {
+          "id": "sp1",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಶುಭೋದಯ! ಇವತ್ತಿನ ಟಾಸ್ಕ್ ಸ್ಟೇಟಸ್ ಹೇಗಿದೆ?",
+          "romanization": "Shubhodaya! Ivattina task status hegide?",
+          "english": "Good morning! How is today's task status?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ನಾನು ಇಮೇಲ್ ಕಳುಹಿಸಿದ್ದೇನೆ.",
+              "romanization": "Naanu email kaluhisiddene.",
+              "english": "I have sent an email.",
+              "phraseId": "workplace-03",
+              "nextStepId": "sp2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಈ ಪ್ರಾಜೆಕ್ಟ್ ಯಾವಾಗ ಮುಗಿಯುತ್ತೆ?",
+              "romanization": "Ee project yaavaaga mugiyutte?",
+              "english": "When will this project finish?",
+              "phraseId": "workplace-05",
+              "nextStepId": "sp3"
+            }
+          ]
+        },
+        "sp2": {
+          "id": "sp2",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಹೌದು, ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಕೋಡ್ ಪಿಆರ್ ನೋಡಿದೆ, ತುಂಬಾ ಉತ್ತಮವಾಗಿ ಮಾಡಿದ್ದೀರಿ!",
+          "romanization": "Haudu, nimma email mattu code PR nodide, tumba uttamavaagi maadiddiri!",
+          "english": "Yes, I saw your email and code PR, you have done exceptionally well!",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಕೆಲಸ ಚೆನ್ನಾಗಿ ಆಗಿದೆ!",
+              "romanization": "Kelasa chennaagi aagide!",
+              "english": "Great job / work done well!",
+              "phraseId": "workplace-09",
+              "nextStepId": "sp4"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಸ್ವಲ್ಪ ಸಮಯ ಮಾತನಾಡಬಹುದಾ?",
+              "romanization": "Svalpa samaya maatanaadabahuda?",
+              "english": "Can we talk for a moment?",
+              "phraseId": "workplace-08",
+              "nextStepId": "sp4"
+            }
+          ]
+        },
+        "sp3": {
+          "id": "sp3",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಈ ವಾರದ ಶುಕ್ರವಾರದೊಳಗೆ ಎಲ್ಲಾ ಟೆಸ್ಟಿಂಗ್ ಮುಗಿಸಿ ಡೆಪ್ಲಾಯ್ ಮಾಡಬೇಕು.",
+          "romanization": "Ee vaarada shukravaaradolage ella testing mugisi deploy maadabeku.",
+          "english": "By this Friday we need to finish all testing and deploy.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ನನಗೆ ಈ ಫೈಲ್ ಕಳುಹಿಸಿ.",
+              "romanization": "Nanage ee file kaluhisi.",
+              "english": "Send me this file.",
+              "phraseId": "workplace-06",
+              "nextStepId": "sp5"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ನಾಳೆ ನಾನು ರಜೆ ತಗೋತೀನಿ.",
+              "romanization": "Naale naanu raje tagotini.",
+              "english": "Tomorrow I am taking leave.",
+              "phraseId": "workplace-07",
+              "nextStepId": "sp5"
+            }
+          ]
+        },
+        "sp4": {
+          "id": "sp4",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಹೌದು, ಇಡೀ ಟೀಮ್ ಎಫರ್ಟ್ ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ.",
+          "romanization": "Haudu, idee team effort tumba chennaagide.",
+          "english": "Indeed, the entire team effort has been wonderful.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ನಾಳೆ ನಾನು ರಜೆ ತಗೋತೀನಿ.",
+              "romanization": "Naale naanu raje tagotini.",
+              "english": "Tomorrow I am taking leave.",
+              "phraseId": "workplace-07",
+              "nextStepId": "sp5"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "sp_end"
+            }
+          ]
+        },
+        "sp5": {
+          "id": "sp5",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಸರಿ, ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಲೀವ್ ಅಪ್ಲೈ ಮಾಡಿ, ನಾನು ಅಪ್ರೂವ್ ಮಾಡ್ತೀನಿ.",
+          "romanization": "Sari, portal-nalli leave apply maadi, naanu approve maadtini.",
+          "english": "Alright, apply for leave in the portal and I will approve it.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಧನ್ಯವಾದಗಳು!",
+              "romanization": "Dhanyavaadagalu!",
+              "english": "Thank you!",
+              "phraseId": "travel-11",
+              "nextStepId": "sp_end"
+            }
+          ]
+        },
+        "sp_end": {
+          "id": "sp_end",
+          "speaker": "partner",
+          "speakerName": "ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್",
+          "kannada": "ಧನ್ಯವಾದಗಳು, ಕೀಪ್ ಅಪ್ ದಿ ಗ್ರೇಟ್ ವರ್ಕ್!",
+          "romanization": "Dhanyavaadagalu, keep up the great work!",
+          "english": "Thank you, keep up the great work!"
+        }
+      }
     }
   ]
 }
