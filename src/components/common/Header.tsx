@@ -2,10 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { MysoreBorder } from '@/components/common/MysoreBorder';
-import { FlameIcon, SunIcon, MoonIcon, SearchIcon, SettingsIcon } from '@/components/common/Icons';
+import { FlameIcon, SunIcon, MoonIcon, SearchIcon, SettingsIcon, KeyboardIcon } from '@/components/common/Icons';
 import styles from './Header.module.css';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onOpenShortcuts?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onOpenShortcuts }) => {
   const streak = useAppStore((state) => state.streak);
   const theme = useAppStore((state) => state.settings.theme);
   const toggleTheme = useAppStore((state) => state.toggleTheme);
@@ -46,6 +50,16 @@ export const Header: React.FC = () => {
             title={`Toggle ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
             {theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
+          </button>
+
+          <button
+            type="button"
+            onClick={onOpenShortcuts}
+            className={styles.actionButton}
+            aria-label="View keyboard shortcuts"
+            title="Keyboard shortcuts (?)"
+          >
+            <KeyboardIcon size={18} />
           </button>
 
           <Link

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState, useCallback } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { Header } from '@/components/common/Header';
 import { BottomNav } from '@/components/common/BottomNav';
 import { PWAStatusBanner } from '@/components/common/PWAStatusBanner';
+import { KeyboardShortcutsModal } from '@/components/common/KeyboardShortcutsModal';
 
 import { HomePage } from '@/pages/HomePage';
 import { LearnPage } from '@/pages/LearnPage';
@@ -17,7 +18,9 @@ import { AboutPage } from '@/pages/AboutPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 
 export const App: React.FC = () => {
-  const { initializeStore, settings } = useAppStore();
+  const navigate = useNavigate();
+  const { initializeStore, settings, toggleTheme } = useAppStore();
+  const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
 
   useEffect(() => {
     initializeStore();
@@ -27,9 +30,44 @@ export const App: React.FC = () => {
     document.documentElement.setAttribute('data-theme', settings.theme);
   }, [settings.theme]);
 
+  const handleGlobalKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      const activeEl = document.activeElement;
+      const isInput =
+        activeEl &&
+        (activeEl.tagName === 'INPUT' ||
+          activeEl.tagName === 'TEXTAREA' ||
+          activeEl.tagName === 'SELECT' ||
+          (activeEl as HTMLElement).isContentEditable);
+
+      if (isInput) return;
+
+      if (e.key === '?') {
+        e.preventDefault();
+        setIsShortcutsOpen((prev) => !prev);
+      } else if (e.key === 'h' || e.key === 'H') {
+        navigate('/');
+      } else if (e.key === 'r' || e.key === 'R') {
+        navigate('/review');
+      } else if (e.key === 's' || e.key === 'S') {
+        navigate('/speak');
+      } else if (e.key === 'p' || e.key === 'P') {
+        navigate('/roleplay');
+      } else if (e.key === 't' || e.key === 'T') {
+        toggleTheme();
+      }
+    },
+    [navigate, toggleTheme]
+  );
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleGlobalKeyDown);
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+  }, [handleGlobalKeyDown]);
+
   return (
     <>
-      <Header />
+      <Header onOpenShortcuts={() => setIsShortcutsOpen(true)} />
       <PWAStatusBanner />
       <div style={{ flex: 1 }}>
         <Routes>
@@ -46,6 +84,10 @@ export const App: React.FC = () => {
         </Routes>
       </div>
       <BottomNav />
+      <KeyboardShortcutsModal
+        isOpen={isShortcutsOpen}
+        onClose={() => setIsShortcutsOpen(false)}
+      />
     </>
   );
 };
