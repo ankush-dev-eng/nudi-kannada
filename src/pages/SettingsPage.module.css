@@ -1,0 +1,183 @@
+.pageContainer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  color: var(--ink);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.titleKannada {
+  font-family: var(--font-kannada-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--kumkuma);
+  margin-bottom: 0.2rem;
+}
+
+.titleEnglish {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.settingsSection {
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.settingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+}
+
+.settingLabelGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingLabel {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.settingHelp {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.selectInput {
+  padding: 0.45rem 0.75rem;
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-family: inherit;
+}
+
+.toggleSwitch {
+  width: 48px;
+  height: 26px;
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  position: relative;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.toggleSwitch.active {
+  background-color: var(--kumkuma);
+  border-color: var(--kumkuma);
+}
+
+.toggleKnob {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: var(--radius-full);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform var(--transition-fast);
+}
+
+.toggleSwitch.active .toggleKnob {
+  transform: translateX(22px);
+}
+
+.actionButtonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background-color: var(--sand);
+  color: var(--ink);
+  transition: all var(--transition-fast);
+}
+
+.actionBtn:hover {
+  background-color: var(--paper);
+  border-color: var(--kumkuma);
+}
+
+.actionBtn.danger {
+  color: var(--kumkuma);
+  border-color: var(--kumkuma);
+  background-color: rgba(158, 42, 43, 0.08);
+}
+
+.actionBtn.danger:hover {
+  background-color: var(--kumkuma);
+  color: #fff;
+}
+
+.statusCard {
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.statusItem {
+  display: flex;
+  justify-content: space-between;
+}
