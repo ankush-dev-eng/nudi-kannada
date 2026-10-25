@@ -1,0 +1,73 @@
+.bannerContainer {
+  width: 100%;
+}
+
+.offlineBanner {
+  background-color: var(--sand);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding: 0.45rem 1rem;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.offlineDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--turmeric);
+  display: inline-block;
+}
+
+.installPrompt {
+  background-color: var(--card-bg);
+  border: 1px solid var(--kumkuma);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: var(--shadow-warm);
+}
+
+.installText {
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.installTitle {
+  font-weight: 600;
+  display: block;
+}
+
+.installSub {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.installButton {
+  background-color: var(--kumkuma);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dismissButton {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+}
