@@ -17,6 +17,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "validate": "go run ./tools/validate",
+    "smoke": "node scripts/smoke.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
