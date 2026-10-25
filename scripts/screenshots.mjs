@@ -45,8 +45,8 @@ async function main() {
   const captures = [
     { name: 'home', path: '/' },
     { name: 'learn', path: '/learn/travel' },
-    { name: 'speak', path: '/speak?situation=travel' },
-    { name: 'roleplay', path: '/roleplay?situation=travel' },
+    { name: 'speak', path: '/speak/travel' },
+    { name: 'roleplay', path: '/roleplay/travel' },
     { name: 'review', path: '/review' },
     { name: 'script', path: '/script' },
     { name: 'dark', path: '/', dark: true },
