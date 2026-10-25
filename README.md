@@ -36,6 +36,11 @@ Every month, thousands of newcomers move to Bengaluru, Mysuru, Mangaluru, and Hu
 
 ## 📸 Visual Showcase & Tour
 
+<p align="center">
+  <img src="docs/assets/demo.gif" alt="Nudi Interactive Mobile Walkthrough" width="320" /><br />
+  <em>Animated Mobile Walkthrough across Daily Survival Scenarios & Dark Theme</em>
+</p>
+
 | Situation Hub & Navigation | Real-Time Pronunciation Practice |
 |:---:|:---:|
 | <img src="docs/assets/screens/home.png" alt="Home Screen" width="100%" /> | <img src="docs/assets/screens/speak.png" alt="Speak Screen" width="100%" /> |
