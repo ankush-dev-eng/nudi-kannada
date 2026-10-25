@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 24" width="960" height="24">
+  <defs>
+    <linearGradient id="divShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E2A2B" stop-opacity="0.2" />
+      <stop offset="25%" stop-color="#D99A1E" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FCE196" stop-opacity="1" />
+      <stop offset="75%" stop-color="#D99A1E" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9E2A2B" stop-opacity="0.2" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="5s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <pattern id="sareeUnit" width="32" height="24" patternUnits="userSpaceOnUse">
+      <!-- Top rule -->
+      <line x1="0" y1="2" x2="32" y2="2" stroke="url(#divShimmer)" stroke-width="1" />
+      <!-- Gopura temple chevron -->
+      <path d="M 2,20 L 8,6 L 14,20" fill="none" stroke="url(#divShimmer)" stroke-width="1.5" />
+      <!-- Inner diamond -->
+      <polygon points="16,6 20,12 16,18 12,12" fill="none" stroke="url(#divShimmer)" stroke-width="1.2" />
+      <circle cx="16" cy="12" r="1.5" fill="#D99A1E" />
+      <!-- Reverse chevron -->
+      <path d="M 18,20 L 24,6 L 30,20" fill="none" stroke="url(#divShimmer)" stroke-width="1.5" />
+      <!-- Bottom rule -->
+      <line x1="0" y1="22" x2="32" y2="22" stroke="url(#divShimmer)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="960" height="24" fill="url(#sareeUnit)" />
+</svg>
