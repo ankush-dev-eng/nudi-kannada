@@ -292,6 +292,116 @@
       "formality": "polite",
       "tags": ["payment", "cash"],
       "reviewed": false
+    },
+    {
+      "id": "healthcare-01",
+      "situationId": "healthcare",
+      "kannada": "ನನಗೆ ಹುಷಾರಿಲ್ಲ.",
+      "romanization": "Nanage hushaadilla.",
+      "english": "I am not feeling well.",
+      "note": "'Hushaaru' means wellbeing / alertness; 'hushaadilla' expresses being unwell.",
+      "formality": "polite",
+      "tags": ["symptoms", "health"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-02",
+      "situationId": "healthcare",
+      "kannada": "ತಲೆ ನೋವು ತುಂಬಾ ಇದೆ.",
+      "romanization": "Tale novu tumba ide.",
+      "english": "I have a severe headache.",
+      "note": "'Tale' = head, 'novu' = pain / ache.",
+      "formality": "polite",
+      "tags": ["symptoms", "pain"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-03",
+      "situationId": "healthcare",
+      "kannada": "ಜ್ವರ ಬಂದಿದೆ.",
+      "romanization": "Jvara bandide.",
+      "english": "I have fever.",
+      "note": "Lit. 'Fever has come'. Standard colloquial medical description.",
+      "formality": "polite",
+      "tags": ["symptoms", "fever"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-04",
+      "situationId": "healthcare",
+      "kannada": "ಹೊಟ್ಟೆ ನೋವು ಇದೆ.",
+      "romanization": "Hotte novu ide.",
+      "english": "I have stomach pain.",
+      "note": "'Hotte' = stomach.",
+      "formality": "polite",
+      "tags": ["symptoms", "stomach"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-05",
+      "situationId": "healthcare",
+      "kannada": "ವೈದ್ಯರು ಯಾವಾಗ ಬರುತ್ತಾರೆ?",
+      "romanization": "Vaidyaru yaavaaga baruttaare?",
+      "english": "When will the doctor come?",
+      "note": "'Vaidyaru' / 'Doctor-u'. 'Baruttaare' is the polite honorific plural form.",
+      "formality": "polite",
+      "tags": ["doctor", "clinic"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-06",
+      "situationId": "healthcare",
+      "kannada": "ಈ ಮಾತ್ರೆ ಊಟದ ನಂತರ ತಗೋಬೇಕಾ?",
+      "romanization": "Ee maatre ootada nantara tagobeka?",
+      "english": "Should this tablet be taken after food?",
+      "note": "'Maatre' = tablet / medicine, 'ootada nantara' = after meals.",
+      "formality": "polite",
+      "tags": ["pharmacy", "medicine"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-07",
+      "situationId": "healthcare",
+      "kannada": "ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತಗೋಬೇಕು?",
+      "romanization": "Dinakke eshtu baari tagobeku?",
+      "english": "How many times a day should it be taken?",
+      "note": "'Dinakke' = per day, 'eshtu baari' = how many times.",
+      "formality": "polite",
+      "tags": ["dosage", "pharmacy"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-08",
+      "situationId": "healthcare",
+      "kannada": "ನನಗೆ ಕೆಮ್ಮು ಮತ್ತು ನೆಗಡಿ ಇದೆ.",
+      "romanization": "Nanage kemmu mattu negadi ide.",
+      "english": "I have cough and cold.",
+      "note": "'Kemmu' = cough, 'negadi' = cold / runny nose.",
+      "formality": "polite",
+      "tags": ["symptoms", "respiratory"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-09",
+      "situationId": "healthcare",
+      "kannada": "ತುರ್ತು ಚಿಕಿತ್ಸೆ ವಿಭಾಗ ಎಲ್ಲಿದೆ?",
+      "romanization": "Turtu chikitse vibhaaga ellide?",
+      "english": "Where is the emergency department?",
+      "note": "'Turtu' = emergency, 'chikitse' = treatment / care.",
+      "formality": "polite",
+      "tags": ["hospital", "emergency"],
+      "reviewed": false
+    },
+    {
+      "id": "healthcare-10",
+      "situationId": "healthcare",
+      "kannada": "ಮೆಡಿಕಲ್ ಶಾಪ್ ಎಲ್ಲಿದೆ?",
+      "romanization": "Medical shop ellide?",
+      "english": "Where is the medical shop / pharmacy?",
+      "note": "Common inquiry near hospitals and clinics.",
+      "formality": "polite",
+      "tags": ["pharmacy", "direction"],
+      "reviewed": false
     }
   ],
   "roleplays": []
