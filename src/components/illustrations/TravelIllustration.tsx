@@ -38,12 +38,25 @@ export const TravelIllustration: React.FC<IllustrationProps> = ({ className, siz
     />
 
     {/* Kalasha / Spire on top */}
-    <line x1="80" y1="25" x2="80" y2="15" stroke="var(--turmeric)" strokeWidth="2.5" strokeLinecap="round" />
+    <line
+      x1="80"
+      y1="25"
+      x2="80"
+      y2="15"
+      stroke="var(--turmeric)"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
     <circle cx="80" cy="14" r="3" fill="var(--turmeric)" />
 
     {/* Road and milestone */}
     <path d="M25 95 Q80 88 135 95" stroke="var(--ink)" strokeWidth="2.5" strokeLinecap="round" />
-    <path d="M30 94 L30 80 Q37 72 44 80 L44 94 Z" fill="var(--paper)" stroke="var(--ghats)" strokeWidth="2" />
+    <path
+      d="M30 94 L30 80 Q37 72 44 80 L44 94 Z"
+      fill="var(--paper)"
+      stroke="var(--ghats)"
+      strokeWidth="2"
+    />
     <path d="M30 84 L44 84" stroke="var(--kumkuma)" strokeWidth="2" />
 
     {/* Sun accent */}

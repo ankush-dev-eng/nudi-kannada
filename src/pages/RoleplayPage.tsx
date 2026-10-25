@@ -65,9 +65,7 @@ export const RoleplayPage: React.FC = () => {
           <button
             key={sit.id}
             type="button"
-            className={`${styles.situationChip} ${
-              activeSituation === sit.id ? styles.active : ''
-            }`}
+            className={`${styles.situationChip} ${activeSituation === sit.id ? styles.active : ''}`}
             onClick={() => handleSelectSituation(sit.id)}
           >
             {sit.titleKannada} ({sit.title})
@@ -102,12 +100,7 @@ export const RoleplayPage: React.FC = () => {
         })}
       </section>
 
-      {activeScenario && (
-        <RoleplayEngine
-          key={activeScenario.id}
-          scenario={activeScenario}
-        />
-      )}
+      {activeScenario && <RoleplayEngine key={activeScenario.id} scenario={activeScenario} />}
     </main>
   );
 };

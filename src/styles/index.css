@@ -24,7 +24,9 @@ body {
   font-family: var(--font-sans);
   min-height: 100vh;
   line-height: 1.5;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +62,10 @@ body {
   outline-offset: 2px;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
 }
 

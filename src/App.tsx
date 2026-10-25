@@ -84,10 +84,7 @@ export const App: React.FC = () => {
         </Routes>
       </div>
       <BottomNav />
-      <KeyboardShortcutsModal
-        isOpen={isShortcutsOpen}
-        onClose={() => setIsShortcutsOpen(false)}
-      />
+      <KeyboardShortcutsModal isOpen={isShortcutsOpen} onClose={() => setIsShortcutsOpen(false)} />
     </>
   );
 };

@@ -55,7 +55,11 @@ export const LearnPage: React.FC = () => {
         <div className={styles.situationHeading}>
           <h2 className={styles.titleEnglish}>Situation Not Found</h2>
           <p>Please select a valid category from the home page.</p>
-          <Link to="/" className={styles.backLink} style={{ justifyContent: 'center', marginTop: '1rem' }}>
+          <Link
+            to="/"
+            className={styles.backLink}
+            style={{ justifyContent: 'center', marginTop: '1rem' }}
+          >
             <ChevronLeftIcon size={18} /> Back to Situations
           </Link>
         </div>
@@ -115,7 +119,11 @@ export const LearnPage: React.FC = () => {
             type="button"
             className={styles.navBtn}
             onClick={() => navigate(`/speak?situation=${situation.id}`)}
-            style={{ backgroundColor: 'var(--kumkuma)', color: '#FFF', borderColor: 'var(--kumkuma)' }}
+            style={{
+              backgroundColor: 'var(--kumkuma)',
+              color: '#FFF',
+              borderColor: 'var(--kumkuma)',
+            }}
           >
             Practice Speaking <ChevronRightIcon size={18} />
           </button>
@@ -138,10 +146,7 @@ export const LearnPage: React.FC = () => {
         >
           <MicIcon size={16} /> Speak Practice
         </Link>
-        <Link
-          to={`/roleplay?situation=${situation.id}`}
-          className={styles.quickActionLink}
-        >
+        <Link to={`/roleplay?situation=${situation.id}`} className={styles.quickActionLink}>
           <UsersIcon size={16} /> Situation Roleplay
         </Link>
       </section>

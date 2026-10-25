@@ -98,7 +98,9 @@ export const SearchPage: React.FC = () => {
             <article key={phrase.id} className={styles.phraseCard}>
               <div className={styles.cardTopRow}>
                 <div className={styles.badgeGroup}>
-                  <span className={`${styles.badge} ${phrase.formality === 'polite' ? styles.polite : ''}`}>
+                  <span
+                    className={`${styles.badge} ${phrase.formality === 'polite' ? styles.polite : ''}`}
+                  >
                     {phrase.formality}
                   </span>
                   <span className={styles.badge}>{phrase.situationId}</span>
@@ -132,7 +134,9 @@ export const SearchPage: React.FC = () => {
       ) : (
         <div className={styles.emptyResults}>
           <h3>ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ</h3>
-          <p>No phrases matched your query. Try searching with different terms or reset your filters.</p>
+          <p>
+            No phrases matched your query. Try searching with different terms or reset your filters.
+          </p>
         </div>
       )}
     </main>

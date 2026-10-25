@@ -21,15 +21,53 @@ export const WorkplaceIllustration: React.FC<IllustrationProps> = ({ className, 
 
     {/* Modern Laptop Workstation on Left */}
     {/* Screen */}
-    <rect x="35" y="45" width="46" height="30" rx="3" fill="var(--sand)" stroke="var(--ink)" strokeWidth="2" />
+    <rect
+      x="35"
+      y="45"
+      width="46"
+      height="30"
+      rx="3"
+      fill="var(--sand)"
+      stroke="var(--ink)"
+      strokeWidth="2"
+    />
     <rect x="39" y="49" width="38" height="22" rx="1" fill="var(--paper)" />
     {/* Code lines on screen */}
-    <line x1="43" y1="55" x2="60" y2="55" stroke="var(--ghats)" strokeWidth="2" strokeLinecap="round" />
-    <line x1="43" y1="60" x2="70" y2="60" stroke="var(--kumkuma)" strokeWidth="2" strokeLinecap="round" />
-    <line x1="43" y1="65" x2="52" y2="65" stroke="var(--turmeric)" strokeWidth="2" strokeLinecap="round" />
+    <line
+      x1="43"
+      y1="55"
+      x2="60"
+      y2="55"
+      stroke="var(--ghats)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <line
+      x1="43"
+      y1="60"
+      x2="70"
+      y2="60"
+      stroke="var(--kumkuma)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <line
+      x1="43"
+      y1="65"
+      x2="52"
+      y2="65"
+      stroke="var(--turmeric)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
 
     {/* Laptop Base */}
-    <path d="M28 75 L88 75 L84 79 L32 79 Z" fill="var(--muted)" stroke="var(--ink)" strokeWidth="1.5" />
+    <path
+      d="M28 75 L88 75 L84 79 L32 79 Z"
+      fill="var(--muted)"
+      stroke="var(--ink)"
+      strokeWidth="1.5"
+    />
 
     {/* South Indian Filter Coffee Davarah-Tumbler on Right in Brass/Turmeric */}
     {/* Davarah (bottom wide cup) */}
@@ -63,6 +101,14 @@ export const WorkplaceIllustration: React.FC<IllustrationProps> = ({ className, 
     />
 
     {/* Desk surface line */}
-    <line x1="20" y1="88" x2="140" y2="88" stroke="var(--ink)" strokeWidth="2" strokeLinecap="round" />
+    <line
+      x1="20"
+      y1="88"
+      x2="140"
+      y2="88"
+      stroke="var(--ink)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
   </svg>
 );

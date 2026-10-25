@@ -8,7 +8,9 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: var(--shadow-warm);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
   overflow: hidden;
 }
 
@@ -121,7 +123,9 @@
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 600;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .actionBtn:hover {

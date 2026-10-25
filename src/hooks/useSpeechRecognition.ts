@@ -71,7 +71,9 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
 
       recognition.onerror = (event: any) => {
         if (event.error === 'no-speech') {
-          setError('ಯಾವುದೇ ಧ್ವನಿ ಕೇಳಿಸಲಿಲ್ಲ. No speech detected. Please speak closer to microphone.');
+          setError(
+            'ಯಾವುದೇ ಧ್ವನಿ ಕೇಳಿಸಲಿಲ್ಲ. No speech detected. Please speak closer to microphone.'
+          );
         } else if (event.error === 'not-allowed') {
           setError('ಮೈಕ್ರೊಫೋನ್ ಅನುಮತಿ ನಿರಾಕರಿಸಲಾಗಿದೆ. Microphone permission denied.');
         } else {
@@ -108,7 +110,9 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
     setInterimTranscript('');
 
     if (!recognitionRef.current) {
-      setError('ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಧ್ವನಿ ಗುರುತಿಸುವಿಕೆ ಲಭ್ಯವಿಲ್ಲ. Voice recognition not supported in this browser.');
+      setError(
+        'ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಧ್ವನಿ ಗುರುತಿಸುವಿಕೆ ಲಭ್ಯವಿಲ್ಲ. Voice recognition not supported in this browser.'
+      );
       return;
     }
 

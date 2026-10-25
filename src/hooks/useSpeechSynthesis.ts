@@ -62,29 +62,26 @@ export function useSpeechSynthesis(): UseSpeechSynthesisReturn {
     }
   }, []);
 
-  const speak = useCallback(
-    (text: string, rate: number = 1.0) => {
-      if (typeof window === 'undefined' || !window.speechSynthesis) return;
+  const speak = useCallback((text: string, rate: number = 1.0) => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
 
-      window.speechSynthesis.cancel();
+    window.speechSynthesis.cancel();
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = rate; // 1.0 = normal, 0.75 = slow
-      utterance.pitch = 1.0;
-      utterance.lang = 'kn-IN';
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = rate; // 1.0 = normal, 0.75 = slow
+    utterance.pitch = 1.0;
+    utterance.lang = 'kn-IN';
 
-      if (selectedVoiceRef.current) {
-        utterance.voice = selectedVoiceRef.current;
-      }
+    if (selectedVoiceRef.current) {
+      utterance.voice = selectedVoiceRef.current;
+    }
 
-      utterance.onstart = () => setSpeaking(true);
-      utterance.onend = () => setSpeaking(false);
-      utterance.onerror = () => setSpeaking(false);
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
 
-      window.speechSynthesis.speak(utterance);
-    },
-    []
-  );
+    window.speechSynthesis.speak(utterance);
+  }, []);
 
   return {
     speak,

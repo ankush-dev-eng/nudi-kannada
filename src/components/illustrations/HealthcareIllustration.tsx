@@ -27,15 +27,18 @@ export const HealthcareIllustration: React.FC<IllustrationProps> = ({ className,
       strokeWidth="2"
     />
     {/* Rim */}
-    <ellipse cx="80" cy="58" rx="25" ry="6" fill="var(--sand)" stroke="var(--ink)" strokeWidth="2" />
+    <ellipse
+      cx="80"
+      cy="58"
+      rx="25"
+      ry="6"
+      fill="var(--sand)"
+      stroke="var(--ink)"
+      strokeWidth="2"
+    />
 
     {/* Pestle angled */}
-    <path
-      d="M88 35 L72 65"
-      stroke="var(--turmeric)"
-      strokeWidth="6"
-      strokeLinecap="round"
-    />
+    <path d="M88 35 L72 65" stroke="var(--turmeric)" strokeWidth="6" strokeLinecap="round" />
     <circle cx="88" cy="35" r="4" fill="var(--turmeric)" />
 
     {/* Ayurvedic Tulsi Leaf sprout */}

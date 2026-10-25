@@ -69,14 +69,7 @@ export const SituationCard: React.FC<SituationCardProps> = ({ situation }) => {
         <div className={styles.progressSection}>
           <div className={styles.progressRingWrapper} aria-hidden="true">
             <svg width="44" height="44" viewBox="0 0 44 44">
-              <circle
-                cx="22"
-                cy="22"
-                r={radius}
-                fill="none"
-                stroke="var(--line)"
-                strokeWidth="4"
-              />
+              <circle cx="22" cy="22" r={radius} fill="none" stroke="var(--line)" strokeWidth="4" />
               <circle
                 cx="22"
                 cy="22"
@@ -99,7 +92,8 @@ export const SituationCard: React.FC<SituationCardProps> = ({ situation }) => {
               {learnedCount} / {totalCount} Phrases
             </span>
             <span className={styles.progressLabel}>
-              {sitProg.phrasesMastered.length} Mastered • {sitProg.roleplaysCompleted.length} Roleplays Done
+              {sitProg.phrasesMastered.length} Mastered • {sitProg.roleplaysCompleted.length}{' '}
+              Roleplays Done
             </span>
           </div>
         </div>

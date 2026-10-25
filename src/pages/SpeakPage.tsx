@@ -18,10 +18,15 @@ export const SpeakPage: React.FC = () => {
   const situationPhrases = getPhrasesBySituation(selectedSituation);
 
   const initialPhraseIndex = phraseParam
-    ? Math.max(0, situationPhrases.findIndex((p) => p.id === phraseParam))
+    ? Math.max(
+        0,
+        situationPhrases.findIndex((p) => p.id === phraseParam)
+      )
     : 0;
 
-  const [currentIdx, setCurrentIdx] = useState<number>(initialPhraseIndex !== -1 ? initialPhraseIndex : 0);
+  const [currentIdx, setCurrentIdx] = useState<number>(
+    initialPhraseIndex !== -1 ? initialPhraseIndex : 0
+  );
 
   // Session session counters
   const [sessionAttempts, setSessionAttempts] = useState<number>(0);
@@ -74,9 +79,13 @@ export const SpeakPage: React.FC = () => {
         <Link to="/" className={styles.backLink} aria-label="Back to situations">
           <ChevronLeftIcon size={16} /> Situations
         </Link>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--kumkuma)' }}>
+        <div
+          style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--kumkuma)' }}
+        >
           <FlameIcon size={18} />
-          <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>{streak.currentStreak} day streak</span>
+          <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>
+            {streak.currentStreak} day streak
+          </span>
         </div>
       </header>
 

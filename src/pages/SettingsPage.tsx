@@ -9,14 +9,8 @@ import { ChevronLeftIcon, SunIcon, MoonIcon, CheckIcon } from '@/components/comm
 import styles from './SettingsPage.module.css';
 
 export const SettingsPage: React.FC = () => {
-  const {
-    settings,
-    updateSettings,
-    toggleTheme,
-    exportData,
-    importData,
-    resetProgress,
-  } = useAppStore();
+  const { settings, updateSettings, toggleTheme, exportData, importData, resetProgress } =
+    useAppStore();
 
   const { isSupported: synthSupported, hasKannadaVoice } = useSpeechSynthesis();
   const { isSupported: recogSupported } = useSpeechRecognition();
@@ -128,7 +122,9 @@ export const SettingsPage: React.FC = () => {
           <div className={styles.settingLabelGroup}>
             <span className={styles.settingLabel}>Display Theme</span>
             <span className={styles.settingHelp}>
-              {settings.theme === 'light' ? 'Sandalwood (ಶ್ರೀಗಂಧ) light palette' : 'Charcoal Ghats dark palette'}
+              {settings.theme === 'light'
+                ? 'Sandalwood (ಶ್ರೀಗಂಧ) light palette'
+                : 'Charcoal Ghats dark palette'}
             </span>
           </div>
           <button
@@ -152,11 +148,15 @@ export const SettingsPage: React.FC = () => {
         <div className={styles.settingRow}>
           <div className={styles.settingLabelGroup}>
             <span className={styles.settingLabel}>Romanization Style</span>
-            <span className={styles.settingHelp}>Conversational Baraha phonetics or ISO transliteration</span>
+            <span className={styles.settingHelp}>
+              Conversational Baraha phonetics or ISO transliteration
+            </span>
           </div>
           <select
             value={settings.romanizationStyle}
-            onChange={(e) => updateSettings({ romanizationStyle: e.target.value as RomanizationStyle })}
+            onChange={(e) =>
+              updateSettings({ romanizationStyle: e.target.value as RomanizationStyle })
+            }
             className={styles.selectInput}
             aria-label="Select romanization transliteration style"
           >
@@ -168,7 +168,9 @@ export const SettingsPage: React.FC = () => {
         <div className={styles.settingRow}>
           <div className={styles.settingLabelGroup}>
             <span className={styles.settingLabel}>Reference Audio Speed</span>
-            <span className={styles.settingHelp}>Default speed for Kannada pronunciation audio</span>
+            <span className={styles.settingHelp}>
+              Default speed for Kannada pronunciation audio
+            </span>
           </div>
           <select
             value={settings.audioSpeed}
@@ -186,7 +188,8 @@ export const SettingsPage: React.FC = () => {
       <section className={styles.settingsSection}>
         <h2 className={styles.sectionTitle}>Data & Privacy (100% Local)</h2>
         <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0 }}>
-          Nudi stores all your progress, SM-2 flashcard schedules, and streak counts inside your device&apos;s browser IndexedDB. No personal data ever leaves your device.
+          Nudi stores all your progress, SM-2 flashcard schedules, and streak counts inside your
+          device&apos;s browser IndexedDB. No personal data ever leaves your device.
         </p>
 
         <div className={styles.actionButtonRow}>
@@ -209,7 +212,11 @@ export const SettingsPage: React.FC = () => {
             style={{ display: 'none' }}
           />
 
-          <button type="button" className={`${styles.actionBtn} ${styles.danger}`} onClick={handleResetData}>
+          <button
+            type="button"
+            className={`${styles.actionBtn} ${styles.danger}`}
+            onClick={handleResetData}
+          >
             Reset Progress
           </button>
         </div>

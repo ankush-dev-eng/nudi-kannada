@@ -36,11 +36,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
       aria-modal="true"
       aria-labelledby="shortcuts-title"
     >
-      <div
-        className={styles.modal}
-        ref={modalRef}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className={styles.modal} ref={modalRef} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
           <h2 id="shortcuts-title" className={styles.title}>
             ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು (Keyboard Shortcuts)

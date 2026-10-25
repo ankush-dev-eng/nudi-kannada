@@ -50,7 +50,9 @@ export const PWAStatusBanner: React.FC = () => {
       {isOffline && (
         <div className={styles.offlineBanner} role="status">
           <span className={styles.offlineDot} aria-hidden="true" />
-          <span>ಆಫ್‌ಲೈನ್ ಮೋಡ್ ಸಕ್ರಿಯವಾಗಿದೆ — Offline mode active. All phrases & reviews work offline.</span>
+          <span>
+            ಆಫ್‌ಲೈನ್ ಮೋಡ್ ಸಕ್ರಿಯವಾಗಿದೆ — Offline mode active. All phrases & reviews work offline.
+          </span>
         </div>
       )}
 
@@ -58,7 +60,9 @@ export const PWAStatusBanner: React.FC = () => {
         <div className={styles.installPrompt} role="region" aria-label="Install app">
           <div className={styles.installText}>
             <span className={styles.installTitle}>Install Nudi on your device</span>
-            <span className={styles.installSub}>Learn Kannada anywhere with instant offline access</span>
+            <span className={styles.installSub}>
+              Learn Kannada anywhere with instant offline access
+            </span>
           </div>
           <button type="button" onClick={handleInstall} className={styles.installButton}>
             Install App

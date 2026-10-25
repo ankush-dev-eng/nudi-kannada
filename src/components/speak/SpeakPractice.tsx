@@ -15,10 +15,7 @@ interface SpeakPracticeProps {
   onAttemptComplete?: (result: PronunciationResult) => void;
 }
 
-export const SpeakPractice: React.FC<SpeakPracticeProps> = ({
-  phrase,
-  onAttemptComplete,
-}) => {
+export const SpeakPractice: React.FC<SpeakPracticeProps> = ({ phrase, onAttemptComplete }) => {
   const { isListening, transcript, isSupported, startListening, stopListening, resetTranscript } =
     useSpeechRecognition();
   const { speak, speaking } = useSpeechSynthesis();
@@ -28,24 +25,27 @@ export const SpeakPractice: React.FC<SpeakPracticeProps> = ({
   const [showFallback, setShowFallback] = useState<boolean>(!isSupported);
   const [fallbackText, setFallbackText] = useState<string>('');
 
-  const evaluateSpeech = useCallback((spokenText: string) => {
-    const result = scorePronunciation(phrase.kannada, phrase.romanization, spokenText);
-    setLastResult(result);
+  const evaluateSpeech = useCallback(
+    (spokenText: string) => {
+      const result = scorePronunciation(phrase.kannada, phrase.romanization, spokenText);
+      setLastResult(result);
 
-    // Audio & haptic feedback
-    if (result.passed) {
-      playSuccessSound();
-      triggerHaptic('success');
-      markPhraseLearned(phrase.id, phrase.situationId);
-    } else {
-      playErrorSound();
-      triggerHaptic('medium');
-    }
+      // Audio & haptic feedback
+      if (result.passed) {
+        playSuccessSound();
+        triggerHaptic('success');
+        markPhraseLearned(phrase.id, phrase.situationId);
+      } else {
+        playErrorSound();
+        triggerHaptic('medium');
+      }
 
-    if (onAttemptComplete) {
-      onAttemptComplete(result);
-    }
-  }, [phrase, markPhraseLearned, onAttemptComplete]);
+      if (onAttemptComplete) {
+        onAttemptComplete(result);
+      }
+    },
+    [phrase, markPhraseLearned, onAttemptComplete]
+  );
 
   // Handle speech recognition completion
   useEffect(() => {
@@ -148,8 +148,8 @@ export const SpeakPractice: React.FC<SpeakPracticeProps> = ({
                 lastResult.score >= 80
                   ? styles.good
                   : lastResult.score >= 60
-                  ? styles.moderate
-                  : styles.low
+                    ? styles.moderate
+                    : styles.low
               }`}
             >
               {lastResult.score}%
@@ -186,7 +186,9 @@ export const SpeakPractice: React.FC<SpeakPracticeProps> = ({
           className={styles.fallbackToggleBtn}
           onClick={() => setShowFallback(!showFallback)}
         >
-          {showFallback ? 'Hide text fallback' : 'Having microphone or voice recognition issues? Use text fallback'}
+          {showFallback
+            ? 'Hide text fallback'
+            : 'Having microphone or voice recognition issues? Use text fallback'}
         </button>
 
         {showFallback && (

@@ -114,7 +114,9 @@
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-md);
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .recordBtn:hover {
@@ -127,8 +129,12 @@
 }
 
 @keyframes pulseButton {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.1); }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

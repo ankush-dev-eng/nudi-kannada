@@ -20,7 +20,15 @@ export const ShoppingIllustration: React.FC<IllustrationProps> = ({ className, s
     <circle cx="80" cy="60" r="48" fill="var(--sand)" opacity="0.6" />
 
     {/* Traditional Market Scale Balance Beam */}
-    <line x1="45" y1="42" x2="115" y2="42" stroke="var(--ink)" strokeWidth="2.5" strokeLinecap="round" />
+    <line
+      x1="45"
+      y1="42"
+      x2="115"
+      y2="42"
+      stroke="var(--ink)"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
     <polygon points="80,32 83,42 77,42" fill="var(--turmeric)" />
     <circle cx="80" cy="32" r="3.5" fill="var(--turmeric)" />
     <line x1="80" y1="42" x2="80" y2="88" stroke="var(--ink)" strokeWidth="2.5" />
@@ -37,12 +45,13 @@ export const ShoppingIllustration: React.FC<IllustrationProps> = ({ className, s
     <path d="M96 65 Q110 72 124 65 Z" fill="var(--kumkuma)" stroke="var(--ink)" strokeWidth="1.5" />
 
     {/* Silk Saree Fabric Drape Accent */}
+    <path d="M100 68 Q115 80 135 75 Q125 90 110 88 Z" fill="var(--kumkuma)" opacity="0.9" />
     <path
-      d="M100 68 Q115 80 135 75 Q125 90 110 88 Z"
-      fill="var(--kumkuma)"
-      opacity="0.9"
+      d="M102 71 Q117 83 133 77"
+      stroke="var(--turmeric)"
+      strokeWidth="1.5"
+      strokeDasharray="3 2"
     />
-    <path d="M102 71 Q117 83 133 77" stroke="var(--turmeric)" strokeWidth="1.5" strokeDasharray="3 2" />
 
     {/* Little coconut / produce accent */}
     <circle cx="48" cy="62" r="5" fill="var(--ghats)" />

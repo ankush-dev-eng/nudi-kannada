@@ -30,7 +30,9 @@
   font-weight: 500;
   padding: 0.3rem 0.6rem;
   border-radius: var(--radius-sm);
-  transition: color var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
   position: relative;
   min-width: 58px;
 }

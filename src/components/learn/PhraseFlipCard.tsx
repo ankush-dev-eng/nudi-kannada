@@ -50,7 +50,10 @@ export const PhraseFlipCard: React.FC<PhraseFlipCardProps> = ({ phrase, onLearne
             <div className={styles.badgeGroup}>
               <span className={styles.formalityBadge}>{phrase.formality}</span>
               {!phrase.reviewed && (
-                <span className={styles.reviewBadge} title="Phrase drafted for learners; verification ongoing">
+                <span
+                  className={styles.reviewBadge}
+                  title="Phrase drafted for learners; verification ongoing"
+                >
                   review pending
                 </span>
               )}

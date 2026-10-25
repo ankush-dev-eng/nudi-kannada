@@ -88,7 +88,9 @@
   font-weight: 600;
   font-size: 0.88rem;
   cursor: pointer;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .navBtn:disabled {

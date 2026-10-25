@@ -63,9 +63,13 @@ export const ReviewPage: React.FC = () => {
         <Link to="/" className={styles.backLink} aria-label="Back to home">
           <ChevronLeftIcon size={16} /> Home
         </Link>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--kumkuma)' }}>
+        <div
+          style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--kumkuma)' }}
+        >
           <FlameIcon size={18} />
-          <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>{streak.currentStreak} day streak</span>
+          <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>
+            {streak.currentStreak} day streak
+          </span>
         </div>
       </header>
 
@@ -111,11 +115,7 @@ export const ReviewPage: React.FC = () => {
             </div>
 
             {!isRevealed ? (
-              <button
-                type="button"
-                className={styles.revealBtn}
-                onClick={handleReveal}
-              >
+              <button type="button" className={styles.revealBtn} onClick={handleReveal}>
                 Show Meaning & Answer (ಉತ್ತರ ನೋಡಿ)
               </button>
             ) : (
@@ -173,7 +173,8 @@ export const ReviewPage: React.FC = () => {
           <div className={styles.emptyTitle}>ಇಂದಿನ ಪುನರಾವರ್ತನೆ ಮುಗಿದಿದೆ!</div>
           <p className={styles.emptyText}>
             You have no pending review flashcards due today. You have reviewed{' '}
-            <strong>{sessionCount}</strong> cards this session! Continue exploring new situations to build your vocabulary.
+            <strong>{sessionCount}</strong> cards this session! Continue exploring new situations to
+            build your vocabulary.
           </p>
           <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>
             Total memorized cards in memory: {Object.keys(cards).length}

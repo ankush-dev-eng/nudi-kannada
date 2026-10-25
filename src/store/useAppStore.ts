@@ -1,12 +1,7 @@
 import { create } from 'zustand';
 import phrasesData from '@/data/phrases.json';
 import { Phrase, SituationMeta, SituationId, RoleplayScenario } from '@/types/phrase';
-import {
-  SM2Card,
-  SituationProgress,
-  UserStreak,
-  UserSettings,
-} from '@/types/progress';
+import { SM2Card, SituationProgress, UserStreak, UserSettings } from '@/types/progress';
 import {
   getAllProgress,
   getAllSM2Cards,
@@ -66,12 +61,42 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   cards: {},
   progress: {
-    travel: { situationId: 'travel', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
-    shopping: { situationId: 'shopping', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
-    healthcare: { situationId: 'healthcare', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
-    transport: { situationId: 'transport', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
-    education: { situationId: 'education', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
-    workplace: { situationId: 'workplace', phrasesLearned: [], phrasesMastered: [], roleplaysCompleted: [] },
+    travel: {
+      situationId: 'travel',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
+    shopping: {
+      situationId: 'shopping',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
+    healthcare: {
+      situationId: 'healthcare',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
+    transport: {
+      situationId: 'transport',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
+    education: {
+      situationId: 'education',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
+    workplace: {
+      situationId: 'workplace',
+      phrasesLearned: [],
+      phrasesMastered: [],
+      roleplaysCompleted: [],
+    },
   },
   streak: DEFAULT_STREAK,
   settings: DEFAULT_SETTINGS,

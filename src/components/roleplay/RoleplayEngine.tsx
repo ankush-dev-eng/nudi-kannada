@@ -21,10 +21,7 @@ interface RoleplayEngineProps {
   onFinished?: () => void;
 }
 
-export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
-  scenario,
-  onFinished,
-}) => {
+export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({ scenario, onFinished }) => {
   const { completeRoleplay } = useAppStore();
   const { speak } = useSpeechSynthesis();
 
@@ -187,11 +184,7 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
 
       {!isCompleted && currentStep && currentStep.speaker === 'partner' && (
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            type="button"
-            className={styles.advanceBtn}
-            onClick={handlePartnerAdvance}
-          >
+          <button type="button" className={styles.advanceBtn} onClick={handlePartnerAdvance}>
             Continue Conversation <ChevronRightIcon size={16} />
           </button>
         </div>
@@ -222,11 +215,7 @@ export const RoleplayEngine: React.FC<RoleplayEngineProps> = ({
           <div className={styles.completionSubtitle}>
             Well done! You successfully navigated this conversation scenario in Kannada.
           </div>
-          <button
-            type="button"
-            className={styles.restartBtn}
-            onClick={handleRestart}
-          >
+          <button type="button" className={styles.restartBtn} onClick={handleRestart}>
             <RefreshIcon size={16} /> Practice Scenario Again
           </button>
         </section>

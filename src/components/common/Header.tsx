@@ -2,7 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAppStore } from '@/store/useAppStore';
 import { MysoreBorder } from '@/components/common/MysoreBorder';
-import { FlameIcon, SunIcon, MoonIcon, SearchIcon, SettingsIcon, KeyboardIcon } from '@/components/common/Icons';
+import {
+  FlameIcon,
+  SunIcon,
+  MoonIcon,
+  SearchIcon,
+  SettingsIcon,
+  KeyboardIcon,
+} from '@/components/common/Icons';
 import styles from './Header.module.css';
 
 interface HeaderProps {

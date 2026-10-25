@@ -1,20 +1,20 @@
 :root {
   /* Warm, editorial Karnataka palette (Sandalwood, Kumkuma, Turmeric, Western Ghats) */
-  --ink: #2B1D14;
-  --paper: #F7F0E1;
-  --sand: #E9DCC3;
-  --kumkuma: #9E2A2B;
-  --turmeric: #D99A1E;
-  --ghats: #2F5D50;
-  --muted: #7A6A58;
-  --line: #D9CBB0;
+  --ink: #2b1d14;
+  --paper: #f7f0e1;
+  --sand: #e9dcc3;
+  --kumkuma: #9e2a2b;
+  --turmeric: #d99a1e;
+  --ghats: #2f5d50;
+  --muted: #7a6a58;
+  --line: #d9cbb0;
 
   /* Functional derivations */
-  --card-bg: #FFFFFF;
+  --card-bg: #ffffff;
   --card-border: var(--line);
   --badge-bg: var(--sand);
   --badge-text: var(--ink);
-  --focus-ring: #9E2A2B;
+  --focus-ring: #9e2a2b;
   --shadow-warm: 0 4px 16px rgba(43, 29, 20, 0.08);
   --shadow-lift: 0 8px 24px rgba(43, 29, 20, 0.12);
   --shadow-sm: 0 2px 8px rgba(43, 29, 20, 0.06);
@@ -37,20 +37,20 @@
 }
 
 [data-theme='dark'] {
-  --ink: #F7F0E1;
-  --paper: #1E1510;
-  --sand: #2C2018;
-  --kumkuma: #C53D3E;
-  --turmeric: #E8B038;
+  --ink: #f7f0e1;
+  --paper: #1e1510;
+  --sand: #2c2018;
+  --kumkuma: #c53d3e;
+  --turmeric: #e8b038;
   --ghats: #468775;
-  --muted: #A89784;
-  --line: #3D2E23;
+  --muted: #a89784;
+  --line: #3d2e23;
 
-  --card-bg: #271C15;
-  --card-border: #3D2E23;
-  --badge-bg: #35251C;
-  --badge-text: #F7F0E1;
-  --focus-ring: #E8B038;
+  --card-bg: #271c15;
+  --card-border: #3d2e23;
+  --badge-bg: #35251c;
+  --badge-text: #f7f0e1;
+  --focus-ring: #e8b038;
   --shadow-warm: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.6);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);

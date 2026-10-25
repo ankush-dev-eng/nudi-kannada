@@ -1,5 +1,11 @@
 import { openDB, DBSchema, IDBPDatabase } from 'idb';
-import { SM2Card, SituationProgress, UserStreak, UserSettings, UserStateExport } from '@/types/progress';
+import {
+  SM2Card,
+  SituationProgress,
+  UserStreak,
+  UserSettings,
+  UserStateExport,
+} from '@/types/progress';
 import { SituationId } from '@/types/phrase';
 
 interface NudiDBSchema extends DBSchema {

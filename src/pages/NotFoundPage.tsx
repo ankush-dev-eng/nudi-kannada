@@ -14,7 +14,8 @@ export const NotFoundPage: React.FC = () => {
       <MysoreBorder variant="kumkuma" height={10} />
 
       <p className={styles.message}>
-        ನೀವು ಹುಡುಕುತ್ತಿರುವ ಪುಟವು ಲಭ್ಯವಿಲ್ಲ. The route or resource you requested could not be located in Nudi.
+        ನೀವು ಹುಡುಕುತ್ತಿರುವ ಪುಟವು ಲಭ್ಯವಿಲ್ಲ. The route or resource you requested could not be located
+        in Nudi.
       </p>
 
       <Link to="/" className={styles.homeBtn}>

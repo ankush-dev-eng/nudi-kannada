@@ -27,7 +27,8 @@ export const HomePage: React.FC = () => {
         <aside className={styles.reviewAlertCard} aria-label="Daily review queue alert">
           <div className={styles.reviewAlertText}>
             <span className={styles.reviewAlertTitle}>
-              {duePhrases.length} phrase{duePhrases.length === 1 ? '' : 's'} due for spaced repetition today
+              {duePhrases.length} phrase{duePhrases.length === 1 ? '' : 's'} due for spaced
+              repetition today
             </span>
             <span className={styles.reviewAlertSubtitle}>
               Reinforce what you learned before you forget (SM-2 scheduler)

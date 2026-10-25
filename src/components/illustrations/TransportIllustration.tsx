@@ -47,11 +47,24 @@ export const TransportIllustration: React.FC<IllustrationProps> = ({ className, 
     />
 
     {/* Passenger entrance cutout */}
-    <rect x="62" y="55" width="26" height="24" rx="2" fill="var(--sand)" stroke="var(--ink)" strokeWidth="1.5" />
+    <rect
+      x="62"
+      y="55"
+      width="26"
+      height="24"
+      rx="2"
+      fill="var(--sand)"
+      stroke="var(--ink)"
+      strokeWidth="1.5"
+    />
 
     {/* Front Headlight */}
     <circle cx="122" cy="64" r="5" fill="var(--turmeric)" stroke="var(--ink)" strokeWidth="1.5" />
-    <path d="M127 64 L138 60 M127 66 L139 66 M127 68 L137 72" stroke="var(--turmeric)" strokeWidth="1.5" />
+    <path
+      d="M127 64 L138 60 M127 66 L139 66 M127 68 L137 72"
+      stroke="var(--turmeric)"
+      strokeWidth="1.5"
+    />
 
     {/* Front Wheel */}
     <circle cx="112" cy="84" r="11" fill="var(--ink)" />
@@ -62,6 +75,14 @@ export const TransportIllustration: React.FC<IllustrationProps> = ({ className, 
     <circle cx="52" cy="84" r="5" fill="var(--sand)" />
 
     {/* Road ground line */}
-    <line x1="25" y1="95" x2="135" y2="95" stroke="var(--line)" strokeWidth="2" strokeLinecap="round" />
+    <line
+      x1="25"
+      y1="95"
+      x2="135"
+      y2="95"
+      stroke="var(--line)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
   </svg>
 );

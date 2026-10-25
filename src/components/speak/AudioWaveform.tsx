@@ -6,10 +6,7 @@ interface AudioWaveformProps {
   barCount?: number;
 }
 
-export const AudioWaveform: React.FC<AudioWaveformProps> = ({
-  isRecording,
-  barCount = 18,
-}) => {
+export const AudioWaveform: React.FC<AudioWaveformProps> = ({ isRecording, barCount = 18 }) => {
   const bars = Array.from({ length: barCount }, (_, i) => i);
 
   return (
@@ -23,7 +20,7 @@ export const AudioWaveform: React.FC<AudioWaveformProps> = ({
           key={index}
           className={styles.bar}
           style={{
-            animationDuration: `${0.8 + ((index % 5) * 0.15)}s`,
+            animationDuration: `${0.8 + (index % 5) * 0.15}s`,
           }}
         />
       ))}

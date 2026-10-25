@@ -59,7 +59,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       )}
       <div className={styles.searchHint}>
         <span>Search Kannada script, English meaning, or romanized phonetics</span>
-        <span>Press <kbd>/</kbd> to focus</span>
+        <span>
+          Press <kbd>/</kbd> to focus
+        </span>
       </div>
     </div>
   );

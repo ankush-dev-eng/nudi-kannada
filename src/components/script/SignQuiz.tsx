@@ -127,13 +127,21 @@ export const SignQuiz: React.FC = () => {
     setCurrentIdx(0);
     setSelectedAnswer(null);
     setScore(0);
-    setOptions([CIVIC_SIGNS[0].meaning, ...CIVIC_SIGNS[0].distractors].sort(() => Math.random() - 0.5));
+    setOptions(
+      [CIVIC_SIGNS[0].meaning, ...CIVIC_SIGNS[0].distractors].sort(() => Math.random() - 0.5)
+    );
   };
 
   if (currentIdx >= CIVIC_SIGNS.length) {
     return (
       <div className={styles.quizContainer} style={{ textAlign: 'center' }}>
-        <h3 style={{ fontFamily: 'var(--font-kannada-serif)', color: 'var(--ghats)', fontSize: '1.4rem' }}>
+        <h3
+          style={{
+            fontFamily: 'var(--font-kannada-serif)',
+            color: 'var(--ghats)',
+            fontSize: '1.4rem',
+          }}
+        >
           ಕ್ವಿಜ್ ಪೂರ್ಣಗೊಂಡಿದೆ! Quiz Complete!
         </h3>
         <p style={{ color: 'var(--ink)' }}>
@@ -199,7 +207,9 @@ export const SignQuiz: React.FC = () => {
       {selectedAnswer !== null && (
         <aside className={styles.feedbackBox} aria-live="polite">
           <div className={styles.feedbackHeading}>
-            {selectedAnswer === currentSign.meaning ? '✅ ಸರಿ! Correct!' : '❌ ತಪ್ಪಾಗಿದೆ. Incorrect.'}
+            {selectedAnswer === currentSign.meaning
+              ? '✅ ಸರಿ! Correct!'
+              : '❌ ತಪ್ಪಾಗಿದೆ. Incorrect.'}
           </div>
           <div>
             <strong>/{currentSign.roman}/</strong>: {currentSign.meaning}

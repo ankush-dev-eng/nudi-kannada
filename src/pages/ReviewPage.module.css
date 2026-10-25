@@ -143,7 +143,9 @@
   border: 1px solid var(--line);
   cursor: pointer;
   background-color: var(--card-bg);
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .rateBtn:hover {

@@ -1,10 +1,5 @@
 export type SituationId =
-  | 'travel'
-  | 'shopping'
-  | 'healthcare'
-  | 'transport'
-  | 'education'
-  | 'workplace';
+  'travel' | 'shopping' | 'healthcare' | 'transport' | 'education' | 'workplace';
 
 export type Formality = 'casual' | 'polite';
 

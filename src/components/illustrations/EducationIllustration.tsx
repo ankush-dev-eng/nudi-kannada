@@ -59,7 +59,15 @@ export const EducationIllustration: React.FC<IllustrationProps> = ({ className, 
       stroke="var(--ink)"
       strokeWidth="1.2"
     />
-    <line x1="98" y1="68" x2="94" y2="72" stroke="var(--ink)" strokeWidth="2" strokeLinecap="round" />
+    <line
+      x1="98"
+      y1="68"
+      x2="94"
+      y2="72"
+      stroke="var(--ink)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
 
     {/* Scholarly bookmark ribbon */}
     <path d="M80 50 L80 90 L85 86 L90 90 L90 50" fill="var(--turmeric)" opacity="0.8" />

@@ -24,7 +24,11 @@ export const HomeIcon: React.FC<IconProps> = ({ className, size = 22, color = 'c
   </svg>
 );
 
-export const LearnIcon: React.FC<IconProps> = ({ className, size = 22, color = 'currentColor' }) => (
+export const LearnIcon: React.FC<IconProps> = ({
+  className,
+  size = 22,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -83,7 +87,11 @@ export const ChatIcon: React.FC<IconProps> = ({ className, size = 22, color = 'c
   </svg>
 );
 
-export const ReviewIcon: React.FC<IconProps> = ({ className, size = 22, color = 'currentColor' }) => (
+export const ReviewIcon: React.FC<IconProps> = ({
+  className,
+  size = 22,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -101,7 +109,11 @@ export const ReviewIcon: React.FC<IconProps> = ({ className, size = 22, color = 
   </svg>
 );
 
-export const ScriptIcon: React.FC<IconProps> = ({ className, size = 22, color = 'currentColor' }) => (
+export const ScriptIcon: React.FC<IconProps> = ({
+  className,
+  size = 22,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -121,7 +133,11 @@ export const ScriptIcon: React.FC<IconProps> = ({ className, size = 22, color = 
   </svg>
 );
 
-export const SearchIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const SearchIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -139,7 +155,11 @@ export const SearchIcon: React.FC<IconProps> = ({ className, size = 20, color = 
   </svg>
 );
 
-export const SettingsIcon: React.FC<IconProps> = ({ className, size = 22, color = 'currentColor' }) => (
+export const SettingsIcon: React.FC<IconProps> = ({
+  className,
+  size = 22,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -157,7 +177,11 @@ export const SettingsIcon: React.FC<IconProps> = ({ className, size = 22, color 
   </svg>
 );
 
-export const FlameIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const FlameIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -170,7 +194,11 @@ export const FlameIcon: React.FC<IconProps> = ({ className, size = 20, color = '
   </svg>
 );
 
-export const VolumeIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const VolumeIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -188,7 +216,11 @@ export const VolumeIcon: React.FC<IconProps> = ({ className, size = 20, color = 
   </svg>
 );
 
-export const SlowAudioIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const SlowAudioIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -207,7 +239,11 @@ export const SlowAudioIcon: React.FC<IconProps> = ({ className, size = 20, color
   </svg>
 );
 
-export const CheckIcon: React.FC<IconProps> = ({ className, size = 18, color = 'currentColor' }) => (
+export const CheckIcon: React.FC<IconProps> = ({
+  className,
+  size = 18,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -224,7 +260,11 @@ export const CheckIcon: React.FC<IconProps> = ({ className, size = 18, color = '
   </svg>
 );
 
-export const CloseIcon: React.FC<IconProps> = ({ className, size = 18, color = 'currentColor' }) => (
+export const CloseIcon: React.FC<IconProps> = ({
+  className,
+  size = 18,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -303,7 +343,11 @@ export const InfoIcon: React.FC<IconProps> = ({ className, size = 20, color = 'c
   </svg>
 );
 
-export const ChevronLeftIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const ChevronLeftIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -320,7 +364,11 @@ export const ChevronLeftIcon: React.FC<IconProps> = ({ className, size = 20, col
   </svg>
 );
 
-export const ChevronRightIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const ChevronRightIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -337,7 +385,11 @@ export const ChevronRightIcon: React.FC<IconProps> = ({ className, size = 20, co
   </svg>
 );
 
-export const KeyboardIcon: React.FC<IconProps> = ({ className, size = 20, color = 'currentColor' }) => (
+export const KeyboardIcon: React.FC<IconProps> = ({
+  className,
+  size = 20,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -380,7 +432,11 @@ export const FlipIcon: React.FC<IconProps> = ({ className, size = 20, color = 'c
   </svg>
 );
 
-export const RefreshIcon: React.FC<IconProps> = ({ className, size = 18, color = 'currentColor' }) => (
+export const RefreshIcon: React.FC<IconProps> = ({
+  className,
+  size = 18,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -398,7 +454,11 @@ export const RefreshIcon: React.FC<IconProps> = ({ className, size = 18, color =
   </svg>
 );
 
-export const UsersIcon: React.FC<IconProps> = ({ className, size = 18, color = 'currentColor' }) => (
+export const UsersIcon: React.FC<IconProps> = ({
+  className,
+  size = 18,
+  color = 'currentColor',
+}) => (
   <svg
     width={size}
     height={size}
@@ -417,4 +477,3 @@ export const UsersIcon: React.FC<IconProps> = ({ className, size = 18, color = '
     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
   </svg>
 );
-

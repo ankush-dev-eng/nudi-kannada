@@ -22,7 +22,10 @@ export const ScriptPage: React.FC = () => {
       </section>
 
       <section className={styles.introBox}>
-        <strong>Did you know?</strong> Kannada is almost 100% phonetic — every letter corresponds to exactly one sound. Unlike English where letters can be silent or irregular, once you recognize the 49 letters of the <em>Varnamale</em>, you can accurately read any street sign, metro station name, or shop board in Bengaluru and Karnataka!
+        <strong>Did you know?</strong> Kannada is almost 100% phonetic — every letter corresponds to
+        exactly one sound. Unlike English where letters can be silent or irregular, once you
+        recognize the 49 letters of the <em>Varnamale</em>, you can accurately read any street sign,
+        metro station name, or shop board in Bengaluru and Karnataka!
       </section>
 
       <nav className={styles.tabBar} aria-label="Script sections">
