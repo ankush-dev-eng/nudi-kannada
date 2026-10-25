@@ -968,6 +968,318 @@
           "english": "You're welcome, all the best!"
         }
       }
+    },
+    {
+      "id": "shopping-roleplay-01",
+      "situationId": "shopping",
+      "title": "Buying Vegetables at Gandhi Bazaar",
+      "titleKannada": "ತರಕಾರಿ ಕೊಳ್ಳುವುದು",
+      "description": "Engage with a vendor at a bustling Bengaluru market, bargain for produce, and pay digitally.",
+      "partnerRole": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ (Vendor)",
+      "userRole": "ಗ್ರಾಹಕ (Customer)",
+      "initialStepId": "v1",
+      "steps": {
+        "v1": {
+          "id": "v1",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಬನ್ನಿ ಅಮ್ಮಾ/ಸಾರ್, ಏನ್ ಬೇಕು? ಹೊಸ ಈರುಳ್ಳಿ, ಆಲೂಗಡ್ಡೆ ಬಂದಿದೆ.",
+          "romanization": "Banni amma/saar, en beku? Hosa eerulli, aaloogadde bandide.",
+          "english": "Welcome! What do you need? Fresh onions and potatoes have arrived.",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ತಾಜಾ ಇದೆಯಾ?",
+              "romanization": "Taaja ideya?",
+              "english": "Is it fresh?",
+              "phraseId": "shopping-04",
+              "nextStepId": "v2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+              "romanization": "Idu eshtu roopaayi?",
+              "english": "How much rupees is this?",
+              "phraseId": "shopping-01",
+              "nextStepId": "v3"
+            }
+          ]
+        },
+        "v2": {
+          "id": "v2",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಬೆಳಗ್ಗೆನೇ ಮಂಡಿಯಿಂದ ತಂದಿರೋದು, ತುಂಬಾ ತಾಜಾ ಇದೆ.",
+          "romanization": "Belaggena mandiyinda tandirodu, tumba taaja ide.",
+          "english": "Brought straight from the mandi this morning, very fresh.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+              "romanization": "Idu eshtu roopaayi?",
+              "english": "How much rupees is this?",
+              "phraseId": "shopping-01",
+              "nextStepId": "v3"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಒಂದು ಕೆಜಿ ಕೊಡಿ.",
+              "romanization": "Ondu kg kodi.",
+              "english": "Give one kilogram.",
+              "phraseId": "shopping-03",
+              "nextStepId": "v5"
+            }
+          ]
+        },
+        "v3": {
+          "id": "v3",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ ಸಾರ್.",
+          "romanization": "Kejige nalavattu roopaayi saar.",
+          "english": "Forty rupees per kg, sir.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ, ಸಾರ್.",
+              "romanization": "Svalpa kammi maadi, saar.",
+              "english": "Reduce a little, sir.",
+              "phraseId": "shopping-02",
+              "nextStepId": "v4"
+            },
+            {
+              "id": "opt6",
+              "kannada": "ಒಂದು ಕೆಜಿ ಕೊಡಿ.",
+              "romanization": "Ondu kg kodi.",
+              "english": "Give one kilogram.",
+              "phraseId": "shopping-03",
+              "nextStepId": "v5"
+            }
+          ]
+        },
+        "v4": {
+          "id": "v4",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಸರಿ, ಮೂವತ್ತೈದು ರೂಪಾಯಿ ಕೊಡಿ. ಎಷ್ಟು ಕೆಜಿ ಕಟ್ಟಲಿ?",
+          "romanization": "Sari, moovattaidu roopaayi kodi. Eshtu kg kattali?",
+          "english": "Okay, give thirty-five rupees. How many kg should I pack?",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಒಂದು ಕೆಜಿ ಕೊಡಿ.",
+              "romanization": "Ondu kg kodi.",
+              "english": "Give one kilogram.",
+              "phraseId": "shopping-03",
+              "nextStepId": "v5"
+            }
+          ]
+        },
+        "v5": {
+          "id": "v5",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಇಗೋ ತಗೊಳ್ಳಿ. ಒಟ್ಟು ಮೂವತ್ತೈದು ರೂಪಾಯಿ.",
+          "romanization": "Igo tagolli. Ottu moovattaidu roopaayi.",
+          "english": "Here you go. Total thirty-five rupees.",
+          "options": [
+            {
+              "id": "opt8",
+              "kannada": "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ ಇದೆಯಾ?",
+              "romanization": "Online payment ideya?",
+              "english": "Is online payment accepted?",
+              "phraseId": "shopping-06",
+              "nextStepId": "v6"
+            },
+            {
+              "id": "opt9",
+              "kannada": "ಚಿಲ್ಲರೆ ಇದೆಯಾ?",
+              "romanization": "Chillare ideya?",
+              "english": "Do you have change?",
+              "phraseId": "shopping-11",
+              "nextStepId": "v6"
+            }
+          ]
+        },
+        "v6": {
+          "id": "v6",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಹೌದು, ಇಲ್ಲೇ ಕ್ಯೂಆರ್ ಕೋಡ್ ಇದೆ, ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
+          "romanization": "Haudu, ille QR code ide, scan maadi.",
+          "english": "Yes, the QR code is right here, please scan.",
+          "options": [
+            {
+              "id": "opt10",
+              "kannada": "ಬ್ಯಾಗ್ ಕೊಡಿ.",
+              "romanization": "Bag kodi.",
+              "english": "Please give a bag.",
+              "phraseId": "shopping-07",
+              "nextStepId": "v_end"
+            }
+          ]
+        },
+        "v_end": {
+          "id": "v_end",
+          "speaker": "partner",
+          "speakerName": "ತರಕಾರಿ ವ್ಯಾಪಾರಿ",
+          "kannada": "ಇಗೋ ಬ್ಯಾಗ್, ಧನ್ಯವಾದಗಳು! ಮತ್ತೆ ಬನ್ನಿ.",
+          "romanization": "Igo bag, dhanyavaadagalu! Matte banni.",
+          "english": "Here is your bag, thank you! Please visit again."
+        }
+      }
+    },
+    {
+      "id": "shopping-roleplay-02",
+      "situationId": "shopping",
+      "title": "Shopping at a Silk Saree Emporium",
+      "titleKannada": "ರೇಷ್ಮೆ ಸೀರೆ ಕೊಳ್ಳುವುದು",
+      "description": "Select traditional Mysore silk sarees, inquire about colors and shades, and request billing.",
+      "partnerRole": "ಸೀರೆ ಅಂಗಡಿ ಮಾರಾಟಗಾರ (Store Assistant)",
+      "userRole": "ಗ್ರಾಹಕ (Customer)",
+      "initialStepId": "e1",
+      "steps": {
+        "e1": {
+          "id": "e1",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ನಮಸ್ಕಾರ! ಮೈಸೂರು ಸಿಲ್ಕ್ ಸೀರೆ ನೋಡಬೇಕಿತ್ತಾ?",
+          "romanization": "Namaskara! Mysore silk saree nodabekitta?",
+          "english": "Hello! Did you want to see Mysore silk sarees?",
+          "options": [
+            {
+              "id": "opt1",
+              "kannada": "ಬೇರೆ ತೋರಿಸಿ.",
+              "romanization": "Bere torisi.",
+              "english": "Show something else.",
+              "phraseId": "shopping-09",
+              "nextStepId": "e2"
+            },
+            {
+              "id": "opt2",
+              "kannada": "ಬೇರೆ ಕಲರ್ ಇದೆಯಾ?",
+              "romanization": "Bere color ideya?",
+              "english": "Is there another color?",
+              "phraseId": "shopping-05",
+              "nextStepId": "e3"
+            }
+          ]
+        },
+        "e2": {
+          "id": "e2",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ಖಂಡಿತ, ಈ ಕುಂಕುಮ ಕೆಂಪು ಮತ್ತು ಹಳದಿ ಜರಿ ನೋಡಿ, ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ.",
+          "romanization": "Khandita, ee kumkuma kempu mattu haladi zari nodi, tumba chennaagide.",
+          "english": "Certainly, look at this kumkuma red with golden zari, very elegant.",
+          "options": [
+            {
+              "id": "opt3",
+              "kannada": "ಇದು ತುಂಬಾ ಇಷ್ಟವಾಯಿತು.",
+              "romanization": "Idu tumba ishtavaayitu.",
+              "english": "I liked this very much.",
+              "phraseId": "shopping-08",
+              "nextStepId": "e4"
+            },
+            {
+              "id": "opt4",
+              "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+              "romanization": "Idu eshtu roopaayi?",
+              "english": "How much rupees is this?",
+              "phraseId": "shopping-01",
+              "nextStepId": "e5"
+            }
+          ]
+        },
+        "e3": {
+          "id": "e3",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ಹೌದು, ನಮ್ಮಲ್ಲಿ ಹಸಿರು ಮತ್ತು ನೀಲಿ ಶೇಡ್ಸ್ ಕೂಡ ಇವೆ.",
+          "romanization": "Haudu, nammalli hasiru mattu neeli shades kooda ive.",
+          "english": "Yes, we also have ghats green and sapphire blue shades.",
+          "options": [
+            {
+              "id": "opt5",
+              "kannada": "ಇದು ತುಂಬಾ ಇಷ್ಟವಾಯಿತು.",
+              "romanization": "Idu tumba ishtavaayitu.",
+              "english": "I liked this very much.",
+              "phraseId": "shopping-08",
+              "nextStepId": "e4"
+            }
+          ]
+        },
+        "e4": {
+          "id": "e4",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ಉತ್ತಮ ಆಯ್ಕೆ! ಇದು ಅಪ್ಪಟ ರೇಷ್ಮೆ.",
+          "romanization": "Uttama aayke! Idu appata reshme.",
+          "english": "Excellent choice! This is pure silk.",
+          "options": [
+            {
+              "id": "opt6",
+              "kannada": "ಬಿಲ್ ಕೊಡಿ.",
+              "romanization": "Bill kodi.",
+              "english": "Give the bill.",
+              "phraseId": "shopping-10",
+              "nextStepId": "e6"
+            }
+          ]
+        },
+        "e5": {
+          "id": "e5",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ನಾಲ್ಕು ಸಾವಿರ ರೂಪಾಯಿ ಸಾರ್, ಗ್ಯಾರಂಟಿ ಪ್ಯೂರ್ ಸಿಲ್ಕ್.",
+          "romanization": "Naalku saavira roopaayi saar, guarantee pure silk.",
+          "english": "Four thousand rupees sir, guaranteed pure silk.",
+          "options": [
+            {
+              "id": "opt7",
+              "kannada": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ, ಸಾರ್.",
+              "romanization": "Svalpa kammi maadi, saar.",
+              "english": "Reduce a little, sir.",
+              "phraseId": "shopping-02",
+              "nextStepId": "e4"
+            },
+            {
+              "id": "opt8",
+              "kannada": "ಬಿಲ್ ಕೊಡಿ.",
+              "romanization": "Bill kodi.",
+              "english": "Give the bill.",
+              "phraseId": "shopping-10",
+              "nextStepId": "e6"
+            }
+          ]
+        },
+        "e6": {
+          "id": "e6",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ಇಗೋ ನಿಮ್ಮ ಬಿಲ್ ಮತ್ತು ಪ್ಯಾಕ್ ಮಾಡಿದ ಸೀರೆ.",
+          "romanization": "Igo nimma bill mattu pack maadida saree.",
+          "english": "Here is your bill and packed saree.",
+          "options": [
+            {
+              "id": "opt9",
+              "kannada": "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ ಇದೆಯಾ?",
+              "romanization": "Online payment ideya?",
+              "english": "Is online payment accepted?",
+              "phraseId": "shopping-06",
+              "nextStepId": "e_end"
+            }
+          ]
+        },
+        "e_end": {
+          "id": "e_end",
+          "speaker": "partner",
+          "speakerName": "ಮಾರಾಟಗಾರ",
+          "kannada": "ಖಂಡಿತ, ಸ್ಕ್ಯಾನ್ ಮಾಡಿ. ಧನ್ಯವಾದಗಳು, ಮತ್ತೆ ಭೇಟಿ ನೀಡಿ!",
+          "romanization": "Khandita, scan maadi. Dhanyavaadagalu, matte bheti needi!",
+          "english": "Certainly, please scan. Thank you, visit again!"
+        }
+      }
     }
   ]
 }
