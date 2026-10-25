@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#F7F0E1" />
+  <circle cx="32" cy="32" r="28" stroke="#E9DCC3" stroke-width="2" />
+  <!-- Office Briefcase / Work Desk in Sandalwood and Ghats -->
+  <rect x="14" y="24" width="36" height="24" rx="4" fill="#2F5D50" fill-opacity="0.15" />
+  <rect x="14" y="24" width="36" height="24" rx="4" stroke="#2B1D14" stroke-width="3" />
+  <path d="M24 24V18C24 16.8954 24.8954 16 26 16H38C39.1046 16 40 16.8954 40 18V24" stroke="#2B1D14" stroke-width="3" />
+  <path d="M14 34H50" stroke="#9E2A2B" stroke-width="2" />
+  <rect x="29" y="32" width="6" height="5" rx="1" fill="#D99A1E" />
+</svg>

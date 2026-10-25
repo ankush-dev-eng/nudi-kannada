@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#F7F0E1" />
+  <circle cx="32" cy="32" r="28" stroke="#E9DCC3" stroke-width="2" />
+  <!-- Auto Rickshaw / Compass Navigation Silhouette in Kumkuma and Turmeric -->
+  <path d="M22 24L38 18L44 34L30 42L22 24Z" fill="#9E2A2B" fill-opacity="0.15" />
+  <path d="M18 38H46M22 38L26 22H38L42 38M20 44C20 46.2091 18.2091 48 16 48C13.7909 48 12 46.2091 12 44C12 41.7909 13.7909 40 16 40C18.2091 40 20 41.7909 20 44ZM52 44C52 46.2091 50.2091 48 48 48C45.7909 48 44 46.2091 44 44C44 41.7909 45.7909 40 48 40C50.2091 40 52 41.7909 52 44Z" stroke="#9E2A2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="32" cy="28" r="4" fill="#D99A1E" />
+</svg>

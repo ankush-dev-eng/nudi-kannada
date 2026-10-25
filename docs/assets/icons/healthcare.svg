@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#F7F0E1" />
+  <circle cx="32" cy="32" r="28" stroke="#E9DCC3" stroke-width="2" />
+  <!-- Medical Cross / Clinic Aid in Western Ghats Green and Kumkuma -->
+  <path d="M28 16H36V28H48V36H36V48H28V36H16V28H28V16Z" fill="#2F5D50" fill-opacity="0.2" />
+  <path d="M28 16H36V28H48V36H36V48H28V36H16V28H28V16Z" stroke="#2F5D50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="32" cy="32" r="4" fill="#9E2A2B" />
+</svg>
