@@ -171,6 +171,127 @@
       "formality": "polite",
       "tags": ["courtesy"],
       "reviewed": false
+    },
+    {
+      "id": "shopping-01",
+      "situationId": "shopping",
+      "kannada": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+      "romanization": "Idu eshtu roopaayi?",
+      "english": "How much rupees is this?",
+      "note": "'Idu' = this, 'eshtu' = how much. The foundation of all shopping interactions.",
+      "formality": "polite",
+      "tags": ["price", "market"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-02",
+      "situationId": "shopping",
+      "kannada": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ, ಸಾರ್.",
+      "romanization": "Svalpa kammi maadi, saar.",
+      "english": "Reduce a little, sir.",
+      "note": "'Svalpa' means a little, 'kammi maadi' means please make it less. Quintessential market bargaining.",
+      "formality": "polite",
+      "tags": ["bargain", "market"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-03",
+      "situationId": "shopping",
+      "kannada": "ಒಂದು ಕೆಜಿ ಕೊಡಿ.",
+      "romanization": "Ondu kg kodi.",
+      "english": "Give one kilogram.",
+      "note": "'Ondu' = one, 'kodi' = please give.",
+      "formality": "polite",
+      "tags": ["grocery", "quantity"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-04",
+      "situationId": "shopping",
+      "kannada": "ತಾಜಾ ಇದೆಯಾ?",
+      "romanization": "Taaja ideya?",
+      "english": "Is it fresh?",
+      "note": "Useful when buying fruits, vegetables, and flowers in Russell or KR Market.",
+      "formality": "polite",
+      "tags": ["grocery", "quality"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-05",
+      "situationId": "shopping",
+      "kannada": "ಬೇರೆ ಕಲರ್ ಇದೆಯಾ?",
+      "romanization": "Bere color ideya?",
+      "english": "Is there another color?",
+      "note": "'Bere' means other / different.",
+      "formality": "polite",
+      "tags": ["clothing", "inquiry"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-06",
+      "situationId": "shopping",
+      "kannada": "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ ಇದೆಯಾ?",
+      "romanization": "Online payment ideya?",
+      "english": "Is online payment accepted?",
+      "note": "Universally understood across Bengaluru for UPI / QR code payment.",
+      "formality": "polite",
+      "tags": ["payment", "upi"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-07",
+      "situationId": "shopping",
+      "kannada": "ಬ್ಯಾಗ್ ಕೊಡಿ.",
+      "romanization": "Bag kodi.",
+      "english": "Please give a bag.",
+      "note": "Asking for a carrying bag or cover.",
+      "formality": "polite",
+      "tags": ["courtesy", "service"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-08",
+      "situationId": "shopping",
+      "kannada": "ಇದು ತುಂಬಾ ಇಷ್ಟವಾಯಿತು.",
+      "romanization": "Idu tumba ishtavaayitu.",
+      "english": "I liked this very much.",
+      "note": "'Tumba' = very much, 'ishtavaayitu' = became liked.",
+      "formality": "polite",
+      "tags": ["compliment", "appreciation"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-09",
+      "situationId": "shopping",
+      "kannada": "ಬೇರೆ ತೋರಿಸಿ.",
+      "romanization": "Bere torisi.",
+      "english": "Show something else.",
+      "note": "'Torisi' is the respectful imperative for 'show'.",
+      "formality": "polite",
+      "tags": ["shopping", "preference"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-10",
+      "situationId": "shopping",
+      "kannada": "ಬಿಲ್ ಕೊಡಿ.",
+      "romanization": "Bill kodi.",
+      "english": "Give the bill.",
+      "note": "Common request at billing counters and shops.",
+      "formality": "polite",
+      "tags": ["checkout", "payment"],
+      "reviewed": false
+    },
+    {
+      "id": "shopping-11",
+      "situationId": "shopping",
+      "kannada": "ಚಿಲ್ಲರೆ ಇದೆಯಾ?",
+      "romanization": "Chillare ideya?",
+      "english": "Do you have change?",
+      "note": "'Chillare' is the Kannada word for coin change or small currency denominations.",
+      "formality": "polite",
+      "tags": ["payment", "cash"],
+      "reviewed": false
     }
   ],
   "roleplays": []
