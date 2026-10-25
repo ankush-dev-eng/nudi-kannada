@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Nudi (ನುಡಿ) - Kannada for Everyday Life. Situation-first Kannada companion.",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
