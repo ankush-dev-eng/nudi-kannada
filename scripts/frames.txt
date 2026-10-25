@@ -1,0 +1,15 @@
+file '../docs/assets/screens/home.png'
+duration 2.0
+file '../docs/assets/screens/learn.png'
+duration 2.0
+file '../docs/assets/screens/speak.png'
+duration 2.0
+file '../docs/assets/screens/roleplay.png'
+duration 2.5
+file '../docs/assets/screens/review.png'
+duration 2.0
+file '../docs/assets/screens/script.png'
+duration 2.0
+file '../docs/assets/screens/dark.png'
+duration 2.0
+file '../docs/assets/screens/home.png'
