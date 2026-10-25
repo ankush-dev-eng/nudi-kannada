@@ -24,7 +24,7 @@ All contributors and community participants are expected to adhere to our [Code 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/nudi-kannada/nudi.git
+   git clone https://github.com/ankush-dev-eng/nudi-kannada.git
    cd nudi
    ```
 

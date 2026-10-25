@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nudi-kannada/nudi/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-Passing-2F5D50?style=for-the-badge&logo=github-actions&logoColor=white" alt="CI Status" /></a>
+  <a href="https://github.com/ankush-dev-eng/nudi-kannada/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-Passing-2F5D50?style=for-the-badge&logo=github-actions&logoColor=white" alt="CI Status" /></a>
   <a href="#test-and-verification"><img src="https://img.shields.io/badge/Tests-30%2F30%20Passing-2F5D50?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest Tests" /></a>
   <a href="#offline-first-pwa"><img src="https://img.shields.io/badge/PWA-100%25%20Offline-9E2A2B?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA Ready" /></a>
   <a href="#accessibility--design"><img src="https://img.shields.io/badge/A11y-WCAG%20AA%20Compliant-D99A1E?style=for-the-badge&logo=w3c&logoColor=white" alt="WCAG AA" /></a>
@@ -157,7 +157,7 @@ Press <kbd>?</kbd> anywhere in the application to view the interactive keyboard 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/nudi-kannada/nudi.git
+git clone https://github.com/ankush-dev-eng/nudi-kannada.git
 cd nudi
 
 # 2. Install dependencies
